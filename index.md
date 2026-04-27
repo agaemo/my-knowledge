@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: Architecture から読む
-      link: /architecture/layered
+      link: /architecture/
     - theme: alt
       text: GitHub
       link: https://github.com/agaemo/my-knowledge
