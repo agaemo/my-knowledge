@@ -75,6 +75,14 @@ export default defineConfig({
           { text: 'Shape Up', link: '/process/shape-up' },
         ],
       },
+      {
+        text: 'Deployment',
+        items: [
+          { text: 'カナリアリリース', link: '/deployment/canary-release' },
+          { text: 'ブルーグリーン', link: '/deployment/blue-green' },
+          { text: 'フィーチャーフラグ', link: '/deployment/feature-flags' },
+        ],
+      },
     ],
     search: {
       provider: 'local',

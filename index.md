@@ -32,5 +32,8 @@ features:
   - title: 開発プロセス
     details: アジャイル・ウォーターフォール・Shape Up
     link: /process/agile
+  - title: Deployment
+    details: カナリアリリース・ブルーグリーン・フィーチャーフラグ
+    link: /deployment/canary-release
 ---
 

@@ -12,7 +12,8 @@ my-knowledge/
 ├── api/             # API設計
 ├── auth/            # 認証・認可
 ├── observability/   # オブザーバビリティ
-└── process/         # 開発プロセス
+├── process/         # 開発プロセス
+└── deployment/      # デプロイ・リリース戦略（カナリア・ブルーグリーン・フィーチャーフラグ）
 ```
 
 ## 方針

@@ -46,3 +46,4 @@ VitePressの設定は `.vitepress/config.ts`、カスタムテーマは `.vitepr
 | [auth](/auth/jwt) | JWT・OAuth2 |
 | [observability](/observability/observability) | ログ・メトリクス・トレース |
 | [process](/process/agile) | アジャイル・ウォーターフォール・Shape Up |
+| [deployment](/deployment/canary-release) | カナリアリリース・ブルーグリーン・フィーチャーフラグ |
