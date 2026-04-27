@@ -89,9 +89,11 @@ export default defineConfig({
       },
       {
         text: 'Tools',
+        link: '/tools/',
         items: [
           {
             text: 'Infra',
+            link: '/tools/infra/',
             collapsed: true,
             items: [
               { text: 'Docker', link: '/tools/infra/docker' },
@@ -101,13 +103,17 @@ export default defineConfig({
           },
           {
             text: 'Cloud',
+            link: '/tools/cloud/',
             collapsed: true,
             items: [
               { text: 'AWS', link: '/tools/cloud/aws' },
+              { text: 'GCP', link: '/tools/cloud/gcp' },
+              { text: 'Azure', link: '/tools/cloud/azure' },
             ],
           },
           {
             text: 'CI/CD',
+            link: '/tools/ci-cd/',
             collapsed: true,
             items: [
               { text: 'GitHub Actions', link: '/tools/ci-cd/github-actions' },
