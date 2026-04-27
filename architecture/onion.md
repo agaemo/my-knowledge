@@ -171,4 +171,4 @@ expect(user.name).toBe('Test');
 ## DDDとの組み合わせ
 
 オニオンアーキテクチャの `domain/` 層に DDD の概念（Entity・Value Object・Repository）を適用するのが最も一般的な組み合わせ。
-[DDD](/architecture/04_ddd) を参照。
+[DDD](/architecture/ddd) を参照。

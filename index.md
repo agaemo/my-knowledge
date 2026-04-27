@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: Architecture から読む
-      link: /architecture/01_layered
+      link: /architecture/layered
     - theme: alt
       text: GitHub
       link: https://github.com/agaemo/my-knowledge
@@ -16,7 +16,7 @@ hero:
 features:
   - title: Architecture
     details: レイヤード・オニオン・DDD・ヘキサゴナル・イベント駆動
-    link: /architecture/01_layered
+    link: /architecture/layered
   - title: AI
     details: Vibe Coding・Harness Engineering・RAG・プロンプトエンジニアリング
     link: /ai/vibe-coding

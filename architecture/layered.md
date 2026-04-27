@@ -127,4 +127,4 @@ const userService = new UserService(userRepo);
 - ビジネスルールが routes や repositories に漏れ始めた
 - テストで DB モックが複雑になった
 
-→ [モジュラーモノリス](/architecture/02_modular-monolith) または [オニオンアーキテクチャ](/architecture/03_onion) を検討
+→ [モジュラーモノリス](/architecture/modular-monolith) または [オニオンアーキテクチャ](/architecture/onion) を検討

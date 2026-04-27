@@ -13,12 +13,13 @@ export default defineConfig({
       {
         text: 'Architecture',
         items: [
-          { text: 'レイヤード', link: '/architecture/01_layered' },
-          { text: 'モジュラーモノリス', link: '/architecture/02_modular-monolith' },
-          { text: 'オニオン', link: '/architecture/03_onion' },
-          { text: 'DDD', link: '/architecture/04_ddd' },
-          { text: 'ヘキサゴナル', link: '/architecture/05_hexagonal' },
-          { text: 'イベント駆動', link: '/architecture/06_event-driven' },
+          { text: 'レイヤード', link: '/architecture/layered' },
+          { text: 'モジュラーモノリス', link: '/architecture/modular-monolith' },
+          { text: 'オニオン', link: '/architecture/onion' },
+          { text: 'DDD', link: '/architecture/ddd' },
+          { text: 'ヘキサゴナル', link: '/architecture/hexagonal' },
+          { text: 'イベント駆動', link: '/architecture/event-driven' },
+          { text: 'ストラングラーフィグ', link: '/architecture/strangler-fig' },
         ],
       },
       {

@@ -39,7 +39,7 @@ VitePressの設定は `.vitepress/config.ts`、カスタムテーマは `.vitepr
 
 | カテゴリ | 内容 |
 |---|---|
-| [architecture](/architecture/01_layered) | レイヤード・オニオン・DDD・イベント駆動など |
+| [architecture](/architecture/layered) | レイヤード・オニオン・DDD・イベント駆動など |
 | [testing](/testing/tdd) | TDD・テスト戦略 |
 | [ai](/ai/vibe-coding) | プロンプトエンジニアリング・RAG・AIエージェント・Vibe Coding など |
 | [api](/api/rest-design) | REST・GraphQL・gRPC・tRPC |
