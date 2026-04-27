@@ -16,6 +16,7 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Architecture',
+        link: '/architecture/',
         items: [
           { text: 'レイヤード', link: '/architecture/layered' },
           { text: 'モジュラーモノリス', link: '/architecture/modular-monolith' },
@@ -28,6 +29,7 @@ export default defineConfig({
       },
       {
         text: 'Testing',
+        link: '/testing/',
         items: [
           { text: 'TDD', link: '/testing/tdd' },
           { text: 'テスト戦略', link: '/testing/testing-strategy' },
@@ -35,6 +37,7 @@ export default defineConfig({
       },
       {
         text: 'AI',
+        link: '/ai/',
         items: [
           { text: 'Vibe Coding', link: '/ai/vibe-coding' },
           { text: 'Harness Engineering', link: '/ai/harness-engineering' },
@@ -51,6 +54,7 @@ export default defineConfig({
       },
       {
         text: 'API',
+        link: '/api/',
         items: [
           { text: 'REST設計', link: '/api/rest-design' },
           { text: 'GraphQL', link: '/api/graphql' },
@@ -60,6 +64,7 @@ export default defineConfig({
       },
       {
         text: '認証',
+        link: '/auth/',
         items: [
           { text: 'JWT', link: '/auth/jwt' },
           { text: 'OAuth2', link: '/auth/oauth2' },
@@ -67,12 +72,14 @@ export default defineConfig({
       },
       {
         text: 'Observability',
+        link: '/observability/',
         items: [
           { text: 'オブザーバビリティ', link: '/observability/observability' },
         ],
       },
       {
         text: '開発プロセス',
+        link: '/process/',
         items: [
           { text: 'アジャイル', link: '/process/agile' },
           { text: 'ウォーターフォール', link: '/process/waterfall' },
@@ -81,6 +88,7 @@ export default defineConfig({
       },
       {
         text: 'Deployment',
+        link: '/deployment/',
         items: [
           { text: 'カナリアリリース', link: '/deployment/canary-release' },
           { text: 'ブルーグリーン', link: '/deployment/blue-green' },
