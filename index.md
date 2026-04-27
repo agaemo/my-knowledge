@@ -16,27 +16,27 @@ hero:
 features:
   - title: Architecture
     details: レイヤード・オニオン・DDD・ヘキサゴナル・イベント駆動
-    link: /architecture/layered
+    link: /architecture/
   - title: AI
     details: Vibe Coding・Harness Engineering・RAG・プロンプトエンジニアリング
-    link: /ai/vibe-coding
+    link: /ai/
   - title: Testing
     details: TDD・テスト戦略・テストピラミッド
-    link: /testing/tdd
+    link: /testing/
   - title: API
     details: REST・GraphQL・gRPC・tRPC
-    link: /api/rest-design
+    link: /api/
   - title: 認証
     details: JWT・OAuth2
-    link: /auth/jwt
+    link: /auth/
   - title: 開発プロセス
     details: アジャイル・ウォーターフォール・Shape Up
-    link: /process/agile
+    link: /process/
   - title: Deployment
     details: カナリアリリース・ブルーグリーン・フィーチャーフラグ
-    link: /deployment/canary-release
+    link: /deployment/
   - title: Tools
     details: Kubernetes・Terraform・AWS・GitHub Actions
-    link: /tools/infra/kubernetes
+    link: /tools/
 ---
 
