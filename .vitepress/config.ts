@@ -94,6 +94,7 @@ export default defineConfig({
             text: 'Infra',
             collapsed: true,
             items: [
+              { text: 'Docker', link: '/tools/infra/docker' },
               { text: 'Kubernetes', link: '/tools/infra/kubernetes' },
               { text: 'Terraform', link: '/tools/infra/terraform' },
             ],
