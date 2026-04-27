@@ -1,4 +1,6 @@
 # 認証
 
-- [JWT](/auth/jwt)
-- [OAuth2](/auth/oauth2)
+認証・認可の仕組みとプロトコル。
+
+- [JWT](/auth/jwt) — JSON形式のステートレスな認証トークン
+- [OAuth2](/auth/oauth2) — 認可の委譲を標準化したプロトコル

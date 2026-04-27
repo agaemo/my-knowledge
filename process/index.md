@@ -1,5 +1,7 @@
 # 開発プロセス
 
-- [アジャイル](/process/agile)
-- [ウォーターフォール](/process/waterfall)
-- [Shape Up](/process/shape-up)
+チームでソフトウェアを進めるための開発手法・プロセス。
+
+- [アジャイル](/process/agile) — 短いサイクルで反復・適応する開発手法
+- [ウォーターフォール](/process/waterfall) — 工程を順序通りに進める開発モデル
+- [Shape Up](/process/shape-up) — 6週間サイクルでスコープを固定するプロジェクト管理手法
