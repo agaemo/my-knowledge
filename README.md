@@ -39,12 +39,12 @@ VitePressの設定は `.vitepress/config.ts`、カスタムテーマは `.vitepr
 
 | カテゴリ | 内容 |
 |---|---|
-| [architecture](/architecture/layered) | レイヤード・オニオン・DDD・イベント駆動など |
-| [testing](/testing/tdd) | TDD・テスト戦略 |
-| [ai](/ai/vibe-coding) | プロンプトエンジニアリング・RAG・AIエージェント・Vibe Coding など |
-| [api](/api/rest-design) | REST・GraphQL・gRPC・tRPC |
-| [auth](/auth/jwt) | JWT・OAuth2 |
-| [observability](/observability/observability) | ログ・メトリクス・トレース |
-| [process](/process/agile) | アジャイル・ウォーターフォール・Shape Up |
-| [deployment](/deployment/canary-release) | カナリアリリース・ブルーグリーン・フィーチャーフラグ |
-| [tools](/tools/infra/kubernetes) | Kubernetes・Terraform・AWS・GitHub Actions |
+| [architecture](architecture/index.md) | レイヤード・オニオン・DDD・イベント駆動など |
+| [testing](testing/index.md) | TDD・テスト戦略 |
+| [ai](ai/index.md) | プロンプトエンジニアリング・RAG・AIエージェント・Vibe Coding など |
+| [api](api/index.md) | REST・GraphQL・gRPC・tRPC |
+| [auth](auth/index.md) | JWT・OAuth2 |
+| [observability](observability/index.md) | ログ・メトリクス・トレース |
+| [process](process/index.md) | アジャイル・ウォーターフォール・Shape Up |
+| [deployment](deployment/index.md) | カナリアリリース・ブルーグリーン・フィーチャーフラグ |
+| [tools](tools/index.md) | Kubernetes・Terraform・AWS・GitHub Actions |
