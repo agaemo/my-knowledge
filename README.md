@@ -11,10 +11,10 @@
 
 | カテゴリ | 内容 |
 |---|---|
-| [architecture](./architecture/) | レイヤード・オニオン・DDD・イベント駆動など |
-| [testing](./testing/) | TDD・テスト戦略 |
-| [ai](./ai/) | プロンプトエンジニアリング・RAG・AIエージェント・Vibe Coding など |
-| [api](./api/) | REST・GraphQL・gRPC・tRPC |
-| [auth](./auth/) | JWT・OAuth2 |
-| [observability](./observability/) | ログ・メトリクス・トレース |
-| [process](./process/) | アジャイル・ウォーターフォール・Shape Up |
+| [architecture](/architecture/01_layered) | レイヤード・オニオン・DDD・イベント駆動など |
+| [testing](/testing/tdd) | TDD・テスト戦略 |
+| [ai](/ai/vibe-coding) | プロンプトエンジニアリング・RAG・AIエージェント・Vibe Coding など |
+| [api](/api/rest-design) | REST・GraphQL・gRPC・tRPC |
+| [auth](/auth/jwt) | JWT・OAuth2 |
+| [observability](/observability/observability) | ログ・メトリクス・トレース |
+| [process](/process/agile) | アジャイル・ウォーターフォール・Shape Up |
