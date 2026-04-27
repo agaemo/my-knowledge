@@ -30,6 +30,17 @@
    ヒーローセクション
    =================================================== */
 
+/* ヘッダーとタイトルの間の余白を詰める */
+.VPHero {
+  padding-top: 32px !important;
+}
+
+@media (min-width: 640px) {
+  .VPHero {
+    padding-top: 40px !important;
+  }
+}
+
 /* タイトル: 青→シアンのグラデーション（色覚異常対応） */
 .VPHero .name {
   background: linear-gradient(120deg, #0968da 0%, #0096c7 100%);
