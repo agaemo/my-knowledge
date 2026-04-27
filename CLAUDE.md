@@ -8,7 +8,7 @@
 my-knowledge/
 ├── architecture/    # アーキテクチャパターン
 ├── testing/         # テスト手法
-├── ai/              # AI・LLMエンジニアリング
+├── ai/              # AI・LLMエンジニアリング（プロンプト・RAG・Embeddings・エージェント・Fine-tuning・Evals・MCP・LLMOps など）
 ├── api/             # API設計
 ├── auth/            # 認証・認可
 ├── observability/   # オブザーバビリティ
