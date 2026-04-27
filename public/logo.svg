@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#07071a"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <circle cx="50" cy="50" r="50" fill="url(#bg)"/>
+
+  <!-- 外周リング -->
+  <circle cx="50" cy="50" r="47" fill="none" stroke="#818cf8" stroke-width="0.8"/>
+
+  <!-- 外周リング 内側（二重リング） -->
+  <circle cx="50" cy="50" r="45" fill="none" stroke="#818cf8" stroke-width="0.3" opacity="0.5"/>
+
+  <!-- 目盛り（12本・30°間隔） -->
+  <line x1="97" y1="50" x2="93.5" y2="50" stroke="#818cf8" stroke-width="1.2"/>
+  <line x1="90.7" y1="73.5" x2="87.7" y2="71.8" stroke="#818cf8" stroke-width="1.2"/>
+  <line x1="73.5" y1="90.7" x2="71.8" y2="87.7" stroke="#818cf8" stroke-width="1.2"/>
+  <line x1="50" y1="97" x2="50" y2="93.5" stroke="#818cf8" stroke-width="1.2"/>
+  <line x1="26.5" y1="90.7" x2="28.3" y2="87.7" stroke="#818cf8" stroke-width="1.2"/>
+  <line x1="9.3" y1="73.5" x2="12.3" y2="71.8" stroke="#818cf8" stroke-width="1.2"/>
+  <line x1="3" y1="50" x2="6.5" y2="50" stroke="#818cf8" stroke-width="1.2"/>
+  <line x1="9.3" y1="26.5" x2="12.3" y2="28.3" stroke="#818cf8" stroke-width="1.2"/>
+  <line x1="26.5" y1="9.3" x2="28.3" y2="12.3" stroke="#818cf8" stroke-width="1.2"/>
+  <line x1="50" y1="3" x2="50" y2="6.5" stroke="#818cf8" stroke-width="1.2"/>
+  <line x1="73.5" y1="9.3" x2="71.8" y2="12.3" stroke="#818cf8" stroke-width="1.2"/>
+  <line x1="90.7" y1="26.5" x2="87.7" y2="28.3" stroke="#818cf8" stroke-width="1.2"/>
+
+  <!-- 中間ダッシュリング -->
+  <circle cx="50" cy="50" r="38" fill="none" stroke="#818cf8" stroke-width="0.5" stroke-dasharray="2 2.5"/>
+
+  <!-- ダッシュリングから頂点への補助線（r=38 → r=28, ペンタグラムの5頂点方向） -->
+  <line x1="50" y1="12" x2="50" y2="22" stroke="#a78bfa" stroke-width="0.6"/>
+  <line x1="86.1" y1="38.3" x2="76.6" y2="41.3" stroke="#a78bfa" stroke-width="0.6"/>
+  <line x1="72.3" y1="80.7" x2="66.5" y2="72.6" stroke="#a78bfa" stroke-width="0.6"/>
+  <line x1="27.7" y1="80.7" x2="33.5" y2="72.6" stroke="#a78bfa" stroke-width="0.6"/>
+  <line x1="13.9" y1="38.3" x2="23.4" y2="41.3" stroke="#a78bfa" stroke-width="0.6"/>
+
+  <!-- 内周リング（ペンタグラムを内接） -->
+  <circle cx="50" cy="50" r="28" fill="none" stroke="#a78bfa" stroke-width="1"/>
+
+  <!-- ペンタグラム
+       A=(50,22) B=(76.6,41.3) C=(66.5,72.6) D=(33.5,72.6) E=(23.4,41.3)
+       結線順: A→C→E→B→D→A -->
+  <path d="M 50,22 L 66.5,72.6 L 23.4,41.3 L 76.6,41.3 L 33.5,72.6 Z"
+        fill="none" stroke="#a78bfa" stroke-width="0.8" stroke-linejoin="round"/>
+
+  <!-- 頂点マーカー -->
+  <circle cx="50"   cy="22"   r="1.8" fill="#c4b5fd"/>
+  <circle cx="76.6" cy="41.3" r="1.8" fill="#c4b5fd"/>
+  <circle cx="66.5" cy="72.6" r="1.8" fill="#c4b5fd"/>
+  <circle cx="33.5" cy="72.6" r="1.8" fill="#c4b5fd"/>
+  <circle cx="23.4" cy="41.3" r="1.8" fill="#c4b5fd"/>
+
+  <!-- 最内リング -->
+  <circle cx="50" cy="50" r="12" fill="none" stroke="#c4b5fd" stroke-width="0.7"/>
+
+  <!-- 最内リング上の4点（東西南北） -->
+  <circle cx="50" cy="38" r="1.2" fill="#818cf8"/>
+  <circle cx="62" cy="50" r="1.2" fill="#818cf8"/>
+  <circle cx="50" cy="62" r="1.2" fill="#818cf8"/>
+  <circle cx="38" cy="50" r="1.2" fill="#818cf8"/>
+
+  <!-- 中心 -->
+  <circle cx="50" cy="50" r="4.5" fill="#4f46e5" opacity="0.7"/>
+  <circle cx="50" cy="50" r="2"   fill="#e0e7ff"/>
+</svg>
