@@ -6,7 +6,7 @@ export default {
   extends: DefaultTheme,
   Layout() {
     return h(DefaultTheme.Layout, null, {
-      'home-hero-before': () =>
+      'home-hero-info-after': () =>
         h('div', { class: 'custom-notice' },
           '⚠️ コンテンツの大部分は Claude Code で生成したものであり、未精査のものを含みます。'
         ),
