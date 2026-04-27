@@ -4,7 +4,7 @@ layout: home
 hero:
   name: my-knowledge
   text: 個人の知識ベース
-  tagline: "用語・概念・設計パターンなど、忘れやすいものをまとめています。\nコンテンツの大部分は Claude Code で生成したものであり、未精査のものを含みます。"
+  tagline: 用語・概念・設計パターンなど、忘れやすいものをまとめています。
   actions:
     - theme: brand
       text: Architecture から読む

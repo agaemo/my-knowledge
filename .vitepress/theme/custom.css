@@ -1,0 +1,86 @@
+/* ブランドカラー */
+:root {
+  --vp-c-brand-1: #6366f1;
+  --vp-c-brand-2: #818cf8;
+  --vp-c-brand-3: #a5b4fc;
+  --vp-c-brand-soft: rgba(99, 102, 241, 0.12);
+}
+
+/* ヒーローのタイトルをグラデーションに */
+.VPHero .name {
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* 免責バナー */
+.custom-notice {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 10px 24px;
+  background-color: rgba(234, 179, 8, 0.1);
+  border: 1px solid rgba(234, 179, 8, 0.4);
+  border-radius: 8px;
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.dark .custom-notice {
+  background-color: rgba(234, 179, 8, 0.08);
+  border-color: rgba(234, 179, 8, 0.3);
+}
+
+/* features カードの改善 */
+.VPFeature {
+  border-radius: 12px !important;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.VPFeature:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.dark .VPFeature:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.VPFeature .title {
+  font-size: 16px !important;
+}
+
+.VPFeature .details {
+  font-size: 13px !important;
+  line-height: 1.7 !important;
+}
+
+/* サイドバーのアクティブリンク */
+.VPSidebarItem.is-active > .item .link {
+  color: var(--vp-c-brand-1);
+  font-weight: 600;
+}
+
+/* コードブロックのフォントサイズ */
+.vp-doc div[class*='language-'] code {
+  font-size: 13px;
+}
+
+/* テーブルの見やすさ改善 */
+.vp-doc table {
+  display: table;
+  width: 100%;
+}
+
+.vp-doc th {
+  background-color: var(--vp-c-brand-soft);
+}
+
+/* h2 に区切り線 */
+.vp-doc h2 {
+  border-top: 1px solid var(--vp-c-divider);
+  padding-top: 24px;
+  margin-top: 40px;
+}
