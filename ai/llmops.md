@@ -67,7 +67,7 @@ async function tracedLlmCall(prompt: string) {
 
 ### Evals パイプライン
 
-→ [evals.md](evals.md) 参照
+→ [Evals](/ai/evals) 参照
 
 プロンプト変更・モデル切り替え時に自動でEvalsを実行してデグレードを検知する。
 
