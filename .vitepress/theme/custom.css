@@ -30,14 +30,14 @@
    ヒーローセクション
    =================================================== */
 
-/* ヘッダーとタイトルの間の余白を詰める */
+/* ヘッダーとタイトルの間の余白を調整 */
 .VPHero {
-  padding-top: 32px !important;
+  padding-top: 64px !important;
 }
 
 @media (min-width: 640px) {
   .VPHero {
-    padding-top: 40px !important;
+    padding-top: 72px !important;
   }
 }
 
