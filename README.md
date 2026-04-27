@@ -22,6 +22,10 @@ npm run build   # .vitepress/dist に出力
 npm run preview # ビルド結果をローカルでプレビュー
 ```
 
+## 設定
+
+VitePressの設定は `.vitepress/config.ts`、カスタムテーマは `.vitepress/theme/` で管理している。
+
 ## デプロイ
 
 `main` ブランチにpushすると GitHub Actions が自動でビルド・GitHub Pages へデプロイする。
