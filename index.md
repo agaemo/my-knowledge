@@ -35,5 +35,8 @@ features:
   - title: Deployment
     details: カナリアリリース・ブルーグリーン・フィーチャーフラグ
     link: /deployment/canary-release
+  - title: Tools
+    details: Kubernetes・Terraform・AWS・GitHub Actions
+    link: /tools/infra/kubernetes
 ---
 

@@ -13,7 +13,8 @@ my-knowledge/
 ├── auth/            # 認証・認可
 ├── observability/   # オブザーバビリティ
 ├── process/         # 開発プロセス
-└── deployment/      # デプロイ・リリース戦略（カナリア・ブルーグリーン・フィーチャーフラグ）
+├── deployment/      # デプロイ・リリース戦略（カナリア・ブルーグリーン・フィーチャーフラグ）
+└── tools/           # ツール（infra/・cloud/・ci-cd/ のサブディレクトリで分類）
 ```
 
 ## 方針

@@ -87,6 +87,33 @@ export default defineConfig({
           { text: 'フィーチャーフラグ', link: '/deployment/feature-flags' },
         ],
       },
+      {
+        text: 'Tools',
+        items: [
+          {
+            text: 'Infra',
+            collapsed: true,
+            items: [
+              { text: 'Kubernetes', link: '/tools/infra/kubernetes' },
+              { text: 'Terraform', link: '/tools/infra/terraform' },
+            ],
+          },
+          {
+            text: 'Cloud',
+            collapsed: true,
+            items: [
+              { text: 'AWS', link: '/tools/cloud/aws' },
+            ],
+          },
+          {
+            text: 'CI/CD',
+            collapsed: true,
+            items: [
+              { text: 'GitHub Actions', link: '/tools/ci-cd/github-actions' },
+            ],
+          },
+        ],
+      },
     ],
     search: {
       provider: 'local',

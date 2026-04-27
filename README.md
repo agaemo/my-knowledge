@@ -47,3 +47,4 @@ VitePressの設定は `.vitepress/config.ts`、カスタムテーマは `.vitepr
 | [observability](/observability/observability) | ログ・メトリクス・トレース |
 | [process](/process/agile) | アジャイル・ウォーターフォール・Shape Up |
 | [deployment](/deployment/canary-release) | カナリアリリース・ブルーグリーン・フィーチャーフラグ |
+| [tools](/tools/infra/kubernetes) | Kubernetes・Terraform・AWS・GitHub Actions |
