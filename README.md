@@ -2,6 +2,30 @@
 
 個人の知識ベース。用語・概念・設計パターンなど、忘れやすいものをまとめている。
 
+## 技術スタック
+
+- [VitePress](https://vitepress.dev/) v1.6.x — Markdownをそのまま静的サイトとして配信
+- Node.js 20
+- GitHub Pages（`main` ブランチへのpushで自動デプロイ）
+
+## ローカル起動
+
+```bash
+npm install
+npm run dev
+```
+
+## ビルド
+
+```bash
+npm run build   # .vitepress/dist に出力
+npm run preview # ビルド結果をローカルでプレビュー
+```
+
+## デプロイ
+
+`main` ブランチにpushすると GitHub Actions が自動でビルド・GitHub Pages へデプロイする。
+
 ## 注意
 
 - コンテンツの大部分は Claude Code で生成したものであり、未精査のものを含む
