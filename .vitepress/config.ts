@@ -53,6 +53,7 @@ export default defineConfig({
               { text: 'GraphQL', link: '/backend/api/graphql' },
               { text: 'gRPC', link: '/backend/api/grpc' },
               { text: 'tRPC', link: '/backend/api/trpc' },
+              { text: 'APIバージョニング', link: '/backend/api/api-versioning' },
             ],
           },
         ],
@@ -119,6 +120,7 @@ export default defineConfig({
           { text: 'アジャイル', link: '/process/agile' },
           { text: 'ウォーターフォール', link: '/process/waterfall' },
           { text: 'Shape Up', link: '/process/shape-up' },
+          { text: 'セマンティックバージョニング', link: '/process/semver' },
         ],
       },
       {
