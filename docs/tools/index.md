@@ -1,10 +1,5 @@
 # Dev Tools
 
-インストールして使う開発ツール。インフラ・CI/CD・ローカルエディタなど。
+インストールして使う開発ツール。インフラ・CI/CDなど。
 
-## Infra
-
-- [Docker](/tools/infra/docker) — コンテナのビルド・実行
-- [Kubernetes](/tools/infra/kubernetes) — コンテナオーケストレーション
-- [Terraform](/tools/infra/terraform) — インフラのコード管理（IaC）
-
+- [Infra](/tools/infra/) — コンテナ・オーケストレーション・IaCなど、アプリケーションの実行基盤を構築・管理するツール

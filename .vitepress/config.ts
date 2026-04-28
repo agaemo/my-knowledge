@@ -40,12 +40,21 @@ export default defineConfig({
         ],
       },
       {
-        text: 'Testing',
-        link: '/testing/',
+        text: 'Backend',
+        link: '/backend/',
         collapsed: true,
         items: [
-          { text: 'TDD', link: '/testing/tdd' },
-          { text: 'テスト戦略', link: '/testing/testing-strategy' },
+          {
+            text: 'API',
+            link: '/backend/api/',
+            collapsed: true,
+            items: [
+              { text: 'REST設計', link: '/backend/api/rest-design' },
+              { text: 'GraphQL', link: '/backend/api/graphql' },
+              { text: 'gRPC', link: '/backend/api/grpc' },
+              { text: 'tRPC', link: '/backend/api/trpc' },
+            ],
+          },
         ],
       },
       {
@@ -68,14 +77,21 @@ export default defineConfig({
         ],
       },
       {
-        text: 'API',
-        link: '/api/',
+        text: 'Testing',
+        link: '/testing/',
         collapsed: true,
         items: [
-          { text: 'REST設計', link: '/api/rest-design' },
-          { text: 'GraphQL', link: '/api/graphql' },
-          { text: 'gRPC', link: '/api/grpc' },
-          { text: 'tRPC', link: '/api/trpc' },
+          { text: 'TDD', link: '/testing/tdd' },
+          { text: 'テスト戦略', link: '/testing/testing-strategy' },
+        ],
+      },
+      {
+        text: 'Security',
+        link: '/security/',
+        collapsed: true,
+        items: [
+          { text: 'CORS', link: '/security/cors' },
+          { text: 'Web攻撃手法', link: '/security/web-attacks' },
         ],
       },
       {

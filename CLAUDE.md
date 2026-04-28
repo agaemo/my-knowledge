@@ -11,7 +11,8 @@ my-knowledge/
     ├── testing/             # テスト手法
     ├── ai/                  # AI・LLMエンジニアリング（プロンプト・RAG・Embeddings・エージェント・Fine-tuning・Evals・MCP・LLMOps など）
     ├── frontend/            # フロントエンド設計（CSS設計・レンダリング戦略など）
-    ├── api/                 # API設計
+    ├── backend/             # バックエンド設計（api/ サブディレクトリで分類）
+    ├── security/            # セキュリティ（CORS・Web攻撃手法など）
     ├── auth/                # 認証・認可
     ├── observability/       # オブザーバビリティ
     ├── process/             # 開発プロセス
