@@ -27,7 +27,16 @@ export default defineConfig({
           { text: 'ヘキサゴナル', link: '/architecture/hexagonal' },
           { text: 'イベント駆動', link: '/architecture/event-driven' },
           { text: 'ストラングラーフィグ', link: '/architecture/strangler-fig' },
-          { text: 'アプリプラットフォーム', link: '/architecture/app-platform' },
+        ],
+      },
+      {
+        text: 'Frontend',
+        link: '/frontend/',
+        collapsed: true,
+        items: [
+          { text: 'CSS設計手法', link: '/frontend/css-methodology' },
+          { text: 'レンダリング戦略', link: '/frontend/rendering-strategy' },
+          { text: 'アプリプラットフォーム', link: '/frontend/app-platform' },
         ],
       },
       {

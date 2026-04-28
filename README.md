@@ -42,6 +42,7 @@ VitePressの設定は `.vitepress/config.ts`、カスタムテーマは `.vitepr
 | [architecture](docs/architecture/index.md) | レイヤード・オニオン・DDD・イベント駆動など |
 | [testing](docs/testing/index.md) | TDD・テスト戦略 |
 | [ai](docs/ai/index.md) | プロンプトエンジニアリング・RAG・AIエージェント・Vibe Coding など |
+| [frontend](docs/frontend/index.md) | CSS設計手法・レンダリング戦略 |
 | [api](docs/api/index.md) | REST・GraphQL・gRPC・tRPC |
 | [auth](docs/auth/index.md) | JWT・OAuth2 |
 | [observability](docs/observability/index.md) | ログ・メトリクス・トレース |

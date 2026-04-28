@@ -20,6 +20,9 @@ features:
   - title: AI
     details: Vibe Coding・Harness Engineering・RAG・プロンプトエンジニアリング
     link: /ai/
+  - title: Frontend
+    details: CSS設計手法・レンダリング戦略（CSR・SSR・SSG・ISR）
+    link: /frontend/
   - title: Testing
     details: TDD・テスト戦略・テストピラミッド
     link: /testing/
