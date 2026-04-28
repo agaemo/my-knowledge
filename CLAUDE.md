@@ -6,15 +6,16 @@
 
 ```
 my-knowledge/
-├── architecture/    # アーキテクチャパターン
-├── testing/         # テスト手法
-├── ai/              # AI・LLMエンジニアリング（プロンプト・RAG・Embeddings・エージェント・Fine-tuning・Evals・MCP・LLMOps など）
-├── api/             # API設計
-├── auth/            # 認証・認可
-├── observability/   # オブザーバビリティ
-├── process/         # 開発プロセス
-├── deployment/      # デプロイ・リリース戦略（カナリア・ブルーグリーン・フィーチャーフラグ）
-└── tools/           # ツール（infra/・cloud/・ci-cd/ のサブディレクトリで分類）
+└── docs/                    # コンテンツルート（VitePress の srcDir）
+    ├── architecture/        # アーキテクチャパターン
+    ├── testing/             # テスト手法
+    ├── ai/                  # AI・LLMエンジニアリング（プロンプト・RAG・Embeddings・エージェント・Fine-tuning・Evals・MCP・LLMOps など）
+    ├── api/                 # API設計
+    ├── auth/                # 認証・認可
+    ├── observability/       # オブザーバビリティ
+    ├── process/             # 開発プロセス
+    ├── deployment/          # デプロイ・リリース戦略（カナリア・ブルーグリーン・フィーチャーフラグ）
+    └── tools/               # ツール（infra/・cloud/・ci-cd/ のサブディレクトリで分類）
 ```
 
 ## 方針

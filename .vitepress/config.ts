@@ -5,6 +5,7 @@ export default defineConfig({
   description: '個人の知識ベース',
   lang: 'ja',
   base: '/my-knowledge/',
+  srcDir: './docs',
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/my-knowledge/logo.svg' }],
   ],
