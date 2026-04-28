@@ -27,6 +27,7 @@ export default defineConfig({
           { text: 'ヘキサゴナル', link: '/architecture/hexagonal' },
           { text: 'イベント駆動', link: '/architecture/event-driven' },
           { text: 'ストラングラーフィグ', link: '/architecture/strangler-fig' },
+          { text: 'アプリプラットフォーム', link: '/architecture/app-platform' },
         ],
       },
       {
@@ -103,6 +104,7 @@ export default defineConfig({
           { text: 'カナリアリリース', link: '/deployment/canary-release' },
           { text: 'ブルーグリーン', link: '/deployment/blue-green' },
           { text: 'フィーチャーフラグ', link: '/deployment/feature-flags' },
+          { text: 'エッジコンピューティング', link: '/deployment/edge-computing' },
         ],
       },
       {
@@ -120,15 +122,6 @@ export default defineConfig({
               { text: 'Terraform', link: '/tools/infra/terraform' },
             ],
           },
-          {
-            text: 'Local',
-            link: '/tools/local/',
-            collapsed: true,
-            items: [
-              { text: 'VSCode', link: '/tools/local/vscode' },
-              { text: 'Cursor', link: '/tools/local/cursor' },
-            ],
-          },
         ],
       },
       {
@@ -141,9 +134,7 @@ export default defineConfig({
             link: '/tools/cloud/',
             collapsed: true,
             items: [
-              { text: 'AWS', link: '/tools/cloud/aws' },
-              { text: 'GCP', link: '/tools/cloud/gcp' },
-              { text: 'Azure', link: '/tools/cloud/azure' },
+              { text: 'クラウドプラットフォーム', link: '/tools/cloud/cloud-platform' },
             ],
           },
           {
@@ -163,15 +154,6 @@ export default defineConfig({
             items: [
               { text: 'Firebase', link: '/tools/baas/firebase' },
               { text: 'Supabase', link: '/tools/baas/supabase' },
-            ],
-          },
-          {
-            text: 'Hosting / Edge',
-            link: '/tools/hosting/',
-            collapsed: true,
-            items: [
-              { text: 'Vercel', link: '/tools/hosting/vercel' },
-              { text: 'Cloudflare', link: '/tools/hosting/cloudflare' },
             ],
           },
           {

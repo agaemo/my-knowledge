@@ -36,10 +36,10 @@ features:
     details: カナリアリリース・ブルーグリーン・フィーチャーフラグ
     link: /deployment/
   - title: Dev Tools
-    details: Docker・Kubernetes・Terraform・GitHub Actions・VSCode・Cursor
+    details: Docker・Kubernetes・Terraform・GitHub Actions
     link: /tools/
   - title: Platforms
-    details: AWS・GCP・Firebase・Supabase・Vercel・Cloudflare・PlanetScale
+    details: クラウド・BaaS・分散DB。Firebase・Supabase・PlanetScale・CockroachDB・TiDB
     link: /tools/platforms
 ---
 

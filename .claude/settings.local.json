@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git *)",
+      "Bash(mv 01_layered.md layered.md)",
+      "Bash(mv 02_modular-monolith.md modular-monolith.md)",
+      "Bash(mv 03_onion.md onion.md)",
+      "Bash(mv 04_ddd.md ddd.md)",
+      "Bash(mv 05_hexagonal.md hexagonal.md)",
+      "Bash([ ! -f \"/Users/d.handa/development/my-knowledge/$dir/index.md\" ])",
+      "WebSearch",
+      "Bash(gh release *)",
+      "Bash(node_modules/.bin/vitepress --version)",
+      "Bash(python3 -c \"import sys,json; p=json.load\\(sys.stdin\\); print\\(p.get\\('engines', {}\\)\\)\")",
+      "Bash(pkill -f \"vitepress dev\")",
+      "Bash(mkdir -p docs)",
+      "Bash(mv architecture *)",
+      "Bash(npm run *)",
+      "Bash(npm install *)"
+    ]
+  }
+}

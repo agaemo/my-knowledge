@@ -4,9 +4,7 @@
 
 ## Cloud
 
-- [AWS](/tools/cloud/aws) — Amazon Web Services
-- [GCP](/tools/cloud/gcp) — Google Cloud Platform
-- [Azure](/tools/cloud/azure) — Microsoft Azure
+- [クラウドプラットフォーム](/tools/cloud/cloud-platform) — オンプレミスとの違い・IaaS/PaaS/SaaS・主要プラットフォームの比較
 
 ## Database
 
@@ -18,11 +16,6 @@
 
 - [Firebase](/tools/baas/firebase) — Google のBaaS。リアルタイムDB・認証・ホスティング
 - [Supabase](/tools/baas/supabase) — OSSベースのBaaS。PostgreSQL・認証・ストレージ
-
-## Hosting / Edge Platform
-
-- [Vercel](/tools/hosting/vercel) — フロントエンド特化のホスティング・サーバーレスプラットフォーム
-- [Cloudflare](/tools/hosting/cloudflare) — CDN・エッジ実行環境・各種ストレージを提供するエッジプラットフォーム
 
 ## CI/CD
 

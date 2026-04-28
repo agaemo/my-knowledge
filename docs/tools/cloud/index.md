@@ -1,7 +1,5 @@
 # Cloud
 
-IaaS・PaaS を中心に提供する大手クラウドプロバイダー。コンピュート・ストレージ・ネットワーク・マネージドサービスなどインフラ全般をオンデマンドで利用できる。
+オンプレミスとクラウドの違い・IaaS/PaaS/SaaSのモデル・主要プラットフォームの特徴など、クラウドの基礎概念をまとめたカテゴリ。
 
-- [AWS](/tools/cloud/aws) — Amazon Web Services
-- [GCP](/tools/cloud/gcp) — Google Cloud Platform
-- [Azure](/tools/cloud/azure) — Microsoft Azure
+- [クラウドプラットフォーム](/tools/cloud/cloud-platform) — オンプレミスとの違い・サービスモデル・主要プラットフォームの比較

@@ -46,6 +46,6 @@ VitePressの設定は `.vitepress/config.ts`、カスタムテーマは `.vitepr
 | [auth](docs/auth/index.md) | JWT・OAuth2 |
 | [observability](docs/observability/index.md) | ログ・メトリクス・トレース |
 | [process](docs/process/index.md) | アジャイル・ウォーターフォール・Shape Up |
-| [deployment](docs/deployment/index.md) | カナリアリリース・ブルーグリーン・フィーチャーフラグ |
-| [dev tools](docs/tools/index.md) | Docker・Kubernetes・Terraform・GitHub Actions・VSCode・Cursor |
-| [platforms](docs/tools/platforms.md) | AWS・GCP・Firebase・Supabase・Vercel・Cloudflare・PlanetScale |
+| [deployment](docs/deployment/index.md) | カナリアリリース・ブルーグリーン・フィーチャーフラグ・エッジコンピューティング |
+| [dev tools](docs/tools/index.md) | Docker・Kubernetes・Terraform・GitHub Actions |
+| [platforms](docs/tools/platforms.md) | クラウド・BaaS・分散DB（Firebase・Supabase・PlanetScale・CockroachDB・TiDB） |
