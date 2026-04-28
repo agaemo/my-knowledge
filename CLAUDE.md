@@ -15,7 +15,7 @@ my-knowledge/
     ├── observability/       # オブザーバビリティ
     ├── process/             # 開発プロセス
     ├── deployment/          # デプロイ・リリース戦略（カナリア・ブルーグリーン・フィーチャーフラグ）
-    └── tools/               # ツール（infra/・cloud/・ci-cd/ のサブディレクトリで分類）
+    └── tools/               # Dev Tools（infra/・ci-cd/・local/）と Platforms（cloud/・database/・baas/・hosting/）に分類
 ```
 
 ## 方針

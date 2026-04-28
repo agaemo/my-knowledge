@@ -1,6 +1,6 @@
-# Tools
+# Dev Tools
 
-ツールの概要・使いどころをまとめたカテゴリ。
+インストールして使う開発ツール。インフラ・CI/CD・ローカルエディタなど。
 
 ## Infra
 
@@ -8,12 +8,7 @@
 - [Kubernetes](/tools/infra/kubernetes) — コンテナオーケストレーション
 - [Terraform](/tools/infra/terraform) — インフラのコード管理（IaC）
 
-## Cloud
+## Local
 
-- [AWS](/tools/cloud/aws) — Amazon Web Services
-- [GCP](/tools/cloud/gcp) — Google Cloud Platform
-- [Azure](/tools/cloud/azure) — Microsoft Azure
-
-## CI/CD
-
-- [GitHub Actions](/tools/ci-cd/github-actions) — GitHub 統合の CI/CD
+- [VSCode](/tools/local/vscode) — 最も普及した軽量コードエディタ
+- [Cursor](/tools/local/cursor) — AI操作を前提に設計されたコードエディタ

@@ -105,7 +105,7 @@ export default defineConfig({
         ],
       },
       {
-        text: 'Tools',
+        text: 'Dev Tools',
         link: '/tools/',
         collapsed: true,
         items: [
@@ -120,6 +120,22 @@ export default defineConfig({
             ],
           },
           {
+            text: 'Local',
+            link: '/tools/local/',
+            collapsed: true,
+            items: [
+              { text: 'VSCode', link: '/tools/local/vscode' },
+              { text: 'Cursor', link: '/tools/local/cursor' },
+            ],
+          },
+        ],
+      },
+      {
+        text: 'Platforms',
+        link: '/tools/platforms',
+        collapsed: true,
+        items: [
+          {
             text: 'Cloud',
             link: '/tools/cloud/',
             collapsed: true,
@@ -127,6 +143,34 @@ export default defineConfig({
               { text: 'AWS', link: '/tools/cloud/aws' },
               { text: 'GCP', link: '/tools/cloud/gcp' },
               { text: 'Azure', link: '/tools/cloud/azure' },
+            ],
+          },
+          {
+            text: 'Database',
+            link: '/tools/database/',
+            collapsed: true,
+            items: [
+              { text: 'PlanetScale', link: '/tools/database/planetscale' },
+              { text: 'CockroachDB', link: '/tools/database/cockroachdb' },
+              { text: 'TiDB', link: '/tools/database/tidb' },
+            ],
+          },
+          {
+            text: 'BaaS',
+            link: '/tools/baas/',
+            collapsed: true,
+            items: [
+              { text: 'Firebase', link: '/tools/baas/firebase' },
+              { text: 'Supabase', link: '/tools/baas/supabase' },
+            ],
+          },
+          {
+            text: 'Hosting / Edge',
+            link: '/tools/hosting/',
+            collapsed: true,
+            items: [
+              { text: 'Vercel', link: '/tools/hosting/vercel' },
+              { text: 'Cloudflare', link: '/tools/hosting/cloudflare' },
             ],
           },
           {
