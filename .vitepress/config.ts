@@ -52,6 +52,7 @@ export default defineConfig({
           { text: 'AIエージェント', link: '/ai/ai-agents' },
           { text: 'Fine-tuning', link: '/ai/fine-tuning' },
           { text: 'Evals', link: '/ai/evals' },
+          { text: 'HITL', link: '/ai/hitl' },
           { text: 'MCP', link: '/ai/mcp' },
           { text: 'LLMOps', link: '/ai/llmops' },
         ],
