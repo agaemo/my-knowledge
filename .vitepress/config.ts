@@ -83,11 +83,11 @@ export default defineConfig({
           { text: 'Embeddings', link: '/ai/embeddings' },
           { text: 'マルチモーダル', link: '/ai/multimodal' },
           { text: 'AIエージェント', link: '/ai/ai-agents' },
+          { text: 'MCP', link: '/ai/mcp' },
           { text: 'Fine-tuning', link: '/ai/fine-tuning' },
           { text: 'Evals', link: '/ai/evals' },
-          { text: 'HITL', link: '/ai/hitl' },
-          { text: 'MCP', link: '/ai/mcp' },
           { text: 'LLMOps', link: '/ai/llmops' },
+          { text: 'HITL', link: '/ai/hitl' },
         ],
       },
       {
