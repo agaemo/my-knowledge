@@ -66,7 +66,15 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'AI・ML・LLM 全体像', link: '/ai/overview' },
-          { text: 'OCR', link: '/ai/ocr' },
+          {
+            text: 'コンピュータビジョン',
+            link: '/ai/computer-vision/',
+            collapsed: true,
+            items: [
+              { text: 'OCR', link: '/ai/computer-vision/ocr' },
+              { text: '物体検出', link: '/ai/computer-vision/object-detection' },
+            ],
+          },
           { text: 'Vibe Coding', link: '/ai/vibe-coding' },
           { text: 'Harness Engineering', link: '/ai/harness-engineering' },
           { text: 'プロンプトエンジニアリング', link: '/ai/prompt-engineering' },
