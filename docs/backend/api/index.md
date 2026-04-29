@@ -7,3 +7,4 @@ API設計のスタイル・プロトコル・設計原則。
 - [gRPC](/backend/api/grpc) — Protocol Buffersを使う高性能RPCフレームワーク
 - [tRPC](/backend/api/trpc) — TypeScriptで型安全なAPIを構築するフレームワーク
 - [APIバージョニング](/backend/api/api-versioning) — 破壊的変更を既存クライアントに影響させない設計方針
+- [API Gateway](/backend/api/api-gateway) — レートリミット・認証・ルーティングを一元管理するエッジパターン

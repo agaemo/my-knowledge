@@ -46,9 +46,9 @@ features:
     link: /deployment/
   - title: Dev Tools
     details: Docker・Kubernetes・Terraform・GitHub Actions
-    link: /tools/
+    link: /dev-tools/
   - title: Platforms
-    details: クラウド・BaaS・分散DB。Firebase・Supabase・PlanetScale・CockroachDB・TiDB
-    link: /tools/platforms
+    details: クラウド・BaaS・分散DB。Firebase・Supabase・NoSQL・NewSQL
+    link: /platforms/
 ---
 

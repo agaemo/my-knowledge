@@ -44,6 +44,7 @@ export default defineConfig({
         link: '/backend/',
         collapsed: true,
         items: [
+          { text: 'リバースプロキシ', link: '/backend/reverse-proxy' },
           {
             text: 'API',
             link: '/backend/api/',
@@ -54,6 +55,7 @@ export default defineConfig({
               { text: 'gRPC', link: '/backend/api/grpc' },
               { text: 'tRPC', link: '/backend/api/trpc' },
               { text: 'APIバージョニング', link: '/backend/api/api-versioning' },
+              { text: 'API Gateway', link: '/backend/api/api-gateway' },
             ],
           },
         ],
@@ -93,6 +95,7 @@ export default defineConfig({
         items: [
           { text: 'CORS', link: '/security/cors' },
           { text: 'Web攻撃手法', link: '/security/web-attacks' },
+          { text: 'Cookie', link: '/security/cookie' },
         ],
       },
       {
@@ -132,65 +135,51 @@ export default defineConfig({
           { text: 'ブルーグリーン', link: '/deployment/blue-green' },
           { text: 'フィーチャーフラグ', link: '/deployment/feature-flags' },
           { text: 'エッジコンピューティング', link: '/deployment/edge-computing' },
+          { text: 'CDN', link: '/deployment/cdn' },
         ],
       },
       {
         text: 'Dev Tools',
-        link: '/tools/',
+        link: '/dev-tools/',
         collapsed: true,
         items: [
           {
             text: 'Infra',
-            link: '/tools/infra/',
+            link: '/dev-tools/infra/',
             collapsed: true,
             items: [
-              { text: 'Docker', link: '/tools/infra/docker' },
-              { text: 'Kubernetes', link: '/tools/infra/kubernetes' },
-              { text: 'Terraform', link: '/tools/infra/terraform' },
+              { text: 'Docker', link: '/dev-tools/infra/docker' },
+              { text: 'Kubernetes', link: '/dev-tools/infra/kubernetes' },
+              { text: 'Terraform', link: '/dev-tools/infra/terraform' },
+            ],
+          },
+          {
+            text: 'CI/CD',
+            link: '/dev-tools/ci-cd/',
+            collapsed: true,
+            items: [
+              { text: 'GitHub Actions', link: '/dev-tools/ci-cd/github-actions' },
             ],
           },
         ],
       },
       {
         text: 'Platforms',
-        link: '/tools/platforms',
+        link: '/platforms/',
         collapsed: true,
         items: [
-          {
-            text: 'Cloud',
-            link: '/tools/cloud/',
-            collapsed: true,
-            items: [
-              { text: 'クラウドプラットフォーム', link: '/tools/cloud/cloud-platform' },
-            ],
-          },
+          { text: 'クラウド', link: '/platforms/cloud' },
           {
             text: 'Database',
-            link: '/tools/database/',
+            link: '/platforms/database/',
             collapsed: true,
             items: [
-              { text: 'PlanetScale', link: '/tools/database/planetscale' },
-              { text: 'CockroachDB', link: '/tools/database/cockroachdb' },
-              { text: 'TiDB', link: '/tools/database/tidb' },
+              { text: 'NoSQL', link: '/platforms/database/nosql' },
+              { text: 'NewSQL', link: '/platforms/database/newsql' },
+              { text: 'インメモリDB', link: '/platforms/database/in-memory-db' },
             ],
           },
-          {
-            text: 'BaaS',
-            link: '/tools/baas/',
-            collapsed: true,
-            items: [
-              { text: 'Firebase', link: '/tools/baas/firebase' },
-              { text: 'Supabase', link: '/tools/baas/supabase' },
-            ],
-          },
-          {
-            text: 'CI/CD',
-            link: '/tools/ci-cd/',
-            collapsed: true,
-            items: [
-              { text: 'GitHub Actions', link: '/tools/ci-cd/github-actions' },
-            ],
-          },
+          { text: 'BaaS', link: '/platforms/baas' },
         ],
       },
     ],
