@@ -16,7 +16,11 @@
       "Bash(mkdir -p docs)",
       "Bash(mv architecture *)",
       "Bash(npm run *)",
-      "Bash(npm install *)"
+      "Bash(npm install *)",
+      "Bash(cp -r /Users/d.handa/development/my-knowledge/docs/tools/database /Users/d.handa/development/my-knowledge/docs/platforms/database)",
+      "Bash(cp -r /Users/d.handa/development/my-knowledge/docs/tools/infra /Users/d.handa/development/my-knowledge/docs/dev-tools/infra)",
+      "Bash(cp -r /Users/d.handa/development/my-knowledge/docs/tools/ci-cd /Users/d.handa/development/my-knowledge/docs/dev-tools/ci-cd)",
+      "WebFetch(domain:martinfowler.com)"
     ]
   }
 }

@@ -31,7 +31,9 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyLTEyMyIsImV4cCI6MTcxNTAwMDA
 HMACSHA256(base64(Header) + "." + base64(Payload), SECRET_KEY)
 ```
 
-**Payload は Base64 エンコードのみ（暗号化ではない）。誰でも読める。**
+::: danger Payload は暗号化されていない
+Base64 エンコードのみ。誰でもデコードして内容を読める。パスワード・カード番号などの機密情報は絶対に入れない。
+:::
 
 ## 署名アルゴリズムの選択
 
@@ -70,6 +72,10 @@ const refreshToken = jwt.sign({ sub: user.id }, REFRESH_SECRET, { expiresIn: '7d
 
 ### localStorage に保存する（XSS脆弱性）
 
+::: danger localStorage に保存しない
+XSS 攻撃で簡単に盗まれる。認証トークンは必ず `httpOnly` Cookie に保存する。
+:::
+
 ```ts
 // Bad: localStorage はXSSで盗まれる
 localStorage.setItem('token', accessToken);
@@ -107,6 +113,10 @@ jwt.sign({ sub: userId }, SECRET, { expiresIn: '15m' });
 Payload は Base64 デコードで誰でも読める。パスワード・カード番号などを入れてはいけない。
 
 ## JWT のログアウト問題
+
+::: warning トークンの即時無効化はできない
+JWT はステートレスなため、サーバー側で発行済みトークンを無効化できない。強制ログアウトや権限変更が必要な場合はブラックリスト方式か、アクセストークンを短命にする設計が必要。
+:::
 
 JWTはステートレスなので、**サーバー側でトークンを無効化できない**。
 有効期限が来るまで有効なトークンは使い続けられる。
