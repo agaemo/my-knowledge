@@ -65,6 +65,8 @@ export default defineConfig({
         link: '/ai/',
         collapsed: true,
         items: [
+          { text: 'AI・ML・LLM 全体像', link: '/ai/overview' },
+          { text: 'OCR', link: '/ai/ocr' },
           { text: 'Vibe Coding', link: '/ai/vibe-coding' },
           { text: 'Harness Engineering', link: '/ai/harness-engineering' },
           { text: 'プロンプトエンジニアリング', link: '/ai/prompt-engineering' },
