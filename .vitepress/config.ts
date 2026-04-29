@@ -75,6 +75,7 @@ export default defineConfig({
               { text: '物体検出', link: '/ai/computer-vision/object-detection' },
             ],
           },
+          { text: 'AI-DLC', link: '/ai/ai-dlc' },
           { text: 'Vibe Coding', link: '/ai/vibe-coding' },
           { text: 'Harness Engineering', link: '/ai/harness-engineering' },
           { text: 'プロンプトエンジニアリング', link: '/ai/prompt-engineering' },
