@@ -71,6 +71,7 @@ export default defineConfig({
           { text: 'Prompt Injection', link: '/ai/prompt-injection' },
           { text: 'RAG', link: '/ai/rag' },
           { text: 'Embeddings', link: '/ai/embeddings' },
+          { text: 'マルチモーダル', link: '/ai/multimodal' },
           { text: 'AIエージェント', link: '/ai/ai-agents' },
           { text: 'Fine-tuning', link: '/ai/fine-tuning' },
           { text: 'Evals', link: '/ai/evals' },
