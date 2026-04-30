@@ -38,6 +38,9 @@ features:
   - title: Observability
     details: ログ・メトリクス・トレース
     link: /observability/
+  - title: SRE
+    details: 単一障害点・カスケード障害・サーキットブレーカー・バルクヘッド・ポストモーテム・SLO
+    link: /sre/
   - title: 開発プロセス
     details: アジャイル・ウォーターフォール・Shape Up
     link: /process/

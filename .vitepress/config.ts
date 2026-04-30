@@ -128,6 +128,36 @@ export default defineConfig({
         ],
       },
       {
+        text: 'SRE',
+        link: '/sre/',
+        collapsed: true,
+        items: [
+          { text: 'SLI / SLO / SLA', link: '/sre/slo-sli-sla' },
+          {
+            text: '障害パターン',
+            link: '/sre/failure/',
+            collapsed: true,
+            items: [
+              { text: '単一障害点（SPOF）', link: '/sre/failure/single-point-of-failure' },
+              { text: 'カスケード障害', link: '/sre/failure/cascade-failure' },
+              { text: 'リトライストーム', link: '/sre/failure/retry-storm' },
+            ],
+          },
+          {
+            text: '対策パターン',
+            link: '/sre/resilience/',
+            collapsed: true,
+            items: [
+              { text: 'タイムアウト設計', link: '/sre/resilience/timeout' },
+              { text: 'サーキットブレーカー', link: '/sre/resilience/circuit-breaker' },
+              { text: 'バルクヘッド', link: '/sre/resilience/bulkhead' },
+              { text: 'バックプレッシャー', link: '/sre/resilience/backpressure' },
+            ],
+          },
+          { text: 'ポストモーテム', link: '/sre/postmortem' },
+        ],
+      },
+      {
         text: '開発プロセス',
         link: '/process/',
         collapsed: true,
@@ -173,21 +203,6 @@ export default defineConfig({
               { text: 'GitHub Actions', link: '/dev-tools/ci-cd/github-actions' },
             ],
           },
-        ],
-      },
-      {
-        text: 'SRE',
-        link: '/sre/',
-        collapsed: true,
-        items: [
-          { text: 'SLI / SLO / SLA', link: '/sre/slo-sli-sla' },
-          { text: '単一障害点（SPOF）', link: '/sre/single-point-of-failure' },
-          { text: 'カスケード障害', link: '/sre/cascade-failure' },
-          { text: 'リトライストーム', link: '/sre/retry-storm' },
-          { text: 'サーキットブレーカー', link: '/sre/circuit-breaker' },
-          { text: 'バルクヘッド', link: '/sre/bulkhead' },
-          { text: 'バックプレッシャー', link: '/sre/backpressure' },
-          { text: 'ポストモーテム', link: '/sre/postmortem' },
         ],
       },
       {
