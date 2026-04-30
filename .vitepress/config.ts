@@ -176,6 +176,21 @@ export default defineConfig({
         ],
       },
       {
+        text: 'SRE',
+        link: '/sre/',
+        collapsed: true,
+        items: [
+          { text: 'SLI / SLO / SLA', link: '/sre/slo-sli-sla' },
+          { text: '単一障害点（SPOF）', link: '/sre/single-point-of-failure' },
+          { text: 'カスケード障害', link: '/sre/cascade-failure' },
+          { text: 'リトライストーム', link: '/sre/retry-storm' },
+          { text: 'サーキットブレーカー', link: '/sre/circuit-breaker' },
+          { text: 'バルクヘッド', link: '/sre/bulkhead' },
+          { text: 'バックプレッシャー', link: '/sre/backpressure' },
+          { text: 'ポストモーテム', link: '/sre/postmortem' },
+        ],
+      },
+      {
         text: 'Platforms',
         link: '/platforms/',
         collapsed: true,
