@@ -36,7 +36,15 @@ my-knowledge/
 
 ## デプロイフロー
 
-見た目の変更（CSS・レイアウト・テンプレート等）をする場合は、commit・push の前に必ずローカルで確認する。
+### コミット後の確認
+
+commit したら必ずユーザーに「コミットしました。push しますか？」と確認する。
+確認なしに push しない。
+
+### 見た目の変更がある場合
+
+CSS・レイアウト・テンプレート等の変更は、commit・push の前に必ずローカルで確認する。
 
 1. `npm run dev` を起動するよう案内する（ターミナルで `! npm run dev`）
-2. ユーザーが `http://localhost:5173` で確認・OKを出したら commit・push する
+2. ユーザーが `http://localhost:5173` で確認・OKを出したら commit する
+3. commit 後にユーザーへ push するか確認する
