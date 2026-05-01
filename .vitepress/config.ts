@@ -37,6 +37,7 @@ export default defineConfig({
           { text: 'CSS設計手法', link: '/frontend/css-methodology' },
           { text: 'レンダリング戦略', link: '/frontend/rendering-strategy' },
           { text: 'アプリプラットフォーム', link: '/frontend/app-platform' },
+          { text: 'i18n（国際化）', link: '/frontend/i18n' },
         ],
       },
       {
