@@ -107,8 +107,22 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'CORS', link: '/security/cors' },
-          { text: 'Web攻撃手法', link: '/security/web-attacks' },
           { text: 'Cookie', link: '/security/cookie' },
+          {
+            text: 'コードで防ぐ攻撃',
+            collapsed: true,
+            items: [
+              { text: 'Web攻撃手法', link: '/security/web-attacks' },
+            ],
+          },
+          {
+            text: '脅威・リスク',
+            collapsed: true,
+            items: [
+              { text: 'ゼロデイ攻撃', link: '/security/zero-day' },
+              { text: 'サプライチェーン攻撃', link: '/security/supply-chain-attack' },
+            ],
+          },
         ],
       },
       {
