@@ -46,6 +46,50 @@ Ansible は冪等な操作を標準で提供し、サーバーの状態をコー
 **ロール（Role）**  
 関連するタスク・変数・ファイルをまとめた再利用単位。「Webサーバーの構築」「監視エージェントの導入」などをロールとして定義し、複数プロジェクトで使い回す。
 
+## サンプル
+
+インベントリでサーバーを定義し、プレイブックで操作を記述する。
+
+**インベントリ（inventory.ini）**
+
+```ini
+# webグループに2台のサーバーを登録
+[web]
+192.168.0.11
+192.168.0.12
+
+# dbグループに1台のサーバーを登録
+[db]
+192.168.0.21
+```
+
+**プレイブック（site.yml）**
+
+```yaml
+- name: WebサーバーにNginxをセットアップする
+  hosts: web          # インベントリの web グループが対象
+  become: true        # sudo で実行する
+
+  tasks:
+    - name: Nginx をインストールする
+      ansible.builtin.package:
+        name: nginx
+        state: present  # インストールされている状態にする（冪等）
+
+    - name: 設定ファイルを配置する
+      ansible.builtin.copy:
+        src: nginx.conf
+        dest: /etc/nginx/nginx.conf
+
+    - name: Nginx を起動して自動起動を有効にする
+      ansible.builtin.service:
+        name: nginx
+        state: started
+        enabled: true
+```
+
+`state: present` のように「この状態にしてほしい」と宣言する書き方になっている。何度実行しても既にその状態なら何もしない（冪等性）。
+
 ## Terraform との違い
 
 よく比較されるが、扱う領域が異なる。
