@@ -156,6 +156,7 @@ export default defineConfig({
         link: '/sre/',
         collapsed: true,
         items: [
+          { text: 'SREとは何か', link: '/sre/what-is-sre' },
           { text: 'SLI / SLO / SLA', link: '/sre/slo-sli-sla' },
           {
             text: '障害パターン',
