@@ -119,7 +119,7 @@ export default defineConfig({
             text: '脅威・リスク',
             collapsed: true,
             items: [
-              { text: 'ゼロデイ攻撃', link: '/security/zero-day' },
+              { text: 'ゼロデイ攻撃・N-day攻撃', link: '/security/zero-day' },
               { text: 'サプライチェーン攻撃', link: '/security/supply-chain-attack' },
             ],
           },
