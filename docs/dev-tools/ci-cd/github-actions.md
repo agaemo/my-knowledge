@@ -4,6 +4,8 @@
 
 GitHub に統合された CI/CD プラットフォーム。リポジトリへの push・PR・スケジュールなどのイベントをトリガーにワークフローを自動実行する。
 
+→ [公式サイト](https://github.com/features/actions) / [ドキュメント](https://docs.github.com/ja/actions)
+
 ## なぜ存在するか
 
 テスト・ビルド・デプロイを手動で行うのはミスが多く、時間もかかる。GitHub Actions はこれをコードとして定義し、GitHub と密に統合することで設定コストを下げる（別途 CI サーバーが不要）。
