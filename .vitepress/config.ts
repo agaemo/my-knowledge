@@ -110,17 +110,19 @@ export default defineConfig({
           { text: 'Cookie', link: '/security/cookie' },
           {
             text: 'コードで防ぐ攻撃',
+            link: '/security/code-attacks/',
             collapsed: true,
             items: [
-              { text: 'Web攻撃手法', link: '/security/web-attacks' },
+              { text: 'Web攻撃手法', link: '/security/code-attacks/web-attacks' },
             ],
           },
           {
             text: '脅威・リスク',
+            link: '/security/threats/',
             collapsed: true,
             items: [
-              { text: 'ゼロデイ攻撃・N-day攻撃', link: '/security/zero-day' },
-              { text: 'サプライチェーン攻撃', link: '/security/supply-chain-attack' },
+              { text: 'ゼロデイ攻撃・N-day攻撃', link: '/security/threats/zero-day' },
+              { text: 'サプライチェーン攻撃', link: '/security/threats/supply-chain-attack' },
             ],
           },
         ],
