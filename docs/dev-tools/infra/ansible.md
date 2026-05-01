@@ -43,6 +43,8 @@ remote_user = ec2-user
 [ssh_connection]
 ssh_args = -o ProxyJump=user@bastion.example.com
 ```
+
+認証は SSH 鍵認証が標準。`--ask-pass` オプションでパスワード認証も使えるが、複数サーバーへの自動化という Ansible の目的と相性が悪いため、実運用では鍵認証が一般的。
 :::
 
 ## なぜ存在するか
