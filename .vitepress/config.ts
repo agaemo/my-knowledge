@@ -158,6 +158,7 @@ export default defineConfig({
         items: [
           { text: 'SREとは何か', link: '/sre/what-is-sre' },
           { text: 'SLI / SLO / SLA', link: '/sre/slo-sli-sla' },
+          { text: 'エラーバジェット', link: '/sre/error-budget' },
           {
             text: '障害パターン',
             link: '/sre/failure/',
