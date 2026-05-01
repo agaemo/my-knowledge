@@ -33,7 +33,7 @@ features:
     details: CORS・XSS・CSRF・SQLインジェクション・ブルートフォース
     link: /security/
   - title: 認証
-    details: JWT・OAuth2
+    details: Basic認証・セッション認証・APIキー・JWT・Bearer・OAuth2・OIDC・SAML
     link: /auth/
   - title: Observability
     details: ログ・メトリクス・トレース

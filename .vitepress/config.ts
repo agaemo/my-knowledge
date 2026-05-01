@@ -115,8 +115,15 @@ export default defineConfig({
         link: '/auth/',
         collapsed: true,
         items: [
+          { text: '使い分けガイド', link: '/auth/overview' },
+          { text: 'Basic 認証', link: '/auth/basic-auth' },
+          { text: 'セッション認証', link: '/auth/session-auth' },
+          { text: 'APIキー認証', link: '/auth/api-key' },
           { text: 'JWT', link: '/auth/jwt' },
+          { text: 'Bearer 認証', link: '/auth/bearer' },
           { text: 'OAuth2', link: '/auth/oauth2' },
+          { text: 'OpenID Connect（OIDC）', link: '/auth/oidc' },
+          { text: 'SAML', link: '/auth/saml' },
         ],
       },
       {
