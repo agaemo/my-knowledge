@@ -219,6 +219,7 @@ export default defineConfig({
               { text: 'Docker', link: '/dev-tools/infra/docker' },
               { text: 'Kubernetes', link: '/dev-tools/infra/kubernetes' },
               { text: 'Terraform', link: '/dev-tools/infra/terraform' },
+              { text: 'Ansible', link: '/dev-tools/infra/ansible' },
             ],
           },
           {
