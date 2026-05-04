@@ -12,12 +12,12 @@ Apache Software Foundationが管理するオープンソースのイベントス
 
 サービスが複数に分かれると「Aが起きたらBとCとDを動かす」という処理をAPI呼び出しで繋ぐと問題が起きる。
 
-```mermaid
-flowchart LR
-    A[注文サービス] -->|API呼び出し| B[在庫サービス]
-    A -->|API呼び出し| C[メール通知サービス]
-    A -->|API呼び出し| D[分析サービス]
-    style A fill:#f66,color:#fff
+```
+┌──────────┐  API呼び出し  ┌──────────┐
+│ 注文     │ ────────────> │ 在庫     │
+│ サービス │ ────────────> │ メール   │
+│          │ ────────────> │ 分析     │
+└──────────┘               └──────────┘
 ```
 
 - BやCが落ちていたら処理が失われる
@@ -26,39 +26,43 @@ flowchart LR
 
 Kafkaはこれを「イベントログ」という形で解決する。Aはログに書くだけで、BもCもDも自分のペースでログを読む（PULL型）。
 
-```mermaid
-flowchart LR
-    A[注文サービス] -->|イベントを書く| K[(Kafka\norders topic)]
-    B[在庫サービス] -->|ポーリング| K
-    C[メール通知サービス] -->|ポーリング| K
-    D[分析サービス] -->|ポーリング| K
-    style A fill:#f66,color:#fff
-    style K fill:#1a73e8,color:#fff
+```
+┌──────────┐  イベントを書く  ┌─────────────────┐
+│ 注文     │ ──────────────> │     Kafka        │
+│ サービス │                 │  orders topic    │
+└──────────┘                 └─────────────────┘
+                                  ↑ ↑ ↑
+                ポーリング ────────┘ │ └──── ポーリング
+           ┌──────────┐             │        ┌──────────┐
+           │ 在庫     │             │        │ 分析     │
+           └──────────┘    ┌────────┴──┐     └──────────┘
+                           │ メール    │
+                           └───────────┘
 ```
 
 各サービスはKafkaに能動的にポーリングしに行く。Kafka側からプッシュはしない。各サービスが独立したポーリングループを持つため、処理速度や障害が互いに影響しない。
 
 ## 主要コンポーネントの全体像
 
-```mermaid
-flowchart LR
-    Producer -->|"Event\n(Key + Value)"| Topic
-
-    subgraph Broker
-        subgraph Topic["Topic: orders"]
-            direction TB
-            P0["Partition 0\noffset=0, 1, 2 ..."]
-            P1["Partition 1\noffset=0, 1, 2 ..."]
-        end
-    end
-
-    subgraph cg["Consumer Group"]
-        CA[Consumer A]
-        CB[Consumer B]
-    end
-
-    CA -->|"ポーリング\n（Offsetで位置管理）"| P0
-    CB -->|"ポーリング\n（Offsetで位置管理）"| P1
+```
+Producer
+   │
+   │ Event (Key + Value)
+   ▼
+┌─────────────────────────────────────┐
+│ Broker                              │
+│  ┌──────────────────────────────┐   │
+│  │ Topic: orders                │   │
+│  │  Partition 0: [0][1][2][3]   │   │
+│  │  Partition 1: [0][1][2][3]   │   │
+│  └──────────────────────────────┘   │
+└─────────────────────────────────────┘
+        │                │
+        │ ポーリング      │ ポーリング
+        ▼                ▼
+   Consumer A       Consumer B
+   └────────────────────────┘
+      Consumer Group
 ```
 
 ## 主要コンポーネント
@@ -88,24 +92,24 @@ Topicを分割した単位。並列処理とスケールアウトのために使
 - 同じKeyのイベントは常に同じPartitionに入る → Partition内での順序が保証される
 - Partitionが多いほど並列処理の上限が上がる
 
-```mermaid
-flowchart TD
-    T[Topic: orders] --> P0[Partition 0\nmsg1, msg4, msg7...]
-    T --> P1[Partition 1\nmsg2, msg5, msg8...]
-    T --> P2[Partition 2\nmsg3, msg6, msg9...]
+```
+Topic: orders
+├── Partition 0: [msg1][msg4][msg7] ...
+├── Partition 1: [msg2][msg5][msg8] ...
+└── Partition 2: [msg3][msg6][msg9] ...
 ```
 
 ### Offset
 
 各Partitionにおける「どこまで読んだか」を示す連番。Kafkaがグループごとに管理するため、Consumerが落ちても再起動後に続きから読める。
 
-```mermaid
-flowchart LR
-    subgraph p0["Partition 0"]
-        direction LR
-        M0["offset=0\nmsg_a"] --> M1["offset=1\nmsg_b"] --> M2["offset=2\nmsg_c"] --> M3["offset=3\nmsg_d"]
-    end
-    M2 -. "ここまで読んだ\n（Committed Offset）" .- CG["Consumer Group"]
+```
+Partition 0:
+  [offset=0] [offset=1] [offset=2] [offset=3]
+   msg_a       msg_b       msg_c ↑   msg_d
+                                 │
+                         ここまで読んだ（Committed Offset）
+                         └── Consumer Group が管理
 ```
 
 ### Consumer Group
@@ -115,23 +119,12 @@ flowchart LR
 - **同じGroup**: Partitionを分担して並列処理（スループット向上）
 - **別のGroup**: 同じTopicを独立して読める（例：処理用とログ分析用で別々に購読）
 
-```mermaid
-flowchart LR
-    P0[Partition 0] --> CA[Consumer A]
-    P1[Partition 1] --> CB[Consumer B]
-    P2[Partition 2] --> CC[Consumer C]
-
-    subgraph Kafka
-        P0
-        P1
-        P2
-    end
-
-    subgraph cg["Consumer Group: order-processors"]
-        CA
-        CB
-        CC
-    end
+```
+┌─ Kafka ───────────────┐   Consumer Group: order-processors
+│ Partition 0 ──────────┼──> Consumer A
+│ Partition 1 ──────────┼──> Consumer B
+│ Partition 2 ──────────┼──> Consumer C
+└───────────────────────┘
 ```
 
 ### Broker
@@ -178,14 +171,20 @@ GET user:001  → "Alice"
 
 実際のシステムではKafkaが「イベントの通り道」を担い、データの保管は別のツールに委ねる構成になる。
 
-```mermaid
-flowchart LR
-    Client[クライアント] --> App[Webアプリ]
-    App -->|高速読み取り| Redis[(インメモリDB\nRedis など)]
-    App -->|永続保存| DB[(PostgreSQL など)]
-    App -->|イベント発行| K[(Kafka)]
-    K -->|購読| Worker[非同期ワーカー]
-    Worker --> DB
+```
+クライアント
+    │
+    ▼
+Webアプリ
+    ├──> インメモリDB (Redis)   # 高速読み取り
+    ├──> PostgreSQL             # 永続保存
+    └──> Kafka                  # イベント発行
+              │
+              ▼
+         非同期ワーカー
+              │
+              ▼
+         PostgreSQL
 ```
 
 | ツール | 役割 |
