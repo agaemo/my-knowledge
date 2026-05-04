@@ -249,6 +249,7 @@ export default defineConfig({
             ],
           },
           { text: 'BaaS', link: '/platforms/baas' },
+          { text: 'Apache Kafka', link: '/platforms/kafka' },
         ],
       },
     ],

@@ -51,7 +51,7 @@ features:
     details: Docker・Kubernetes・Terraform・GitHub Actions
     link: /dev-tools/
   - title: Platforms
-    details: クラウド・BaaS・分散DB。Firebase・Supabase・NoSQL・NewSQL
+    details: クラウド・BaaS・分散DB・Kafka。Firebase・Supabase・NoSQL・NewSQL・イベントストリーミング
     link: /platforms/
 ---
 
