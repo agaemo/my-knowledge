@@ -149,6 +149,9 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'オブザーバビリティ', link: '/observability/observability' },
+          { text: 'OpenTelemetry', link: '/observability/opentelemetry' },
+          { text: '分散トレーシング', link: '/observability/distributed-tracing' },
+          { text: 'ログ集約', link: '/observability/log-aggregation' },
           { text: 'Zabbix', link: '/observability/zabbix' },
         ],
       },

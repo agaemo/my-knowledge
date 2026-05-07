@@ -36,7 +36,7 @@ features:
     details: Basic認証・セッション認証・APIキー・JWT・Bearer・OAuth2・OIDC・SAML
     link: /auth/
   - title: Observability
-    details: ログ・メトリクス・トレース・Zabbix
+    details: ログ・メトリクス・トレース・OpenTelemetry・分散トレーシング・ログ集約・Zabbix
     link: /observability/
   - title: SRE
     details: 単一障害点・カスケード障害・サーキットブレーカー・バルクヘッド・ポストモーテム・SLO
