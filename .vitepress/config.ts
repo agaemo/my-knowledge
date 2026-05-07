@@ -149,6 +149,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'オブザーバビリティ', link: '/observability/observability' },
+          { text: 'Zabbix', link: '/observability/zabbix' },
         ],
       },
       {
