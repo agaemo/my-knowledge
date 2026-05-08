@@ -89,6 +89,7 @@ export default defineConfig({
           { text: 'Fine-tuning', link: '/ai/fine-tuning' },
           { text: 'Evals', link: '/ai/evals' },
           { text: 'LLMOps', link: '/ai/llmops' },
+          { text: 'Langfuse', link: '/ai/langfuse' },
           { text: 'HITL', link: '/ai/hitl' },
         ],
       },

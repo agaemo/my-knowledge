@@ -24,7 +24,7 @@ features:
     details: REST・GraphQL・gRPC・tRPC
     link: /backend/
   - title: AI
-    details: Vibe Coding・Harness Engineering・RAG・プロンプトエンジニアリング
+    details: Vibe Coding・Harness Engineering・RAG・プロンプトエンジニアリング・Langfuse
     link: /ai/
   - title: Testing
     details: TDD・テスト戦略・テストピラミッド
