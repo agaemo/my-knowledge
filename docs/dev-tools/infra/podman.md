@@ -4,7 +4,7 @@
 
 デーモンプロセスなしでコンテナを実行するOCI準拠のコンテナエンジン。Docker互換のCLIを持ちながら、アーキテクチャが根本的に異なる。
 
-→ [公式サイト](https://podman.io/) / [ドキュメント](https://docs.podman.io/)
+→ [公式サイト](https://podman.io/) / [Getting Started](https://podman.io/docs) / [ドキュメント](https://docs.podman.io/)
 
 ## なぜ存在するか
 
@@ -57,15 +57,92 @@ podman exec -it <container> sh
 
 Docker Composeの代替として `podman-compose` も利用可能。
 
-## Systemdとの統合
+## Systemdとの統合（Quadlet）
 
-Podmanはデーモンがないため、コンテナの自動起動にSystemdを使う。`podman generate systemd` でSystemdユニットファイルを生成できる。
+Podmanはデーモンがないため、コンテナの自動起動にSystemdを使う。Podman 4.4以降は **Quadlet** が推奨方法。`podman generate systemd` は非推奨。
+
+QuadletはSystemdのジェネレーター機能を使い、`.container` ファイルからSystemdサービスユニットを自動生成する。宣言的に記述でき、Gitで管理しやすい。
+
+```ini
+# /etc/containers/systemd/myapp.container
+[Container]
+Image=docker.io/library/nginx:latest
+PublishPort=8080:80
+Volume=/data:/usr/share/nginx/html:Z
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+```
 
 ```bash
-# コンテナのSystemdユニットを生成
-podman generate systemd --name myapp --files --new
-systemctl --user enable container-myapp.service
-systemctl --user start container-myapp.service
+# daemon-reloadでQuadletが自動的にサービスを生成する
+systemctl daemon-reload
+systemctl start myapp.service
+```
+
+ユーザースコープで動かす場合（ルートレス）は `~/.config/containers/systemd/` に置き、`systemctl --user` で操作する。
+
+## podman machine（macOS / Windows）
+
+コンテナはLinuxカーネルの機能（namespace・cgroup）に依存するため、macOSとWindowsでは仮想マシンが必要。`podman machine` がそのライフサイクルを管理する。
+
+```bash
+# 仮想マシンを初期化して起動
+podman machine init
+podman machine start
+
+# 状態確認
+podman machine list
+```
+
+| プラットフォーム | デフォルトVM | 代替 |
+|---|---|---|
+| macOS | libkrun | applehv |
+| Windows | WSL2 | Hyper-V |
+
+Docker Desktopと同様の役割だが、OSSで無償。
+
+## Podman Desktop
+
+PodmanとKubernetesをGUIで操作するデスクトップアプリ（macOS・Windows・Linux対応）。複数のコンテナエンジン（Podman・Docker）を統一UIで管理できる。
+
+主な機能：
+- コンテナ・イメージ・Podの一覧と操作
+- Dockerfile/Containerfileからのビルド
+- KubernetesへのデプロイとYAML生成
+- podman machineの管理
+
+コマンドラインに不慣れなチームへの導入や、Kubernetesへの移行期に有効。
+
+## containers エコシステム
+
+Podmanは単独ツールではなく、`containers` オーガニゼーション（GitHub: [containers/](https://github.com/containers/)）が開発するOSSプロジェクト群の中核。各ツールが役割を分担している。
+
+| ツール | 役割 |
+|---|---|
+| **Podman** | コンテナ・Pod・イメージのライフサイクル管理 |
+| **Buildah** | OCI イメージのビルドに特化。`podman build` は内部で Buildah の API を使用 |
+| **Skopeo** | レジストリ間のイメージコピー・同期・検査。デーモン不要・ルートレス |
+| **crun** | 軽量・高速な OCI ランタイム（C実装）。runc の代替として Podman のデフォルト |
+| **netavark** | Rust実装のコンテナネットワークスタック |
+| **CRI-O** | Kubernetes 向け OCI ランタイムインターフェース |
+
+Dockerが単一のデーモンに機能を集約するのに対し、containers エコシステムは「1ツール1責務」で構成されている。
+
+### Skopeo の特徴的なユースケース
+
+```bash
+# コンテナを pull せずにイメージのメタデータを検査
+skopeo inspect docker://docker.io/library/nginx:latest
+
+# レジストリ間でイメージをコピー（ローカルへの保存不要）
+skopeo copy docker://quay.io/myimage:latest docker://registry.example.com/myimage:latest
+
+# エアギャップ環境向けにリポジトリをまるごと同期
+skopeo sync --src docker --dest dir quay.io/myorg /offline/images
 ```
 
 ## いつ使うか
@@ -83,6 +160,9 @@ systemctl --user start container-myapp.service
 | デーモン | 必要（Root） | 不要 |
 | ルートレス | 制限あり | ネイティブサポート |
 | Compose | Docker Compose | podman-compose / Quadlet |
+| Systemd統合 | 非公式 | Quadlet（公式サポート） |
+| macOS/Windows | Docker Desktop | podman machine |
+| GUI | Docker Desktop | Podman Desktop |
 | Kubernetesとの親和性 | ビルドツールとして | PodコンセプトがKと共通 |
 | エコシステム | 成熟・広い | RHEL/Fedora系で強い |
 
