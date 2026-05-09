@@ -48,7 +48,7 @@ features:
     details: カナリアリリース・ブルーグリーン・フィーチャーフラグ・エッジコンピューティング
     link: /deployment/
   - title: Dev Tools
-    details: Docker・Podman・Buildah・Kubernetes・Terraform・GitHub Actions
+    details: Docker・Podman・Buildah・Kubernetes・Terraform・GitHub Actions・Nix・mise
     link: /dev-tools/
   - title: Platforms
     details: クラウド・BaaS・分散DB・Kafka。Firebase・Supabase・NoSQL・NewSQL・イベントストリーミング

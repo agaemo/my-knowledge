@@ -237,6 +237,15 @@ export default defineConfig({
               { text: 'GitHub Actions', link: '/dev-tools/ci-cd/github-actions' },
             ],
           },
+          {
+            text: '環境管理',
+            link: '/dev-tools/env-management/',
+            collapsed: true,
+            items: [
+              { text: 'Nix', link: '/dev-tools/env-management/nix' },
+              { text: 'mise', link: '/dev-tools/env-management/mise' },
+            ],
+          },
         ],
       },
       {

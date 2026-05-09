@@ -17,7 +17,7 @@ my-knowledge/
     ├── observability/       # オブザーバビリティ
     ├── process/             # 開発プロセス
     ├── deployment/          # デプロイ・リリース戦略（カナリア・ブルーグリーン・フィーチャーフラグ）
-    ├── dev-tools/           # 開発・インフラツール（infra/・ci-cd/）
+    ├── dev-tools/           # 開発・インフラツール（infra/・ci-cd/・env-management/）
     ├── platforms/           # マネージドサービス・プラットフォーム（cloud・database/・baas）
     └── sre/                 # SRE（信頼性設計・障害パターン・ポストモーテムなど）
 ```
