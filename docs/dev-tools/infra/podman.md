@@ -56,7 +56,36 @@ podman logs -f <container>
 podman exec -it <container> sh
 ```
 
-Docker Composeの代替として `podman-compose` も利用可能。
+Docker Composeの代替として `podman compose`（サブコマンド）が利用可能。
+
+## Compose サポート
+
+`podman compose` はPodman本体のサブコマンドとして組み込まれている。ただしこれは**ラッパー**で、実際の処理は別途インストールしたプロバイダーに委譲する。
+
+```bash
+podman compose up -d
+podman compose down
+```
+
+### プロバイダーの仕組み
+
+| プロバイダー | インストール方法 | 備考 |
+|---|---|---|
+| `docker-compose` | 別途インストール | デフォルトで優先される |
+| `podman-compose` | `pip3 install podman-compose` など | Docker非依存で動作 |
+
+両方インストールされている場合は `docker-compose` が優先される。`PODMAN_COMPOSE_PROVIDER` 環境変数か `containers.conf` の `compose_providers` で変更可能。
+
+```bash
+# プロバイダーを明示的に指定する
+PODMAN_COMPOSE_PROVIDER=podman-compose podman compose up -d
+```
+
+### Docker Compose との差異
+
+`podman-compose` は完全互換ではなく、一部の機能（`depends_on` の条件指定・ネットワークの詳細設定など）で挙動が異なる場合がある。`docker-compose` をプロバイダーに使う場合は Podman ソケット経由で Docker API を呼び出すため、より高い互換性が得られる。
+
+Composeを多用する場合、プロバイダー選択と機能差異の確認が必要。
 
 ## Systemdとの統合（Quadlet）
 
@@ -160,7 +189,7 @@ skopeo sync --src docker --dest dir quay.io/myorg /offline/images
 |---|---|---|
 | デーモン | 必要（Root） | 不要 |
 | ルートレス | 制限あり | ネイティブサポート |
-| Compose | Docker Compose | podman-compose |
+| Compose | Docker Compose | podman compose（プロバイダー別途インストール必要） |
 | Systemd統合 | 非公式 | Quadlet（公式サポート） |
 | macOS/Windows | Docker Desktop | podman machine |
 | GUI | Docker Desktop | Podman Desktop |
