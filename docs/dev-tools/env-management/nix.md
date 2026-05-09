@@ -86,3 +86,52 @@ pkgs.mkShell {
 | ロールバック | あり | イメージタグで管理 |
 
 Nix でビルドした成果物を Docker イメージにする組み合わせもある。
+
+## Nix ラッパーツール
+
+Nix 単体は習得コストが高い（独自言語・概念の多さ）。実際の開発では Nix を内部で使いつつ設定を簡略化したラッパーツールが使われることが多い。
+
+### Devbox
+
+Jetify が開発する OSS ツール。Nix 言語を書かずに `devbox.json` だけで環境を定義できる。
+
+→ [公式サイト](https://www.jetify.com/devbox)
+
+```json
+{
+  "packages": ["nodejs@20", "python@3.12", "postgresql@16"],
+  "shell": {
+    "init_hook": ["echo 'Ready.'"]
+  }
+}
+```
+
+- チームで `devbox.json` をリポジトリに入れて共有する運用が基本
+- `devbox generate dockerfile` で Dockerfile に書き出せる（CI・本番への橋渡し）
+- プロセス管理（DB・サーバーの同時起動）も内蔵
+
+### devenv
+
+`devenv.nix` という簡略化された Nix ファイルで環境を定義する。Nix 言語を使うが、汎用 Nix より記述量が少なく、言語別ツールチェーンや PostgreSQL・Redis などのサービスをモジュールとして組み込める。
+
+→ [公式サイト](https://devenv.sh/)
+
+```nix
+{ pkgs, ... }: {
+  languages.python.enable = true;
+  languages.python.version = "3.12";
+  services.postgres.enable = true;
+}
+```
+
+- 設定の合成が得意で、モノレポ構成に向いている
+- Nix の知識がある程度あるチーム向け
+
+### 選択の目安
+
+| | Devbox | devenv | Nix 直接 |
+|---|---|---|---|
+| Nix 知識 | 不要 | 少し必要 | 必要 |
+| 設定ファイル | JSON | Nix（簡略） | Nix（フル） |
+| 柔軟性 | 中 | 高 | 最高 |
+| 向いている場面 | チーム導入・初期コスト重視 | モジュール化・サービス管理 | CI/CD・NixOS との統合 |
