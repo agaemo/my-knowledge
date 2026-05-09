@@ -51,7 +51,7 @@ features:
     details: Docker・Podman・Buildah・Kubernetes・Terraform・GitHub Actions・Nix・mise
     link: /dev-tools/
   - title: Platforms
-    details: クラウド・BaaS・分散DB・Kafka。Firebase・Supabase・NoSQL・NewSQL・イベントストリーミング
+    details: クラウド・BaaS・分散DB・Kafka。RDBMS・NoSQL・NewSQL・インメモリDB・OLAP（DuckDB）・イベントストリーミング
     link: /platforms/
 ---
 

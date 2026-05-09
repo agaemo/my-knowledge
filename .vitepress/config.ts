@@ -259,9 +259,11 @@ export default defineConfig({
             link: '/platforms/database/',
             collapsed: true,
             items: [
+              { text: 'RDBMS', link: '/platforms/database/rdbms' },
               { text: 'NoSQL', link: '/platforms/database/nosql' },
               { text: 'NewSQL', link: '/platforms/database/newsql' },
               { text: 'インメモリDB', link: '/platforms/database/in-memory-db' },
+              { text: 'OLAP（分析DB）', link: '/platforms/database/olap' },
             ],
           },
           { text: 'BaaS', link: '/platforms/baas' },
