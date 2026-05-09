@@ -223,6 +223,7 @@ export default defineConfig({
             items: [
               { text: 'Docker', link: '/dev-tools/infra/docker' },
               { text: 'Podman', link: '/dev-tools/infra/podman' },
+              { text: 'Buildah', link: '/dev-tools/infra/buildah' },
               { text: 'Kubernetes', link: '/dev-tools/infra/kubernetes' },
               { text: 'Terraform', link: '/dev-tools/infra/terraform' },
               { text: 'Ansible', link: '/dev-tools/infra/ansible' },
