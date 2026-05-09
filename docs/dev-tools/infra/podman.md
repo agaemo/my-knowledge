@@ -24,7 +24,7 @@ Docker:
   CLI → dockerd（Root常駐デーモン）→ containerd → runc → コンテナ
 
 Podman:
-  CLI → conmon（軽量監視プロセス）→ runc → コンテナ
+  CLI → conmon（軽量監視プロセス）→ crun → コンテナ
   （デーモンなし・各コンテナが独立したプロセスツリー）
 ```
 
@@ -160,7 +160,7 @@ skopeo sync --src docker --dest dir quay.io/myorg /offline/images
 |---|---|---|
 | デーモン | 必要（Root） | 不要 |
 | ルートレス | 制限あり | ネイティブサポート |
-| Compose | Docker Compose | podman-compose / Quadlet |
+| Compose | Docker Compose | podman-compose |
 | Systemd統合 | 非公式 | Quadlet（公式サポート） |
 | macOS/Windows | Docker Desktop | podman machine |
 | GUI | Docker Desktop | Podman Desktop |
