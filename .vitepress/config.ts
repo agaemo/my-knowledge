@@ -36,6 +36,7 @@ export default defineConfig({
               { text: '構造パターン', link: '/architecture/design-patterns/structural' },
               { text: '振る舞いパターン', link: '/architecture/design-patterns/behavioral' },
               { text: 'SOLID 原則', link: '/architecture/design-patterns/solid' },
+              { text: 'プログラミング原則', link: '/architecture/design-patterns/principles' },
             ],
           },
           {
@@ -294,6 +295,15 @@ export default defineConfig({
           },
           { text: 'BaaS', link: '/platforms/baas' },
           { text: 'Apache Kafka', link: '/platforms/kafka' },
+        ],
+      },
+      {
+        text: 'エンジニア組織',
+        link: '/org/',
+        collapsed: true,
+        items: [
+          { text: 'コンウェイの法則', link: '/org/conways-law' },
+          { text: 'エンジニアリングロール', link: '/org/engineering-roles' },
         ],
       },
     ],

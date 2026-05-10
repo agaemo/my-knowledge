@@ -53,5 +53,8 @@ features:
   - title: Platforms
     details: クラウド・BaaS・分散DB・Kafka。RDBMS・NoSQL・NewSQL・インメモリDB・OLAP（DuckDB）・イベントストリーミング
     link: /platforms/
+  - title: エンジニア組織
+    details: コンウェイの法則・逆コンウェイ戦略・Team Topologies・IC/EM/Staff Engineer
+    link: /org/
 ---
 
