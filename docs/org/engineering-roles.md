@@ -2,6 +2,39 @@
 
 ソフトウェアエンジニアのキャリアには大きく2つのトラックがある。**IC（Individual Contributor）** と **EM（Engineering Manager）**。どちらが上下ではなく、貢献の仕方が異なる並列のキャリアパス。
 
+## キャリアパス全体像
+
+正解のない部分も多いが、一般的なイメージは以下の通り。Senior 前後がトラックの分岐点になることが多い。
+
+```mermaid
+flowchart TD
+    Start([ジュニアエンジニア\nL3])
+
+    subgraph IC ["IC（Individual Contributor）トラック"]
+        direction TB
+        L4[エンジニア L4]
+        L5[シニアエンジニア L5]
+        L6["スタッフエンジニア L6\n（Tech Lead・Architect・Solver・Right Hand）"]
+        L7[シニアスタッフ / プリンシパル L7]
+        L8[ディスティングイッシュト / フェロー L8+]
+        L4 --> L5 --> L6 --> L7 --> L8
+    end
+
+    subgraph Mgmt ["マネジメントトラック"]
+        direction TB
+        EM1[エンジニアリングマネージャー]
+        EM2[シニアEM / グループマネージャー]
+        EM3[エンジニアリングディレクター]
+        VPoE[VP of Engineering]
+        CTO[CTO]
+        EM1 --> EM2 --> EM3 --> VPoE --> CTO
+    end
+
+    Start --> L4
+    L5 -->|"転換"| EM1
+    L6 -->|"転換"| EM2
+```
+
 ## IC（Individual Contributor）
 
 マネジメントを持たず、技術的な貢献で価値を出すロール。コード・設計・技術判断が主な仕事。
