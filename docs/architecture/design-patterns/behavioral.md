@@ -2,7 +2,6 @@
 
 オブジェクト間の通信・責務の割り当て・アルゴリズムの交換を扱うパターン群。
 
----
 
 ## Strategy
 
@@ -32,7 +31,6 @@ const sorted = list.sort((a, b) => a.price - b.price);
 
 **いつ使うか：** ソート・検索・バリデーション・圧縮など、アルゴリズムを差し替えたいとき。
 
----
 
 ## Observer
 
@@ -54,7 +52,6 @@ class EventBus {
 
 **いつ使うか：** UIの状態管理、ドメインイベントの発行、プラグイン機構など「1対多」の通知が必要なとき。
 
----
 
 ## Command
 
@@ -85,7 +82,6 @@ class History {
 
 **いつ使うか：** アンドゥ/リドゥ、タスクキュー、トランザクションログ、マクロ記録。
 
----
 
 ## Template Method
 
@@ -110,7 +106,6 @@ abstract class DataMigration {
 
 **いつ使うか：** フレームワーク設計。共通の処理フローがあり、特定ステップだけカスタマイズさせたいとき。
 
----
 
 ## State
 
@@ -130,7 +125,6 @@ class GreenState implements TrafficLightState {
 
 **いつ使うか：** ステートマシン（注文ステータス・ワークフロー・接続状態）。`if (state == "A") ... else if (state == "B")` が増え始めたとき。
 
----
 
 ## Chain of Responsibility
 
@@ -155,7 +149,6 @@ class AuthHandler extends Handler {
 
 **いつ使うか：** 認証・ロギング・バリデーションなど、リクエストパイプラインの構築。
 
----
 
 ## Iterator
 
@@ -172,7 +165,6 @@ while (it.hasNext()) {
 
 **いつ使うか：** ほぼ無意識に使っている。カスタムデータ構造（グラフ・ツリー）を `for...of` で巡回させたいとき、明示的に実装する。
 
----
 
 ## Mediator
 
@@ -185,7 +177,6 @@ while (it.hasNext()) {
 
 **いつ使うか：** チャットルーム・航空管制・UIコンポーネント間の調整（Redux はその一例）。
 
----
 
 ## Memento
 
@@ -204,7 +195,6 @@ class Editor {
 
 **いつ使うか：** テキストエディタのアンドゥ、ゲームのセーブデータ、トランザクションのロールバック。
 
----
 
 ## Visitor
 
@@ -223,7 +213,6 @@ class SVGExporter implements ShapeVisitor { ... }
 
 **いつ使うか：** コンパイラのAST処理、ドキュメントのエクスポート（PDF・HTML・Markdown）。Shape のような安定したクラス階層に対して、操作の種類が増え続けるとき。
 
----
 
 ## Interpreter
 
@@ -231,7 +220,6 @@ class SVGExporter implements ShapeVisitor { ... }
 
 **いつ使うか：** SQLパーサー・正規表現エンジン・設定ファイルのDSLなど。実装コストが高いため、現代ではパーサーライブラリを使うことがほとんど。
 
----
 
 ## Null Object
 

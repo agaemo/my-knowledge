@@ -3,7 +3,6 @@
 GoF デザインパターンの多くが「どうやって解決するか」であるのに対し、SOLID は「どういう設計を目指すか」という指針。  
 Robert C. Martin（Uncle Bob）が2000年代に提唱。「なぜ変更が難しいか」「なぜテストが書けないか」の根本に必ずどれかの違反がある。
 
----
 
 ## S — Single Responsibility Principle（単一責任の原則）
 
@@ -30,7 +29,6 @@ class ReportSaver {
 
 **見分け方：** 「〇〇の変更のとき」「△△の変更のとき」と理由が複数思いつくクラスは違反候補。
 
----
 
 ## O — Open/Closed Principle（開放閉鎖の原則）
 
@@ -59,7 +57,6 @@ class Triangle implements Shape { public double area() { ... } } // 追加する
 
 **GoF との関係：** Strategy・Decorator・Factory Method はこの原則を実現する手段になることが多い。
 
----
 
 ## L — Liskov Substitution Principle（リスコフの置換原則）
 
@@ -86,7 +83,6 @@ class Square extends Rectangle {
 
 **見分け方：** サブクラスで `throw UnsupportedOperationException()` が出てきたら要注意。親クラスの前提条件を強める・事後条件を弱めると違反。
 
----
 
 ## I — Interface Segregation Principle（インターフェース分離の原則）
 
@@ -111,7 +107,6 @@ interface FaxMachine { void fax(); }
 class SimplePrinter implements Printer { ... }
 ```
 
----
 
 ## D — Dependency Inversion Principle（依存性逆転の原則）
 
@@ -136,7 +131,6 @@ class UserService {
 
 **現代の等価物：** DI コンテナ（Spring・Guice・Dagger）はこの原則を自動化するツール。テストでモック注入できるのはこの原則のおかげ。
 
----
 
 ## まとめ
 

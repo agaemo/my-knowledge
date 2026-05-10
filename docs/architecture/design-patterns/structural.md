@@ -3,7 +3,6 @@
 クラスやオブジェクトを組み合わせて、より大きな構造を作るパターン群。  
 インターフェースの変換・機能の追加・複雑さの隠蔽を担う。
 
----
 
 ## Adapter
 
@@ -29,7 +28,6 @@ class LoggerAdapter implements Logger {
 
 **いつ使うか：** 外部ライブラリや既存コードを、変更せずに新しいインターフェースに適合させたいとき。
 
----
 
 ## Bridge
 
@@ -44,7 +42,6 @@ class LoggerAdapter implements Logger {
 
 **いつ使うか：** 抽象と実装の両軸で独立に拡張が必要なとき。プラットフォーム別実装（Windows/Mac/Linux）の分離など。
 
----
 
 ## Composite
 
@@ -69,7 +66,6 @@ class Container implements Component {
 
 **いつ使うか：** ファイルシステム（ファイル vs ディレクトリ）、UIコンポーネントツリー、組織階層など木構造データを扱うとき。
 
----
 
 ## Decorator
 
@@ -100,7 +96,6 @@ DataSource source = new CompressionDecorator(new EncryptionDecorator(new FileDat
 
 **いつ使うか：** ロギング・キャッシュ・圧縮・暗号化など、横断的機能を組み合わせ可能に追加したいとき。
 
----
 
 ## Facade
 
@@ -121,7 +116,6 @@ class VideoConverter {
 
 **いつ使うか：** ライブラリや複雑なシステムの初期化・利用をシンプルに見せたいとき。マイクロサービスの BFF（Backend for Frontend）も Facade の考え方。
 
----
 
 ## Flyweight
 
@@ -141,7 +135,6 @@ class Tree { // 個別
 
 **いつ使うか：** ゲームの大量スプライト、テキストエディタの文字オブジェクト、地図上の大量マーカーなど、メモリ消費が問題になるとき。
 
----
 
 ## Proxy
 

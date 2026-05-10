@@ -3,7 +3,6 @@
 「どのようにオブジェクトを生成するか」を抽象化するパターン群。  
 呼び出し側が具体的なクラスに依存しないようにすることで、生成ロジックの変更をカプセル化する。
 
----
 
 ## Factory Method
 
@@ -31,7 +30,6 @@ class WindowsDialog extends Dialog {
 
 **いつ使うか：** 生成するクラスをサブクラスやプラグインで差し替えたいとき。
 
----
 
 ## Abstract Factory
 
@@ -53,7 +51,6 @@ class MacFactory implements GUIFactory {
 
 **いつ使うか：** OS・テーマ・データベースエンジンなど「ファミリー」単位で切り替えたいとき。
 
----
 
 ## Builder
 
@@ -76,7 +73,6 @@ val pizza = Pizza(size = "Large", cheese = true, pepperoni = true)
 
 **いつ使うか：** コンストラクタ引数が多く、組み合わせが複雑なとき。テストデータの組み立てにも有効。
 
----
 
 ## Prototype
 
@@ -92,7 +88,6 @@ interface Prototype {
 
 **いつ使うか：** オブジェクトの初期化コストが高く、類似したオブジェクトが多数必要なとき。
 
----
 
 ## Singleton
 
