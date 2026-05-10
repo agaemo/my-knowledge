@@ -7,7 +7,7 @@
 ```
 my-knowledge/
 └── docs/                    # コンテンツルート（VitePress の srcDir）
-    ├── architecture/        # アーキテクチャパターン
+    ├── architecture/        # アーキテクチャパターン（design-patterns/・functional-patterns/・mv-patterns/ を含む）
     ├── testing/             # テスト手法
     ├── ai/                  # AI・LLMエンジニアリング（プロンプト・RAG・Embeddings・エージェント・Fine-tuning・Evals・MCP・LLMOps など）
     ├── frontend/            # フロントエンド設計（CSS設計・レンダリング戦略など）

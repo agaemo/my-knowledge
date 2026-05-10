@@ -27,6 +27,31 @@ export default defineConfig({
           { text: 'ヘキサゴナル', link: '/architecture/hexagonal' },
           { text: 'イベント駆動', link: '/architecture/event-driven' },
           { text: 'ストラングラーフィグ', link: '/architecture/strangler-fig' },
+          {
+            text: 'GoF デザインパターン',
+            link: '/architecture/design-patterns/',
+            collapsed: true,
+            items: [
+              { text: '生成パターン', link: '/architecture/design-patterns/creational' },
+              { text: '構造パターン', link: '/architecture/design-patterns/structural' },
+              { text: '振る舞いパターン', link: '/architecture/design-patterns/behavioral' },
+              { text: 'SOLID 原則', link: '/architecture/design-patterns/solid' },
+            ],
+          },
+          {
+            text: '関数型パターン',
+            link: '/architecture/functional-patterns/',
+          },
+          {
+            text: 'MV* パターン',
+            link: '/architecture/mv-patterns/',
+            collapsed: true,
+            items: [
+              { text: 'MVC', link: '/architecture/mv-patterns/mvc' },
+              { text: 'MVP', link: '/architecture/mv-patterns/mvp' },
+              { text: 'MVVM', link: '/architecture/mv-patterns/mvvm' },
+            ],
+          },
         ],
       },
       {

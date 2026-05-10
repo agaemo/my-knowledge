@@ -15,7 +15,7 @@ hero:
 
 features:
   - title: Architecture
-    details: レイヤード・オニオン・DDD・ヘキサゴナル・イベント駆動
+    details: レイヤード・オニオン・DDD・ヘキサゴナル・GoF・SOLID・関数型パターン・MVC/MVP/MVVM
     link: /architecture/
   - title: Frontend
     details: CSS設計手法・レンダリング戦略（CSR・SSR・SSG・ISR）
