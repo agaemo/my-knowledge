@@ -1,7 +1,6 @@
 import { defineConfig } from 'vitepress'
-import { withMermaid } from 'vitepress-plugin-mermaid'
 
-export default withMermaid(defineConfig({
+export default defineConfig({
   title: 'my-knowledge',
   description: '個人の知識ベース',
   lang: 'ja',
@@ -315,4 +314,4 @@ export default withMermaid(defineConfig({
       { icon: 'github', link: 'https://github.com/agaemo/my-knowledge' },
     ],
   },
-}))
+})
