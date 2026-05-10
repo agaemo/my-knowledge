@@ -50,6 +50,7 @@ export default defineConfig({
               { text: 'MVC', link: '/architecture/mv-patterns/mvc' },
               { text: 'MVP', link: '/architecture/mv-patterns/mvp' },
               { text: 'MVVM', link: '/architecture/mv-patterns/mvvm' },
+              { text: 'MVI', link: '/architecture/mv-patterns/mvi' },
             ],
           },
         ],
