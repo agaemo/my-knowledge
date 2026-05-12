@@ -30,7 +30,7 @@ features:
     details: TDD・テスト戦略・テストピラミッド
     link: /testing/
   - title: Security
-    details: CORS・XSS・CSRF・SQLインジェクション・ディレクトリトラバーサル・ゼロデイ・サプライチェーン攻撃
+    details: CORS・XSS・CSRF・SQLインジェクション・ゼロデイ・Zero Trust・多層防御・最小権限
     link: /security/
   - title: 認証
     details: Basic認証・セッション認証・APIキー・JWT・Bearer・OAuth2・OIDC・SAML
@@ -42,7 +42,7 @@ features:
     details: 単一障害点・カスケード障害・サーキットブレーカー・バルクヘッド・ポストモーテム・SLO
     link: /sre/
   - title: 開発プロセス
-    details: アジャイル・ウォーターフォール・Shape Up
+    details: アジャイル・ウォーターフォール・Shape Up・ADR
     link: /process/
   - title: Deployment
     details: カナリアリリース・ブルーグリーン・フィーチャーフラグ・エッジコンピューティング

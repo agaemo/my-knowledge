@@ -136,6 +136,7 @@ export default defineConfig({
         items: [
           { text: 'CORS', link: '/security/cors' },
           { text: 'Cookie', link: '/security/cookie' },
+          { text: 'セキュリティ設計原則', link: '/security/principles' },
           {
             text: 'コードで防ぐ攻撃',
             link: '/security/code-attacks/',
@@ -224,6 +225,7 @@ export default defineConfig({
           { text: 'ウォーターフォール', link: '/process/waterfall' },
           { text: 'Shape Up', link: '/process/shape-up' },
           { text: 'セマンティックバージョニング', link: '/process/semver' },
+          { text: 'ADR', link: '/process/adr' },
         ],
       },
       {
