@@ -56,8 +56,8 @@ features:
   - title: 組織
     details: コンウェイの法則・IC/EM/Staff Engineer・The Model（SDR/AE/CSM/PLG）
     link: /org/
-  - title: スタートアップ
+  - title: ビジネス
     details: ユニコーン・資金調達ステージ・VC・ARR/バーンレート・PMF・SLG/PLG/MLG/CLG
-    link: /startup/
+    link: /business/
 ---
 

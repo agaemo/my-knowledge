@@ -21,7 +21,7 @@ my-knowledge/
     ├── platforms/           # マネージドサービス・プラットフォーム（cloud・database/・baas）
     ├── sre/                 # SRE（信頼性設計・障害パターン・ポストモーテムなど）
     ├── org/                 # 組織（コンウェイの法則・ロール・チーム設計・The Model）
-    └── startup/             # スタートアップ（資金調達・指標・成長戦略）
+    └── business/            # ビジネス（資金調達・指標・成長戦略・SLG/PLG）
 ```
 
 ## 方針

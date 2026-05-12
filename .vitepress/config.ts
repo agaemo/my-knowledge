@@ -16,6 +16,9 @@ export default defineConfig({
     ],
     sidebar: [
       {
+        text: '設計・開発',
+        items: [
+      {
         text: 'Architecture',
         link: '/architecture/',
         collapsed: true,
@@ -226,6 +229,11 @@ export default defineConfig({
           { text: 'SAML', link: '/auth/saml' },
         ],
       },
+        ], // 設計・開発 end
+      },
+      {
+        text: '運用・インフラ',
+        items: [
       {
         text: 'Observability',
         link: '/observability/',
@@ -269,20 +277,6 @@ export default defineConfig({
             ],
           },
           { text: 'ポストモーテム', link: '/sre/postmortem' },
-        ],
-      },
-      {
-        text: '開発プロセス',
-        link: '/process/',
-        collapsed: true,
-        items: [
-          { text: 'アジャイル', link: '/process/agile' },
-          { text: 'ウォーターフォール', link: '/process/waterfall' },
-          { text: 'Shape Up', link: '/process/shape-up' },
-          { text: 'セマンティックバージョニング', link: '/process/semver' },
-          { text: 'ADR', link: '/process/adr' },
-          { text: 'PoC / Prototype / MVP / Spike', link: '/process/poc' },
-          { text: '技術的負債', link: '/process/technical-debt' },
         ],
       },
       {
@@ -362,7 +356,12 @@ export default defineConfig({
           { text: 'Apache Kafka', link: '/platforms/kafka' },
         ],
       },
+        ], // 運用・インフラ end
+      },
       {
+        text: '組織・プロセス・事業',
+        items: [
+          {
         text: '組織',
         link: '/org/',
         collapsed: true,
@@ -373,15 +372,31 @@ export default defineConfig({
         ],
       },
       {
-        text: 'スタートアップ',
-        link: '/startup/',
+        text: 'ビジネス',
+        link: '/business/',
         collapsed: true,
         items: [
-          { text: '会社の種類', link: '/startup/company-types' },
-          { text: '資金調達', link: '/startup/funding' },
-          { text: '重要指標', link: '/startup/metrics' },
-          { text: '成長戦略', link: '/startup/growth-strategy' },
+          { text: '会社の種類', link: '/business/company-types' },
+          { text: '資金調達', link: '/business/funding' },
+          { text: '重要指標', link: '/business/metrics' },
+          { text: '成長戦略', link: '/business/growth-strategy' },
         ],
+      },
+      {
+        text: '開発プロセス',
+        link: '/process/',
+        collapsed: true,
+        items: [
+          { text: 'アジャイル', link: '/process/agile' },
+          { text: 'ウォーターフォール', link: '/process/waterfall' },
+          { text: 'Shape Up', link: '/process/shape-up' },
+          { text: 'セマンティックバージョニング', link: '/process/semver' },
+          { text: 'ADR', link: '/process/adr' },
+          { text: 'PoC / Prototype / MVP / Spike', link: '/process/poc' },
+          { text: '技術的負債', link: '/process/technical-debt' },
+        ],
+      },
+        ], // 組織・プロセス・事業 end
       },
     ],
     search: {
