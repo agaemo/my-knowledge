@@ -372,6 +372,17 @@ export default defineConfig({
           { text: 'The Model', link: '/org/the-model' },
         ],
       },
+      {
+        text: 'スタートアップ',
+        link: '/startup/',
+        collapsed: true,
+        items: [
+          { text: '会社の種類', link: '/startup/company-types' },
+          { text: '資金調達', link: '/startup/funding' },
+          { text: '重要指標', link: '/startup/metrics' },
+          { text: '成長戦略', link: '/startup/growth-strategy' },
+        ],
+      },
     ],
     search: {
       provider: 'local',

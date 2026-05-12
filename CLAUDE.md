@@ -20,7 +20,8 @@ my-knowledge/
     ├── dev-tools/           # 開発・インフラツール（infra/・ci-cd/・env-management/）
     ├── platforms/           # マネージドサービス・プラットフォーム（cloud・database/・baas）
     ├── sre/                 # SRE（信頼性設計・障害パターン・ポストモーテムなど）
-    └── org/                 # エンジニア組織（コンウェイの法則・ロール・チーム設計）
+    ├── org/                 # 組織（コンウェイの法則・ロール・チーム設計・The Model）
+    └── startup/             # スタートアップ（資金調達・指標・成長戦略）
 ```
 
 ## 方針
