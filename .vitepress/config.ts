@@ -282,6 +282,7 @@ export default defineConfig({
           { text: 'セマンティックバージョニング', link: '/process/semver' },
           { text: 'ADR', link: '/process/adr' },
           { text: 'PoC / Prototype / MVP / Spike', link: '/process/poc' },
+          { text: '技術的負債', link: '/process/technical-debt' },
         ],
       },
       {
@@ -314,6 +315,10 @@ export default defineConfig({
               { text: 'Terraform', link: '/dev-tools/infra/terraform' },
               { text: 'Ansible', link: '/dev-tools/infra/ansible' },
             ],
+          },
+          {
+            text: 'プラットフォームエンジニアリング',
+            link: '/dev-tools/platform-engineering',
           },
           {
             text: 'CI/CD',
