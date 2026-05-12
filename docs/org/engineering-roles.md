@@ -15,8 +15,7 @@
      │                    VPoE
     L6  ─────────→  Director / Senior EM
      │
-    L5  ─────────→  Engineering Manager
-     │   ←────────
+    L5  ←────────→  Engineering Manager
     L4
      │
     L3
