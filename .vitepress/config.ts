@@ -171,6 +171,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'TDD', link: '/testing/tdd' },
+          { text: 'テストダブル', link: '/testing/test-doubles' },
           { text: '契約テスト', link: '/testing/contract-testing' },
           { text: 'テスト戦略', link: '/testing/testing-strategy' },
         ],
@@ -274,6 +275,7 @@ export default defineConfig({
           { text: 'Shape Up', link: '/process/shape-up' },
           { text: 'セマンティックバージョニング', link: '/process/semver' },
           { text: 'ADR', link: '/process/adr' },
+          { text: 'PoC / Prototype / MVP / Spike', link: '/process/poc' },
         ],
       },
       {

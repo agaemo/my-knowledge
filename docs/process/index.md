@@ -7,3 +7,4 @@
 - [Shape Up](/process/shape-up) — 6週間サイクルでスコープを固定するプロジェクト管理手法
 - [セマンティックバージョニング](/process/semver) — バージョン番号の意味と運用ルール
 - [ADR](/process/adr) — アーキテクチャ上の意思決定をその背景・理由とともに記録する手法
+- [PoC・Prototype・MVP・Spike](/process/poc) — 本格開発の前に小さく試す手法の目的と使い分け
