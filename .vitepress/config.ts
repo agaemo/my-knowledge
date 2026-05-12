@@ -27,6 +27,8 @@ export default defineConfig({
           { text: 'ヘキサゴナル', link: '/architecture/hexagonal' },
           { text: 'イベント駆動', link: '/architecture/event-driven' },
           { text: 'ストラングラーフィグ', link: '/architecture/strangler-fig' },
+          { text: 'CQRS / Event Sourcing', link: '/architecture/cqrs-event-sourcing' },
+          { text: 'CAP定理', link: '/architecture/cap-theorem' },
           {
             text: 'GoF デザインパターン',
             link: '/architecture/design-patterns/',
@@ -61,6 +63,7 @@ export default defineConfig({
         link: '/frontend/',
         collapsed: true,
         items: [
+          { text: '状態管理パターン', link: '/frontend/state-management' },
           { text: 'CSS設計手法', link: '/frontend/css-methodology' },
           { text: 'レンダリング戦略', link: '/frontend/rendering-strategy' },
           { text: 'アプリプラットフォーム', link: '/frontend/app-platform' },
@@ -73,6 +76,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'リバースプロキシ', link: '/backend/reverse-proxy' },
+          { text: '冪等性', link: '/backend/idempotency' },
           {
             text: 'API',
             link: '/backend/api/',
@@ -129,6 +133,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'TDD', link: '/testing/tdd' },
+          { text: '契約テスト', link: '/testing/contract-testing' },
           { text: 'テスト戦略', link: '/testing/testing-strategy' },
         ],
       },
@@ -139,6 +144,7 @@ export default defineConfig({
         items: [
           { text: 'CORS', link: '/security/cors' },
           { text: 'Cookie', link: '/security/cookie' },
+          { text: '暗号化の基礎', link: '/security/encryption' },
           { text: 'セキュリティ設計原則', link: '/security/principles' },
           {
             text: 'コードで防ぐ攻撃',
@@ -185,6 +191,7 @@ export default defineConfig({
           { text: '分散トレーシング', link: '/observability/distributed-tracing' },
           { text: 'ログ集約', link: '/observability/log-aggregation' },
           { text: 'Zabbix', link: '/observability/zabbix' },
+          { text: 'メトリクス設計', link: '/observability/metrics-design' },
         ],
       },
       {
@@ -241,6 +248,7 @@ export default defineConfig({
           { text: 'フィーチャーフラグ', link: '/deployment/feature-flags' },
           { text: 'エッジコンピューティング', link: '/deployment/edge-computing' },
           { text: 'CDN', link: '/deployment/cdn' },
+          { text: 'GitOps', link: '/deployment/gitops' },
         ],
       },
       {
