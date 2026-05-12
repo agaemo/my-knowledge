@@ -381,6 +381,8 @@ export default defineConfig({
           { text: '重要指標', link: '/business/metrics' },
           { text: '成長戦略', link: '/business/growth-strategy' },
           { text: 'North Star Metric', link: '/business/north-star-metric' },
+          { text: 'KGI・KPI・OKR', link: '/business/kpi' },
+          { text: 'OKR', link: '/business/okr' },
           { text: 'Rule of 40', link: '/business/rule-of-40' },
         ],
       },
@@ -396,7 +398,6 @@ export default defineConfig({
           { text: 'ADR', link: '/process/adr' },
           { text: 'PoC / Prototype / MVP / Spike', link: '/process/poc' },
           { text: '技術的負債', link: '/process/technical-debt' },
-          { text: 'OKR', link: '/process/okr' },
         ],
       },
         ], // 組織・プロセス・事業 end
