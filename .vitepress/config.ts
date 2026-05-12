@@ -377,9 +377,10 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '会社の種類', link: '/business/company-types' },
+          { text: 'Vision・Mission・Value', link: '/business/vmv' },
           { text: '資金調達', link: '/business/funding' },
-          { text: '重要指標', link: '/business/metrics' },
           { text: '成長戦略', link: '/business/growth-strategy' },
+          { text: '重要指標', link: '/business/metrics' },
           { text: 'North Star Metric', link: '/business/north-star-metric' },
           { text: 'KGI・KPI・OKR', link: '/business/kpi' },
           { text: 'OKR', link: '/business/okr' },
