@@ -110,5 +110,5 @@ await langfuse.score({
 
 プロトタイプ段階では不要なことが多い。本番リリース前後から導入を検討するのが現実的。
 
-→ [LLMOps](/ai/llmops) — Langfuseが担うオブザーバビリティ・Evalsの位置づけ  
-→ [Evals](/ai/evals) — Evalの設計・種類の詳細
+→ [LLMOps](/ai/mlops/llmops) — Langfuseが担うオブザーバビリティ・Evalsの位置づけ  
+→ [Evals](/ai/mlops/evals) — Evalの設計・種類の詳細
