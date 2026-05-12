@@ -1,12 +1,12 @@
-# エンジニア組織
+# 組織
 
-技術組織の構造・役割・チーム設計に関する知識。  
-「どう作るか」だけでなく「誰がどう動くか」がシステムの品質と速度に影響する。
+技術組織・SaaS ビジネス組織の構造・役割・チーム設計に関する知識。
 
-## チーム設計
+## エンジニア組織
 
 - [コンウェイの法則](/org/conways-law) — 組織構造がアーキテクチャを決める理由
+- [エンジニアリングロール](/org/engineering-roles) — IC・EM・Staff Engineer・FDE の違いと役割
 
-## 役割・キャリア
+## SaaS 組織
 
-- [エンジニアリングロール](/org/engineering-roles) — IC・EM・Staff Engineer の違いと役割
+- [The Model](/org/the-model) — SaaS の収益組織モデル。SDR・AE・CSM の分業とPLG

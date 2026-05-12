@@ -358,12 +358,13 @@ export default defineConfig({
         ],
       },
       {
-        text: 'エンジニア組織',
+        text: '組織',
         link: '/org/',
         collapsed: true,
         items: [
           { text: 'コンウェイの法則', link: '/org/conways-law' },
           { text: 'エンジニアリングロール', link: '/org/engineering-roles' },
+          { text: 'The Model', link: '/org/the-model' },
         ],
       },
     ],

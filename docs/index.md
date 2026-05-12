@@ -53,8 +53,8 @@ features:
   - title: Platforms
     details: クラウド・XaaS（IaaS/PaaS/SaaS/FaaS）・BaaS・分散DB・Kafka
     link: /platforms/
-  - title: エンジニア組織
-    details: コンウェイの法則・逆コンウェイ戦略・Team Topologies・IC/EM/Staff Engineer
+  - title: 組織
+    details: コンウェイの法則・IC/EM/Staff Engineer・The Model（SDR/AE/CSM/PLG）
     link: /org/
 ---
 
