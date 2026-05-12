@@ -100,9 +100,60 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'AI・ML・LLM 全体像', link: '/ai/overview' },
-          { text: 'ハルシネーション', link: '/ai/hallucination' },
-          { text: '推論モデル', link: '/ai/reasoning-models' },
-          { text: 'コンテキストエンジニアリング', link: '/ai/context-engineering' },
+          {
+            text: 'LLM の基礎概念',
+            collapsed: true,
+            items: [
+              { text: 'ハルシネーション', link: '/ai/hallucination' },
+              { text: '推論モデル', link: '/ai/reasoning-models' },
+              { text: 'コンテキストエンジニアリング', link: '/ai/context-engineering' },
+            ],
+          },
+          {
+            text: 'プロンプト',
+            collapsed: true,
+            items: [
+              { text: 'プロンプトエンジニアリング', link: '/ai/prompt-engineering' },
+              { text: 'Prompt Injection', link: '/ai/prompt-injection' },
+            ],
+          },
+          {
+            text: 'データ・検索',
+            collapsed: true,
+            items: [
+              { text: 'RAG', link: '/ai/rag' },
+              { text: 'Embeddings', link: '/ai/embeddings' },
+              { text: 'マルチモーダル', link: '/ai/multimodal' },
+            ],
+          },
+          {
+            text: 'エージェント',
+            collapsed: true,
+            items: [
+              { text: 'AIエージェント', link: '/ai/ai-agents' },
+              { text: 'MCP', link: '/ai/mcp' },
+            ],
+          },
+          {
+            text: 'モデル改善・運用',
+            collapsed: true,
+            items: [
+              { text: 'Fine-tuning', link: '/ai/fine-tuning' },
+              { text: 'Evals', link: '/ai/evals' },
+              { text: 'LLMOps', link: '/ai/llmops' },
+              { text: 'Langfuse', link: '/ai/langfuse' },
+              { text: 'HITL', link: '/ai/hitl' },
+            ],
+          },
+          {
+            text: '開発スタイル',
+            collapsed: true,
+            items: [
+              { text: 'AI-DLC', link: '/ai/ai-dlc' },
+              { text: 'Vibe Coding', link: '/ai/vibe-coding' },
+              { text: 'Harness Engineering', link: '/ai/harness-engineering' },
+            ],
+          },
           {
             text: 'コンピュータビジョン',
             link: '/ai/computer-vision/',
@@ -112,21 +163,6 @@ export default defineConfig({
               { text: '物体検出', link: '/ai/computer-vision/object-detection' },
             ],
           },
-          { text: 'AI-DLC', link: '/ai/ai-dlc' },
-          { text: 'Vibe Coding', link: '/ai/vibe-coding' },
-          { text: 'Harness Engineering', link: '/ai/harness-engineering' },
-          { text: 'プロンプトエンジニアリング', link: '/ai/prompt-engineering' },
-          { text: 'Prompt Injection', link: '/ai/prompt-injection' },
-          { text: 'RAG', link: '/ai/rag' },
-          { text: 'Embeddings', link: '/ai/embeddings' },
-          { text: 'マルチモーダル', link: '/ai/multimodal' },
-          { text: 'AIエージェント', link: '/ai/ai-agents' },
-          { text: 'MCP', link: '/ai/mcp' },
-          { text: 'Fine-tuning', link: '/ai/fine-tuning' },
-          { text: 'Evals', link: '/ai/evals' },
-          { text: 'LLMOps', link: '/ai/llmops' },
-          { text: 'Langfuse', link: '/ai/langfuse' },
-          { text: 'HITL', link: '/ai/hitl' },
         ],
       },
       {
