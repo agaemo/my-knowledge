@@ -94,6 +94,9 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'AI・ML・LLM 全体像', link: '/ai/overview' },
+          { text: 'ハルシネーション', link: '/ai/hallucination' },
+          { text: '推論モデル', link: '/ai/reasoning-models' },
+          { text: 'コンテキストエンジニアリング', link: '/ai/context-engineering' },
           {
             text: 'コンピュータビジョン',
             link: '/ai/computer-vision/',
