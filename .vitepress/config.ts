@@ -283,6 +283,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'クラウド', link: '/platforms/cloud' },
+          { text: 'XaaS', link: '/platforms/xaas' },
           {
             text: 'Database',
             link: '/platforms/database/',

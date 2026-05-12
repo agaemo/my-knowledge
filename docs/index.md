@@ -51,7 +51,7 @@ features:
     details: Docker・Podman・Buildah・Kubernetes・Terraform・GitHub Actions・Nix・mise
     link: /dev-tools/
   - title: Platforms
-    details: クラウド・BaaS・分散DB・Kafka。RDBMS・NoSQL・NewSQL・インメモリDB・OLAP（DuckDB）・イベントストリーミング
+    details: クラウド・XaaS（IaaS/PaaS/SaaS/FaaS）・BaaS・分散DB・Kafka
     link: /platforms/
   - title: エンジニア組織
     details: コンウェイの法則・逆コンウェイ戦略・Team Topologies・IC/EM/Staff Engineer
