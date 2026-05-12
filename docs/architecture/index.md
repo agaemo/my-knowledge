@@ -13,6 +13,10 @@
 - [DDD](/architecture/ddd) — ドメインモデルを中心に設計する手法
 - [モジュラーモノリス](/architecture/modular-monolith) — 単一デプロイ単位で内部をモジュール分割
 
+## スケール・分散
+
+- [マイクロサービス](/architecture/microservices) — モノリスとの対比・分割方法・いつ採用するか
+
 ## 移行・疎結合
 
 - [イベント駆動](/architecture/event-driven) — イベントを介してコンポーネントを疎結合にする

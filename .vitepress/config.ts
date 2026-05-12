@@ -29,6 +29,7 @@ export default defineConfig({
           { text: 'DDD', link: '/architecture/ddd' },
           { text: 'ヘキサゴナル', link: '/architecture/hexagonal' },
           { text: 'イベント駆動', link: '/architecture/event-driven' },
+          { text: 'マイクロサービス', link: '/architecture/microservices' },
           { text: 'ストラングラーフィグ', link: '/architecture/strangler-fig' },
           { text: 'CQRS / Event Sourcing', link: '/architecture/cqrs-event-sourcing' },
           { text: 'CAP定理', link: '/architecture/cap-theorem' },
@@ -82,6 +83,7 @@ export default defineConfig({
         items: [
           { text: 'リバースプロキシ', link: '/backend/reverse-proxy' },
           { text: '冪等性', link: '/backend/idempotency' },
+          { text: 'キャッシュ戦略', link: '/backend/caching' },
           {
             text: 'API',
             link: '/backend/api/',
@@ -400,6 +402,7 @@ export default defineConfig({
           { text: 'PoC / Prototype / MVP / Spike', link: '/process/poc' },
           { text: '技術的負債', link: '/process/technical-debt' },
           { text: 'A/Bテスト', link: '/process/ab-testing' },
+          { text: 'Git ブランチ戦略', link: '/process/git-branching' },
         ],
       },
         ], // 組織・プロセス・事業 end

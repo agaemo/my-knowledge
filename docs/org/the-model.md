@@ -80,21 +80,9 @@ SaaS 企業の健全性を示す最重要指標のひとつ。新規顧客を獲
 
 ## PLG（Product-Led Growth）
 
-The Model の進化形。**プロダクト自体が獲得・活性化・拡大のエンジンになる**モデル。
+The Model（Sales-Led）の対概念。プロダクト自体が獲得・活性化・拡大のエンジンになるモデル。The Model と PLG は対立ではなく、PLG で個人・SMB を獲得しエンタープライズは The Model で攻めるハイブリッド戦略が多い。
 
-```
-The Model（Sales-Led）:
-  営業が顧客を獲得 → 使ってもらう
-
-PLG（Product-Led）:
-  まず使ってもらう（フリートライアル・Freemium）→ 価値を体験 → 自然に課金
-```
-
-- **代表例**: Slack・Figma・Notion・Dropbox
-- **特徴**: ウイルス的な普及（1人が使い始めてチームに広がる）・セールスコストの低減
-- **課題**: フリーユーザーのコストをどう回収するか・エンタープライズ拡販の難しさ
-
-The Model と PLG は対立ではなく、PLG で個人・SMB を獲得しエンタープライズは The Model で攻めるハイブリッド戦略が多い。
+詳細は [成長戦略](/business/growth-strategy) を参照。
 
 ## エンジニアとの接点
 
