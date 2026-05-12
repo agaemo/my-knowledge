@@ -6,46 +6,18 @@
 
 正解はないが、一般的なイメージは以下の通り。Senior 前後がトラックの分岐点になることが多い。
 
-```
-  IC トラック        マネジメントトラック
-  ───────────        ──────────────────
-    L8+
-     │                     CTO
-    L7                      │
-     │                    VPoE
-    L6  ─────────→  Director / Senior EM
-     │
-    L5  ←────────→  Engineering Manager
-     │
-    L4
-     │
-    L3
-  ───────────        ──────────────────
-        ▲ キャリアの方向
-```
+↑ 上が上位。Senior 前後がトラックの分岐点になることが多い。
 
-`→` はトラック転換のタイミングの例。往復も一般的。
+| IC トラック | レベル | 転換 | マネジメントトラック |
+|---|:---:|:---:|---|
+| Distinguished / Fellow | L8+ | | CTO |
+| Senior Staff / Principal | L7 | | VP of Engineering |
+| Staff Engineer | L6 | → | Director / Senior EM |
+| Senior Engineer | L5 | ⇔ | Engineering Manager |
+| Engineer | L4 | | |
+| Junior Engineer | L3 | | |
 
-### IC トラック
-
-| レベル | 職位 | スコープ |
-|---|---|---|
-| L3 | ジュニアエンジニア | 指示を受けながらタスクを完遂 |
-| L4 | エンジニア | 機能単位を自律的に完遂 |
-| L5 | シニアエンジニア | チーム内の技術課題を自律的に推進 |
-| L6 | スタッフエンジニア | 複数チームをまたぐ技術課題（Tech Lead / Architect / Solver / Right Hand） |
-| L7 | シニアスタッフ / プリンシパル | 部門・プロダクト全体の技術方向性 |
-| L8+ | Distinguished / Fellow | 会社・業界レベルの影響力 |
-
-### マネジメントトラック
-
-| 職位 | スコープ |
-|---|---|
-| Engineering Manager | 1チーム（6〜10人程度） |
-| Senior EM / Group Manager | 複数チーム |
-| Engineering Director | 複数グループ・プロダクト |
-| VP of Engineering（VPoE） | 組織全体の技術部門 |
-| CTO | 会社全体の技術戦略 |
+`→` はトラックへの転換。`⇔` は往復も一般的なことを示す。
 
 ## IC（Individual Contributor）
 
