@@ -18,7 +18,7 @@ features:
     details: レイヤード・オニオン・DDD・ヘキサゴナル・GoF・SOLID・関数型パターン・MVC/MVP/MVVM
     link: /architecture/
   - title: Frontend
-    details: CSS設計手法・レンダリング戦略（CSR・SSR・SSG・ISR）
+    details: 状態管理・リアクティブプログラミング・JSランタイム（Node.js/Deno）・レンダリング戦略
     link: /frontend/
   - title: Backend
     details: REST・GraphQL・gRPC・tRPC

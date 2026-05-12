@@ -64,6 +64,8 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '状態管理パターン', link: '/frontend/state-management' },
+          { text: 'リアクティブプログラミング', link: '/frontend/reactivity' },
+          { text: 'JavaScript ランタイム', link: '/frontend/js-runtime' },
           { text: 'CSS設計手法', link: '/frontend/css-methodology' },
           { text: 'レンダリング戦略', link: '/frontend/rendering-strategy' },
           { text: 'アプリプラットフォーム', link: '/frontend/app-platform' },
