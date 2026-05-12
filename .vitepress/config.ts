@@ -399,6 +399,7 @@ export default defineConfig({
           { text: 'ADR', link: '/process/adr' },
           { text: 'PoC / Prototype / MVP / Spike', link: '/process/poc' },
           { text: '技術的負債', link: '/process/technical-debt' },
+          { text: 'A/Bテスト', link: '/process/ab-testing' },
         ],
       },
         ], // 組織・プロセス・事業 end
