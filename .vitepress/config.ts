@@ -43,6 +43,9 @@ export default defineConfig({
               { text: '振る舞いパターン', link: '/architecture/design-patterns/behavioral' },
               { text: 'SOLID 原則', link: '/architecture/design-patterns/solid' },
               { text: 'プログラミング原則', link: '/architecture/design-patterns/principles' },
+              { text: 'Repository', link: '/architecture/design-patterns/repository' },
+              { text: 'Dependency Injection', link: '/architecture/design-patterns/dependency-injection' },
+              { text: 'Active Record vs Data Mapper', link: '/architecture/design-patterns/orm-patterns' },
             ],
           },
           {
