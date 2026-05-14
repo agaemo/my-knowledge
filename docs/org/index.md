@@ -5,6 +5,7 @@
 ## エンジニア組織
 
 - [コンウェイの法則](/org/conways-law) — 組織構造がアーキテクチャを決める理由
+- [サイロ化](/org/silo) — 組織が孤立・分断していくメカニズムと解消策
 - [エンジニアリングロール](/org/engineering-roles) — IC・EM・Staff Engineer・FDE の違いと役割
 
 ## SaaS 組織

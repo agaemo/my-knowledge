@@ -405,6 +405,7 @@ const sidebars = {
           collapsed: true,
           items: [
             'org/conways-law',
+            'org/silo',
             'org/engineering-roles',
             'org/the-model',
           ],
