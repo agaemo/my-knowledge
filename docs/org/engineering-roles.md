@@ -6,18 +6,38 @@
 
 正解はないが、一般的なイメージは以下の通り。Senior 前後がトラックの分岐点になることが多い。
 
-↑ 上が上位。Senior 前後がトラックの分岐点になることが多い。
+```mermaid
+flowchart BT
+    subgraph common["L4 まで共通"]
+        L3["Junior Engineer (L3)"] --> L4["Engineer (L4)"]
+    end
 
-| IC トラック | レベル | 転換 | マネジメントトラック |
-|---|:---:|:---:|---|
-| Distinguished / Fellow | L8+ | | CTO |
-| Senior Staff / Principal | L7 | | VP of Engineering |
-| Staff Engineer | L6 | → | Director / Senior EM |
-| Senior Engineer | L5 | ⇔ | Engineering Manager |
-| Engineer | L4 | | |
-| Junior Engineer | L3 | | |
+    subgraph tracks[" "]
+        subgraph ic["IC トラック"]
+            direction BT
+            L5["Senior Engineer (L5)"] --> Staff["Staff Engineer (L6)"]
+            Staff --> Principal["Senior Staff / Principal (L7)"]
+            Principal --> Distinguished["Distinguished / Fellow (L8+)"]
+        end
 
-`→` はトラックへの転換。`⇔` は往復も一般的なことを示す。
+        subgraph em["マネジメントトラック"]
+            direction BT
+            EM["Engineering Manager"] --> SEM["Senior EM / Director"]
+            SEM --> VP["VP of Engineering"]
+            VP --> CTO["CTO"]
+        end
+    end
+
+    L4 --> L5
+    L4 --> EM
+
+    note["💡 L5⇔EM は相互転換が一般的（往復も多い）&#13;L6 Staff→Senior EM への転換も起こりうる"]
+
+    style L5 fill:#fff3cd,stroke:#d97706
+    style Distinguished fill:#cce5ff,stroke:#0968da
+    style CTO fill:#cce5ff,stroke:#0968da
+    style note fill:#fefce8,stroke:#d97706,color:#78350f
+```
 
 ## IC（Individual Contributor）
 

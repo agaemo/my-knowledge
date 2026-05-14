@@ -4,7 +4,7 @@
 
 ## 技術スタック
 
-- [VitePress](https://vitepress.dev/) v1.6.x — Markdownをそのまま静的サイトとして配信
+- [Docusaurus](https://docusaurus.io/) v3.x — Markdown / MDX を静的サイトとして配信。Mermaid 公式サポート
 - Node.js 20
 - GitHub Pages（`main` ブランチへのpushで自動デプロイ）
 
@@ -12,19 +12,19 @@
 
 ```bash
 npm install
-npm run dev
+npm run start
 ```
 
 ## ビルド
 
 ```bash
-npm run build   # .vitepress/dist に出力
-npm run preview # ビルド結果をローカルでプレビュー
+npm run build  # build/ に出力
+npm run serve  # ビルド結果をローカルでプレビュー
 ```
 
 ## 設定
 
-VitePressの設定は `.vitepress/config.ts`、カスタムテーマは `.vitepress/theme/` で管理している。
+Docusaurus の設定は `docusaurus.config.js`、サイドバーは `sidebars.js` で管理している。
 
 ## デプロイ
 
