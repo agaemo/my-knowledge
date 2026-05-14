@@ -35,6 +35,9 @@ features:
   - title: 認証
     details: Basic認証・セッション認証・APIキー・JWT・Bearer・OAuth2・OIDC・SAML
     link: /auth/
+  - title: Networking
+    details: OSIモデル・HTTP/2/3・DNS・TLS・WebSocket/SSE・VPC・NAT
+    link: /networking/
   - title: Observability
     details: ログ・メトリクス・トレース・OpenTelemetry・分散トレーシング・ログ集約・Zabbix
     link: /observability/

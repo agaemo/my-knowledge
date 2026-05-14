@@ -19,6 +19,7 @@ my-knowledge/
     ├── deployment/          # デプロイ・リリース戦略（カナリア・ブルーグリーン・フィーチャーフラグ）
     ├── dev-tools/           # 開発・インフラツール（infra/・ci-cd/・env-management/）
     ├── platforms/           # マネージドサービス・プラットフォーム（cloud・database/・baas）
+    ├── networking/          # ネットワーク（OSI・HTTP・DNS・TLS・WebSocket/SSE・VPC・NAT）
     ├── sre/                 # SRE（信頼性設計・障害パターン・ポストモーテムなど）
     ├── org/                 # 組織（コンウェイの法則・ロール・チーム設計・The Model）
     └── business/            # ビジネス（資金調達・指標・成長戦略・SLG/PLG）

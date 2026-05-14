@@ -240,6 +240,20 @@ export default defineConfig({
         text: '運用・インフラ',
         items: [
       {
+        text: 'Networking',
+        link: '/networking/',
+        collapsed: true,
+        items: [
+          { text: 'OSI参照モデル / TCP/IPモデル', link: '/networking/osi-model' },
+          { text: 'HTTP バージョンの変遷', link: '/networking/http-versions' },
+          { text: 'DNS の仕組み', link: '/networking/dns' },
+          { text: 'TLS', link: '/networking/tls' },
+          { text: 'リアルタイム通信', link: '/networking/realtime-protocols' },
+          { text: 'VPC / サブネット / CIDR', link: '/networking/vpc-subnet' },
+          { text: 'NAT / ポートフォワーディング', link: '/networking/nat' },
+        ],
+      },
+      {
         text: 'Observability',
         link: '/observability/',
         collapsed: true,
