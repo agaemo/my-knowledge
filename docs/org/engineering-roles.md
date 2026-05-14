@@ -31,13 +31,13 @@ flowchart BT
     L4 --> L5
     L4 --> EM
 
-    note["💡 L5⇔EM は相互転換が一般的（往復も多い）&#13;L6 Staff→Senior EM への転換も起こりうる"]
-
     style L5 fill:#fff3cd,stroke:#d97706
     style Distinguished fill:#cce5ff,stroke:#0968da
     style CTO fill:#cce5ff,stroke:#0968da
-    style note fill:#fefce8,stroke:#d97706,color:#78350f
 ```
+
+- **L5 ⇔ EM** の相互転換が最も一般的で、往復も多い
+- **L6 Staff → Senior EM / Director** への転換も起こりうる
 
 ## IC（Individual Contributor）
 

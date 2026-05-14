@@ -9,20 +9,23 @@
 
 玉ねぎの断面図のように、中心から外に向かって層が重なる。
 
-```
-       ┌─────────────────────────┐
-       │     presentation        │  HTTP / CLI / UI
-       │   ┌─────────────────┐   │
-       │   │   application   │   │  ユースケース
-       │   │  ┌───────────┐  │   │
-       │   │  │  domain   │  │   │  エンティティ・値オブジェクト・ルール
-       │   │  └───────────┘  │   │
-       │   └─────────────────┘   │
-       └─────────────────────────┘
-              ↑ infrastructure     DBやAPIなどの実装
+```mermaid
+flowchart TD
+    subgraph presentation["Presentation : HTTP · CLI · UI"]
+        subgraph application["Application : ユースケース"]
+            subgraph domain["Domain : エンティティ · 値オブジェクト · ルール"]
+                CORE[" "]
+            end
+        end
+    end
+    style CORE fill:#dbeafe,stroke:#dbeafe
+    style domain fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    style application fill:#dcfce7,stroke:#16a34a,color:#14532d
+    style presentation fill:#fef9c3,stroke:#d97706,color:#713f12
 ```
 
-**依存の向き: 外 → 内のみ。内は外を知らない。**
+- **依存の向き**: 外 → 内のみ。内は外を知らない。
+- **Infrastructure**（DB・外部API）は輪の外に位置し、Domain のインターフェースを実装することで輪の内側に接続する（依存の逆転）。
 
 ## 構造
 
