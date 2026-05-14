@@ -99,18 +99,6 @@ PATCH /users/123
 | 429 Too Many Requests | レート制限 | API制限超過 |
 | 500 Internal Server Error | サーバーエラー | 予期しないエラー |
 
-```ts
-// 400: パラメータが足りない・形式が違う
-if (!body.email) {
-  return res.status(400).json({ error: 'email is required' });
-}
-
-// 422: ビジネスルール違反（形式は正しいが受け入れられない）
-if (await userExists(body.email)) {
-  return res.status(422).json({ error: 'email already registered' });
-}
-```
-
 ## エラーレスポンスの統一
 
 エラー形式を統一することで、クライアントが一貫した処理を書ける。
@@ -129,58 +117,15 @@ if (await userExists(body.email)) {
 }
 ```
 
-```ts
-// Express の例: 中央集権的なエラーハンドラ
-app.use((err: AppError, req: Request, res: Response, next: NextFunction) => {
-  res.status(err.statusCode).json({
-    error: {
-      code: err.code,
-      message: err.message,
-      details: err.details,
-    },
-  });
-});
-```
-
 ## ページネーション
 
 ### オフセットベース
 
-シンプルだが、大量データでパフォーマンスが劣化する。データが追加されると重複が起きる。
-
-```ts
-// リクエスト
-GET /users?page=2&limit=20
-
-// レスポンス
-{
-  "data": [...],
-  "pagination": {
-    "page": 2,
-    "limit": 20,
-    "total": 150,
-    "totalPages": 8
-  }
-}
-```
+`GET /users?page=2&limit=20` のように ページ番号 + 件数で指定する。シンプルだが、大量データでパフォーマンスが劣化し、データ追加時に重複が起きる。
 
 ### カーソルベース
 
-大量データ・リアルタイム更新に向く。前後のページを取得するだけなら最適。
-
-```ts
-// リクエスト
-GET /posts?cursor=eyJpZCI6MTAwfQ&limit=20
-
-// レスポンス
-{
-  "data": [...],
-  "pagination": {
-    "nextCursor": "eyJpZCI6MTIwfQ",  // 次ページのカーソル
-    "hasNext": true
-  }
-}
-```
+`GET /posts?cursor=xxx&limit=20` のように前回の最終レコードを起点に取得する。大量データ・リアルタイム更新に向く。ページ番号指定ができない代わりに一貫性が高い。
 
 ## バージョニング
 
