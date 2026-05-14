@@ -268,7 +268,7 @@ const sidebars = {
           link: { type: 'doc', id: 'observability/index' },
           collapsed: true,
           items: [
-            'observability/observability',
+            'observability/observability-concept',
             'observability/opentelemetry',
             'observability/distributed-tracing',
             'observability/log-aggregation',
