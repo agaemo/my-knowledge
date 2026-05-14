@@ -1,4 +1,4 @@
-name: Deploy VitePress
+name: Deploy Docusaurus
 
 on:
   push:
@@ -27,7 +27,7 @@ jobs:
       - run: npm run build
       - uses: actions/upload-pages-artifact@v5
         with:
-          path: .vitepress/dist
+          path: build
 
   deploy:
     environment:

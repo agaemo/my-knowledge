@@ -19,7 +19,7 @@
 ### リトライストーム
 
 クライアントが一斉にリトライすることで、回復しかけたサービスに再び大量のリクエストが集中する。
-→ [リトライストーム](./retry-storm)
+→ [リトライストーム](./retry-storm.md)
 
 ## 典型的なシナリオ
 
@@ -36,8 +36,8 @@ DB レスポンス遅延
 
 | パターン | 役割 |
 |---|---|
-| [サーキットブレーカー](../resilience/circuit-breaker) | 障害のある依存先への呼び出しを遮断 |
-| [バルクヘッド](../resilience/bulkhead) | 障害の波及範囲をコンポーネント間で隔離 |
-| [タイムアウト設計](../resilience/timeout) | 応答を無限に待たず、早期に失敗を確定させる |
-| [バックプレッシャー](../resilience/backpressure) | 処理能力を超えた入力を上流で抑制 |
-| [リトライストーム対策](./retry-storm) | Exponential Backoff + Jitter |
+| [サーキットブレーカー](../resilience/circuit-breaker.md) | 障害のある依存先への呼び出しを遮断 |
+| [バルクヘッド](../resilience/bulkhead.md) | 障害の波及範囲をコンポーネント間で隔離 |
+| [タイムアウト設計](../resilience/timeout.md) | 応答を無限に待たず、早期に失敗を確定させる |
+| [バックプレッシャー](../resilience/backpressure.md) | 処理能力を超えた入力を上流で抑制 |
+| [リトライストーム対策](./retry-storm.md) | Exponential Backoff + Jitter |
