@@ -71,34 +71,15 @@ GraphQL はスキーマが契約になる。型定義から自動でドキュメ
 type User {
   id: ID!          # ! は Non-null
   name: String!
-  email: String!
-  orders: [Order!]!
-}
-
-type Order {
-  id: ID!
-  status: OrderStatus!
-  items: [OrderItem!]!
-  totalAmount: Int!
-}
-
-enum OrderStatus {
-  PENDING
-  CONFIRMED
-  SHIPPED
-  DELIVERED
+  orders: [Order!]!  # 関連を型で表現
 }
 
 type Query {
   user(id: ID!): User
-  orders(userId: ID!): [Order!]!
-}
-
-type Mutation {
-  createUser(input: CreateUserInput!): User!
-  placeOrder(input: PlaceOrderInput!): Order!
 }
 ```
+
+クライアントはスキーマを見れば取得できるデータ・型・関連が分かる。別途ドキュメントを書く必要がない。
 
 ## N+1 問題と DataLoader
 
@@ -115,28 +96,16 @@ query {
 }
 ```
 
-```ts
-// Bad: N+1
-const orders = await orderRepo.findAll();         // 1クエリ
-for (const order of orders) {
-  order.user = await userRepo.findById(order.userId); // N クエリ
-}
-```
-
-**DataLoader で解決**: リクエストをバッチにまとめて1クエリにする。
+**DataLoader で解決**: 各 Resolver の呼び出しをバッチにまとめ、1クエリにする。
 
 ```ts
-import DataLoader from 'dataloader';
-
 const userLoader = new DataLoader(async (userIds: string[]) => {
-  const users = await userRepo.findByIds(userIds); // 1クエリで全ユーザーを取得
+  const users = await userRepo.findByIds(userIds); // まとめて1クエリ
   return userIds.map(id => users.find(u => u.id === id));
 });
 
 // Resolver
-const orderResolver = {
-  user: (order) => userLoader.load(order.userId), // バッチに積まれる
-};
+user: (order) => userLoader.load(order.userId), // バッチに積まれる
 ```
 
 ## REST と GraphQL の使い分け
