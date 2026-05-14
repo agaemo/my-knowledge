@@ -245,12 +245,14 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'OSI参照モデル / TCP/IPモデル', link: '/networking/osi-model' },
-          { text: 'HTTP バージョンの変遷', link: '/networking/http-versions' },
+          { text: 'IPアドレス', link: '/networking/ip-address' },
+          { text: 'HTTP', link: '/networking/http' },
           { text: 'DNS の仕組み', link: '/networking/dns' },
           { text: 'TLS', link: '/networking/tls' },
           { text: 'リアルタイム通信', link: '/networking/realtime-protocols' },
           { text: 'VPC / サブネット / CIDR', link: '/networking/vpc-subnet' },
           { text: 'NAT / ポートフォワーディング', link: '/networking/nat' },
+          { text: 'ソケット', link: '/networking/socket' },
         ],
       },
       {
