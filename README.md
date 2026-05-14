@@ -39,15 +39,19 @@ VitePressの設定は `.vitepress/config.ts`、カスタムテーマは `.vitepr
 
 | カテゴリ | 内容 |
 |---|---|
-| [architecture](docs/architecture/index.md) | レイヤード・オニオン・DDD・イベント駆動など |
-| [testing](docs/testing/index.md) | TDD・テスト戦略 |
-| [ai](docs/ai/index.md) | プロンプトエンジニアリング・RAG・AIエージェント・Vibe Coding など |
-| [frontend](docs/frontend/index.md) | CSS設計手法・レンダリング戦略 |
-| [backend](docs/backend/index.md) | REST・GraphQL・gRPC・tRPC |
-| [security](docs/security/index.md) | CORS・XSS・CSRF・SQLインジェクション・ブルートフォース |
-| [auth](docs/auth/index.md) | JWT・OAuth2 |
-| [observability](docs/observability/index.md) | ログ・メトリクス・トレース |
-| [process](docs/process/index.md) | アジャイル・ウォーターフォール・Shape Up |
-| [deployment](docs/deployment/index.md) | カナリアリリース・ブルーグリーン・フィーチャーフラグ・エッジコンピューティング |
-| [dev tools](docs/tools/index.md) | Docker・Kubernetes・Terraform・GitHub Actions |
-| [platforms](docs/tools/platforms.md) | クラウド・BaaS・分散DB（Firebase・Supabase・PlanetScale・CockroachDB・TiDB） |
+| [architecture](docs/architecture/index.md) | レイヤード・オニオン・DDD・ヘキサゴナル・GoF・SOLID・MV*パターン |
+| [frontend](docs/frontend/index.md) | 状態管理・リアクティブ・JSランタイム・CSS設計・レンダリング戦略 |
+| [backend](docs/backend/index.md) | REST・GraphQL・gRPC・tRPC・リバースプロキシ・キャッシュ |
+| [ai](docs/ai/index.md) | プロンプトエンジニアリング・RAG・AIエージェント・Evals・Vibe Coding |
+| [testing](docs/testing/index.md) | TDD・テスト戦略・テストダブル・契約テスト |
+| [security](docs/security/index.md) | CORS・XSS・CSRF・SQLインジェクション・暗号化・ゼロデイ |
+| [auth](docs/auth/index.md) | JWT・OAuth2・OIDC・SAML・セッション認証 |
+| [networking](docs/networking/index.md) | OSI・HTTP・DNS・TLS・WebSocket/SSE・VPC・ソケット |
+| [observability](docs/observability/index.md) | ログ・メトリクス・トレース・OpenTelemetry |
+| [sre](docs/sre/index.md) | SLO・エラーバジェット・サーキットブレーカー・ポストモーテム |
+| [deployment](docs/deployment/index.md) | カナリアリリース・ブルーグリーン・フィーチャーフラグ・CDN |
+| [dev-tools](docs/dev-tools/index.md) | Docker・Kubernetes・Terraform・GitHub Actions・Nix |
+| [platforms](docs/platforms/index.md) | クラウド・XaaS・RDBMS・NoSQL・Kafka |
+| [org](docs/org/index.md) | コンウェイの法則・エンジニアリングロール・The Model |
+| [business](docs/business/index.md) | 資金調達・成長戦略・ARR・PMF・SLG/PLG |
+| [process](docs/process/index.md) | アジャイル・Shape Up・ADR・技術的負債 |
