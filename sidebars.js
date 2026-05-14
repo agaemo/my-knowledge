@@ -406,6 +406,8 @@ const sidebars = {
           items: [
             'org/conways-law',
             'org/silo',
+            'org/devops',
+            'org/team-topologies',
             'org/engineering-roles',
             'org/the-model',
           ],

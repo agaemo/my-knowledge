@@ -42,7 +42,7 @@
 チーム構造を変えずにアーキテクチャだけ変えようとすると、サイロが残り失敗しやすい。
 
 **Platform team の整備**  
-共通基盤（CI/CD・認証・監視など）を Platform team が提供することで、各 Stream-aligned team が重複実装せず自律的に動ける。→ [コンウェイの法則 / Team Topologies](./conways-law.md)
+共通基盤（CI/CD・認証・監視など）を Platform team が提供することで、各 Stream-aligned team が重複実装せず自律的に動ける。→ [Team Topologies](./team-topologies.md)
 
 ## サイロ化のサイン
 

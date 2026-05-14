@@ -42,13 +42,7 @@
 
 ## Team Topologies との関係
 
-2019年の書籍 *Team Topologies*（Matthew Skelton・Manuel Pais）はコンウェイの法則を体系化し、4種類のチームタイプと3種類のインタラクションモードを定義した。
-
-**チームタイプ：**
-- **Stream-aligned team** — 製品の価値フロー（機能開発）に直接責任を持つチーム
-- **Platform team** — 他チームの自律性を高めるプラットフォームを提供
-- **Enabling team** — 他チームの能力向上を支援（SRE・DX チームなど）
-- **Complicated-subsystem team** — 高度な専門知識を要するサブシステムを担当
+2019年の書籍 *[Team Topologies](./team-topologies.md)*（Matthew Skelton・Manuel Pais）はコンウェイの法則を体系化し、4種類のチームタイプと3種類のインタラクションモードを定義した。逆コンウェイ戦略を実践するための具体的な設計図。
 
 **いつ使うか：** アーキテクチャ変更を議論するとき、チーム再編を検討するとき。「なぜこの設計にしたか」の背景にチーム構造の話が出てきたら、コンウェイの法則が働いている。
 
