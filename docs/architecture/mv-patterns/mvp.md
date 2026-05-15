@@ -4,11 +4,14 @@ MVC の Controller を Presenter に置き換えたパターン。View をイン
 
 ## 構成
 
-```
-User → View → Presenter → Model
-       ↑            ↓
-       └────────────┘
-      （Viewインターフェース経由）
+```mermaid
+flowchart LR
+    User --> V["View"]
+    V --> P["Presenter"]
+    P --> M["Model"]
+    P -->|Viewインターフェース経由| V
+
+    style P fill:#fef9c3,stroke:#d97706
 ```
 
 | 役割 | 責任 |

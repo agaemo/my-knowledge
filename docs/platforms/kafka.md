@@ -12,12 +12,11 @@ Apache Software Foundationが管理するオープンソースのイベントス
 
 サービスが複数に分かれると「Aが起きたらBとCとDを動かす」という処理をAPI呼び出しで繋ぐと問題が起きる。
 
-```
-┌──────────┐  API呼び出し  ┌──────────┐
-│ 注文     │ ────────────> │ 在庫     │
-│ サービス │ ────────────> │ メール   │
-│          │ ────────────> │ 分析     │
-└──────────┘               └──────────┘
+```mermaid
+flowchart LR
+    Order["注文サービス"] -->|API呼び出し| Inv["在庫"]
+    Order -->|API呼び出し| Mail["メール"]
+    Order -->|API呼び出し| Analytics["分析"]
 ```
 
 - BやCが落ちていたら処理が失われる
@@ -26,43 +25,38 @@ Apache Software Foundationが管理するオープンソースのイベントス
 
 Kafkaはこれを「イベントログ」という形で解決する。Aはログに書くだけで、BもCもDも自分のペースでログを読む（PULL型）。
 
-```
-┌──────────┐  イベントを書く  ┌─────────────────┐
-│ 注文     │ ──────────────> │     Kafka        │
-│ サービス │                 │  orders topic    │
-└──────────┘                 └─────────────────┘
-                                  ↑ ↑ ↑
-                ポーリング ────────┘ │ └──── ポーリング
-           ┌──────────┐             │        ┌──────────┐
-           │ 在庫     │             │        │ 分析     │
-           └──────────┘    ┌────────┴──┐     └──────────┘
-                           │ メール    │
-                           └───────────┘
+```mermaid
+flowchart LR
+    Order["注文サービス"] -->|イベントを書く| Kafka[("Kafka\norders topic")]
+    Inv["在庫"] -->|ポーリング| Kafka
+    Mail["メール"] -->|ポーリング| Kafka
+    Analytics["分析"] -->|ポーリング| Kafka
+
+    style Kafka fill:#dbeafe,stroke:#2563eb
 ```
 
 各サービスはKafkaに能動的にポーリングしに行く。Kafka側からプッシュはしない。各サービスが独立したポーリングループを持つため、処理速度や障害が互いに影響しない。
 
 ## 主要コンポーネントの全体像
 
-```
-Producer
-   │
-   │ Event (Key + Value)
-   ▼
-┌─────────────────────────────────────┐
-│ Broker                              │
-│  ┌──────────────────────────────┐   │
-│  │ Topic: orders                │   │
-│  │  Partition 0: [0][1][2][3]   │   │
-│  │  Partition 1: [0][1][2][3]   │   │
-│  └──────────────────────────────┘   │
-└─────────────────────────────────────┘
-        │                │
-        │ ポーリング      │ ポーリング
-        ▼                ▼
-   Consumer A       Consumer B
-   └────────────────────────┘
-      Consumer Group
+```mermaid
+flowchart TD
+    Producer -->|"Event (Key + Value)"| Broker
+
+    subgraph Broker["Broker"]
+        subgraph Topic["Topic: orders"]
+            P0["Partition 0: [0][1][2][3]"]
+            P1["Partition 1: [0][1][2][3]"]
+        end
+    end
+
+    subgraph CG["Consumer Group"]
+        CA["Consumer A"]
+        CB["Consumer B"]
+    end
+
+    CA -->|ポーリング| Broker
+    CB -->|ポーリング| Broker
 ```
 
 ## 主要コンポーネント

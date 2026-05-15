@@ -19,15 +19,15 @@ Martin Fowler が提唱。既存システム（レガシー）を一気に書き
 
 ## 仕組み
 
-```
-                 ┌────────────────────┐
-クライアント ──▶ │  Facade / Proxy    │
-                 └─────────┬──────────┘
-                           │
-              ┌────────────┴────────────┐
-              ▼                         ▼
-       [新システム]               [旧システム]
-     (移行済み機能)              (未移行機能)
+```mermaid
+flowchart TD
+    Client["クライアント"] --> Facade["Facade / Proxy"]
+    Facade -->|移行済み機能| New["新システム"]
+    Facade -->|未移行機能| Old["旧システム"]
+
+    style New fill:#dcfce7,stroke:#16a34a
+    style Old fill:#f3f4f6,stroke:#9ca3af
+    style Facade fill:#fef9c3,stroke:#d97706
 ```
 
 1. **Facade を立てる** — クライアントは Facade だけを向く（旧システムへの直接アクセスを遮断）

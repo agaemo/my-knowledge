@@ -24,14 +24,22 @@ RAGはこれらを解決する。
 
 ## システム構成
 
-```
-                  ┌─────────────────────────────┐
-                  │         Knowledge Base       │
-  [ドキュメント]  │  チャンク化 → Embedding →   │
-                  │        Vector DB 格納        │
-                  └─────────────────────────────┘
-                               ↓ 検索
-[質問] → Embedding → 類似チャンク取得 → LLM → [回答]
+```mermaid
+flowchart LR
+    subgraph offline["インデックス構築（オフライン）"]
+        Doc["ドキュメント"] --> Chunk["チャンク化"]
+        Chunk --> Emb1["Embedding"]
+        Emb1 --> VDB[("Vector DB")]
+    end
+
+    Q["質問"] --> Emb2["Embedding"]
+    Emb2 -->|類似検索| VDB
+    VDB --> LLM["LLM"]
+    Q --> LLM
+    LLM --> Ans["回答"]
+
+    style VDB fill:#dbeafe,stroke:#2563eb
+    style LLM fill:#fef9c3,stroke:#d97706
 ```
 
 ## インデックス構築（オフライン）

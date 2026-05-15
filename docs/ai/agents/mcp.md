@@ -5,10 +5,9 @@
 LLMアプリケーションと外部ツール・データソースを接続するための標準プロトコル。
 Anthropicが2024年11月に公開したオープン標準。
 
-```
-LLMアプリ（Claude, Cursor など）
-    ↕ MCP
-MCPサーバー（DB, ファイルシステム, API, ブラウザ など）
+```mermaid
+flowchart LR
+    App["LLMアプリ\n（Claude, Cursor など）"] <-->|MCP| Server["MCPサーバー\n（DB・ファイルシステム・API）"]
 ```
 
 ## なぜ重要か
@@ -24,20 +23,17 @@ USB-Cのようなもの：デバイス（クライアント）とケーブル（
 
 ## アーキテクチャ
 
-```
-┌─────────────────────────────────────────┐
-│  MCP Host（Claude Desktop / IDE など）   │
-│  ┌──────────────────────────────────┐   │
-│  │  LLM Application                 │   │
-│  │  ┌────────────┐  ┌────────────┐ │   │
-│  │  │ MCP Client │  │ MCP Client │ │   │
-│  └──┴────────────┴──┴────────────┴─┘   │
-└────────────┬───────────────┬────────────┘
-             ↕ stdio/SSE     ↕ stdio/SSE
-    ┌────────────────┐  ┌────────────────┐
-    │  MCPサーバーA  │  │  MCPサーバーB  │
-    │  （ファイルDB）│  │  （GitHub API）│
-    └────────────────┘  └────────────────┘
+```mermaid
+flowchart TB
+    subgraph host["MCP Host（Claude Desktop / IDE など）"]
+        subgraph app["LLM Application"]
+            C1["MCP Client"]
+            C2["MCP Client"]
+        end
+    end
+
+    C1 <-->|stdio/SSE| S1["MCPサーバーA\n（ファイルDB）"]
+    C2 <-->|stdio/SSE| S2["MCPサーバーB\n（GitHub API）"]
 ```
 
 ## MCPサーバーが提供できるもの

@@ -5,10 +5,13 @@ View と ViewModel を**データバインディング**で結び、コードで
 
 ## 構成
 
-```
-Model ← ViewModel → （データバインディング） → View
-         ↑                                      ↓
-         └────────────── イベント ───────────────┘
+```mermaid
+flowchart TD
+    VM["ViewModel"] --> M["Model"]
+    VM -->|データバインディング| V["View"]
+    V -->|イベント| VM
+
+    style VM fill:#fef9c3,stroke:#d97706
 ```
 
 | 役割 | 責任 |

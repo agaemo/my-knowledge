@@ -14,13 +14,16 @@
 
 ## 3つの状態
 
-```
-         エラー率が閾値超過                  タイムアウト経過
-  Closed ─────────────────→ Open ────────────────────→ Half-Open
-    ↑                                                       │
-    │              成功                                     │
-    └───────────────────────────────────────────────────────┘
-                   失敗 → Open に戻る
+```mermaid
+stateDiagram-v2
+    Closed --> Open : エラー率が閾値超過
+    Open --> HalfOpen : タイムアウト経過
+    HalfOpen --> Closed : 成功
+    HalfOpen --> Open : 失敗
+
+    Closed : Closed（通常）
+    Open : Open（遮断中）
+    HalfOpen : Half-Open（試験中）
 ```
 
 | 状態 | 動作 |
