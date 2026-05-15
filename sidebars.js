@@ -189,6 +189,7 @@ const sidebars = {
             'testing/test-doubles',
             'testing/contract-testing',
             'testing/testing-strategy',
+            'testing/headless-browser',
           ],
         },
         {
@@ -388,6 +389,7 @@ const sidebars = {
             },
             'platforms/baas',
             'platforms/kafka',
+            'platforms/cms',
           ],
         },
       ],

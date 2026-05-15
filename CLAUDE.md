@@ -8,7 +8,7 @@
 my-knowledge/
 ├── docs/                    # コンテンツルート（Docusaurus の docs ディレクトリ）
 │   ├── architecture/        # アーキテクチャパターン（design-patterns/・functional-patterns/・mv-patterns/ を含む）
-│   ├── testing/             # テスト手法
+│   ├── testing/             # テスト手法（TDD・テストダブル・契約テスト・ヘッドレスブラウザ）
 │   ├── ai/                  # AI・LLMエンジニアリング（プロンプト・RAG・Embeddings・エージェント・Fine-tuning・Evals・MCP・LLMOps など）
 │   ├── frontend/            # フロントエンド設計（CSS設計・レンダリング戦略など）
 │   ├── backend/             # バックエンド設計（api/ サブディレクトリで分類）
@@ -18,7 +18,7 @@ my-knowledge/
 │   ├── process/             # 開発プロセス
 │   ├── deployment/          # デプロイ・リリース戦略（カナリア・ブルーグリーン・フィーチャーフラグ）
 │   ├── dev-tools/           # 開発・インフラツール（infra/・ci-cd/・env-management/）
-│   ├── platforms/           # マネージドサービス・プラットフォーム（cloud・database/・baas）
+│   ├── platforms/           # マネージドサービス・プラットフォーム（cloud・database/・baas・cms）
 │   ├── networking/          # ネットワーク（OSI・HTTP・DNS・TLS・WebSocket/SSE・VPC・NAT）
 │   ├── sre/                 # SRE（信頼性設計・障害パターン・ポストモーテムなど）
 │   ├── org/                 # 組織（コンウェイの法則・ロール・チーム設計・The Model）
