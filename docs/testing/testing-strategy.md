@@ -175,6 +175,36 @@ class InMemoryUserRepository implements UserRepository {
    → リリース前: E2Eも含めた全テスト
 ```
 
+## FIRST 原則
+
+良いユニットテストが満たすべき5つの特性。Robert C. Martin（Uncle Bob）が提唱した。
+
+| 頭文字 | 特性 | 内容 |
+|---|---|---|
+| **F**ast | 高速 | テストは素早く実行できる。遅いテストは実行を避けるようになる |
+| **I**solated | 独立 | テスト間に依存関係がない。順序を変えても結果が変わらない |
+| **R**epeatable | 再現可能 | 環境・タイミングに関わらず同じ結果になる（時刻・乱数はモックする） |
+| **S**elf-validating | 自己検証 | テスト自体が pass/fail を判定する。人が目視で確認する必要がない |
+| **T**imely | 適時 | 実装と同時、またはテストファーストで書く。後回しにしない |
+
+```ts
+// Repeatable を破る例 → 修正後
+// Bad: 現在時刻に依存（テストが特定の日時にしか通らない）
+test('30日以内の注文はキャンセル可能', () => {
+  const order = new Order(new Date('2024-01-01'));
+  expect(order.isCancellable()).toBe(true); // 今日の日付次第で壊れる
+});
+
+// Good: 時刻を注入して制御下に置く
+test('30日以内の注文はキャンセル可能', () => {
+  const now = new Date('2024-01-15');
+  const order = new Order(new Date('2024-01-01'), now);
+  expect(order.isCancellable()).toBe(true);
+});
+```
+
+FIRST はユニットテストの設計基準であり、テストが「書いたのに信頼できない」状態を防ぐチェックリストとして使える。
+
 ## よくある失敗
 
 | 失敗 | 問題 | 対策 |
