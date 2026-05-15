@@ -21,7 +21,17 @@ const config = {
     locales: ['ja'],
   },
 
-  themes: ['@docusaurus/theme-mermaid'],
+  themes: [
+    '@docusaurus/theme-mermaid',
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: true,
+        language: ['ja', 'en'],
+        highlightSearchTermsOnTargetPage: true,
+      },
+    ],
+  ],
   markdown: {
     mermaid: true,
   },
