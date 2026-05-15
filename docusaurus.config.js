@@ -29,6 +29,8 @@ const config = {
         hashed: true,
         language: ['ja', 'en'],
         highlightSearchTermsOnTargetPage: true,
+        docsRouteBasePath: '/',
+        indexBlog: false,
       },
     ],
   ],
