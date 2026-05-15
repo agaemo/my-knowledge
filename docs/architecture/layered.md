@@ -19,8 +19,21 @@ src/
 
 ## 依存の向き
 
-```
-routes → services → repositories/interfaces ← repositories/impl
+```mermaid
+flowchart TD
+    P["Presentation 層　routes\nコントローラー・APIエンドポイント・バリデーション"]
+    A["Application 層　services\nユースケース・トランザクション制御"]
+    D["Domain 層　repositories/interfaces\n業務ロジック・エンティティ・リポジトリI/F"]
+    Inf["Infrastructure 層　repositories/impl\nDB・外部システム・ファイルI/Oの実装"]
+
+    P -->|依存| A
+    A -->|依存| D
+    Inf -.->|実装| D
+
+    style P fill:#fef9c3,stroke:#d97706,color:#713f12
+    style A fill:#dcfce7,stroke:#16a34a,color:#14532d
+    style D fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    style Inf fill:#f3f4f6,stroke:#6b7280
 ```
 
 - `routes` は `services` を呼ぶ
