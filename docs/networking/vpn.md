@@ -82,5 +82,5 @@ sequenceDiagram
 
 ## 関連
 
-- [TLS](./tls) — OpenVPNが内部で使っているハンドシェイクの仕組み
-- [VPC / サブネット](./vpc-subnet) — VPN接続後にアクセスするプライベートネットワークの設計
+- [TLS](./tls.md) — OpenVPNが内部で使っているハンドシェイクの仕組み
+- [VPC / サブネット](./vpc-subnet.md) — VPN接続後にアクセスするプライベートネットワークの設計
