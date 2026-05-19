@@ -22,8 +22,19 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: 24
-          cache: npm
+      - uses: actions/cache@v4
+        id: node-modules-cache
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
       - run: npm ci
+        if: steps.node-modules-cache.outputs.cache-hit != 'true'
+      - uses: actions/cache@v4
+        with:
+          path: .docusaurus
+          key: ${{ runner.os }}-docusaurus-${{ hashFiles('docs/**', 'src/**', 'docusaurus.config.js', 'sidebars.js') }}
+          restore-keys: |
+            ${{ runner.os }}-docusaurus-
       - run: npm run build
       - uses: actions/upload-pages-artifact@v5
         with:
