@@ -261,6 +261,7 @@ const sidebars = {
             'networking/vpc-subnet',
             'networking/nat',
             'networking/socket',
+            'networking/vpn',
           ],
         },
         {
