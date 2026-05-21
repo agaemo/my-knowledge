@@ -82,7 +82,7 @@ Set-Cookie: session=abc123; Domain=.example.com  # サブドメインも含む
 
 認証セッションCookieの推奨設定。
 
-::: tip 認証Cookieの推奨設定
+:::tip[認証Cookieの推奨設定]
 ```
 Set-Cookie: session=<token>; HttpOnly; Secure; SameSite=Lax; Max-Age=86400; Path=/
 ```
@@ -103,6 +103,6 @@ Set-Cookie: session=<token>; HttpOnly; Secure; SameSite=Lax; Max-Age=86400; Path
 | 容量 | 約4KB | 約5MB |
 | 用途 | セッション・認証トークン | UIの状態・キャッシュ |
 
-::: danger 認証トークンを LocalStorage に保存しない
+:::danger[認証トークンを LocalStorage に保存しない]
 XSS 攻撃で即座に窃取される。認証トークンは必ず `HttpOnly` Cookie に保存する。
 :::
