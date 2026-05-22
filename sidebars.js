@@ -192,6 +192,7 @@ const sidebars = {
             'testing/contract-testing',
             'testing/testing-strategy',
             'testing/headless-browser',
+            'testing/qa-engineer',
           ],
         },
         {
