@@ -69,6 +69,7 @@ const sidebars = {
             'frontend/app-platform',
             'frontend/i18n',
             'frontend/micro-frontend',
+            'frontend/js-frameworks',
           ],
         },
         {
@@ -77,6 +78,7 @@ const sidebars = {
           link: { type: 'doc', id: 'backend/index' },
           collapsed: true,
           items: [
+            'backend/web-frameworks',
             'backend/reverse-proxy',
             'backend/idempotency',
             'backend/caching',
