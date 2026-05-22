@@ -61,6 +61,7 @@ const sidebars = {
           link: { type: 'doc', id: 'frontend/index' },
           collapsed: true,
           items: [
+            'frontend/frontend-history',
             'frontend/state-management',
             'frontend/reactivity',
             'frontend/js-runtime',
@@ -70,6 +71,8 @@ const sidebars = {
             'frontend/i18n',
             'frontend/micro-frontend',
             'frontend/js-frameworks',
+            'frontend/webassembly',
+            'frontend/cross-platform',
           ],
         },
         {

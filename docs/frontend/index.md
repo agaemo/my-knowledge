@@ -2,6 +2,7 @@
 
 フロントエンド開発の設計・技術選択に関する概念。
 
+- [フロントエンドの歴史](/frontend/frontend-history) — AJAX・jQuery・Flash・SPA の台頭から現代フレームワークまでの流れ
 - [状態管理パターン](/frontend/state-management) — Flux・Redux・Zustand・React Query。ローカル/グローバル/サーバー状態の設計
 - [リアクティブプログラミング](/frontend/reactivity) — データの変化を自動伝播させる設計。Signal・Vue ref・RxJS
 - [JavaScript ランタイム](/frontend/js-runtime) — V8・イベントループ・Node.js/Deno/Bun。サーバーサイド JS の成り立ち
@@ -11,3 +12,5 @@
 - [i18n（国際化）](/frontend/i18n) — 翻訳キー設計・複数形・日付フォーマット・言語検出の考え方
 - [マイクロフロントエンド](/frontend/micro-frontend) — 機能単位に独立したフロントエンドへ分割する設計。マイクロサービスの思想をフロントエンドに適用
 - [フロントエンド JS フレームワーク](/frontend/js-frameworks) — React・Vue・Angular・Svelte の設計思想と採用文脈
+- [WebAssembly](/frontend/webassembly) — JS の限界からなぜ生まれたか・ブラウザ外への展開
+- [クロスプラットフォーム](/frontend/cross-platform) — "Write Once, Run Anywhere" の歴史と Electron・Tauri・Flutter の位置づけ
