@@ -20,6 +20,7 @@ const sidebars = {
             'architecture/hexagonal',
             'architecture/event-driven',
             'architecture/microservices',
+            'architecture/bff',
             'architecture/strangler-fig',
             'architecture/cqrs-event-sourcing',
             'architecture/cap-theorem',
@@ -67,6 +68,7 @@ const sidebars = {
             'frontend/rendering-strategy',
             'frontend/app-platform',
             'frontend/i18n',
+            'frontend/micro-frontend',
           ],
         },
         {
@@ -311,6 +313,7 @@ const sidebars = {
               ],
             },
             'sre/postmortem',
+            'sre/chaos-engineering',
           ],
         },
         {
@@ -386,6 +389,7 @@ const sidebars = {
                 'platforms/database/newsql',
                 'platforms/database/in-memory-db',
                 'platforms/database/olap',
+                'platforms/database/acid',
               ],
             },
             'platforms/baas',

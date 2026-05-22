@@ -9,3 +9,4 @@
 - [レンダリング戦略](/frontend/rendering-strategy) — CSR・SSR・SSG・ISRの違いと使い分け
 - [アプリプラットフォーム](/frontend/app-platform) — ネイティブ・クロスプラットフォーム・PWAの違いと選択基準
 - [i18n（国際化）](/frontend/i18n) — 翻訳キー設計・複数形・日付フォーマット・言語検出の考え方
+- [マイクロフロントエンド](/frontend/micro-frontend) — 機能単位に独立したフロントエンドへ分割する設計。マイクロサービスの思想をフロントエンドに適用

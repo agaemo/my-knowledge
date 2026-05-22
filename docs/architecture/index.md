@@ -16,6 +16,7 @@
 ## スケール・分散
 
 - [マイクロサービス](/architecture/microservices) — モノリスとの対比・分割方法・いつ採用するか
+- [BFF（Backend for Frontend）](/architecture/bff) — クライアント種別ごとに専用バックエンド層を置くパターン
 
 ## 移行・疎結合
 
