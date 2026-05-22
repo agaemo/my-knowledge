@@ -291,6 +291,7 @@ const sidebars = {
             'auth/jwt',
             'auth/bearer',
             'auth/request-signing',
+            'auth/fido2-webauthn',
             'auth/oauth2',
             'auth/oidc',
             'auth/saml',

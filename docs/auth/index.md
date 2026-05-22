@@ -16,6 +16,10 @@
 - [Bearer 認証](/auth/bearer) — トークンをHTTPヘッダーに乗せるHTTPの規約
 - [リクエスト署名](/auth/request-signing) — HMAC でリクエスト全体に署名し、改ざん検知とリプレイ攻撃を防ぐ
 
+## パスワードレス
+
+- [FIDO2 / WebAuthn / Passkeys](/auth/fido2-webauthn) — パスワードに依存しない認証の標準仕様。フィッシング耐性と生体認証の仕組み
+
 ## 認可・SSO プロトコル
 
 - [OAuth2](/auth/oauth2) — 認可の委譲を標準化したプロトコル
