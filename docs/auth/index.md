@@ -14,6 +14,7 @@
 
 - [JWT](/auth/jwt) — JSON形式のステートレスな認証トークン
 - [Bearer 認証](/auth/bearer) — トークンをHTTPヘッダーに乗せるHTTPの規約
+- [リクエスト署名](/auth/request-signing) — HMAC でリクエスト全体に署名し、改ざん検知とリプレイ攻撃を防ぐ
 
 ## 認可・SSO プロトコル
 

@@ -290,6 +290,7 @@ const sidebars = {
             'auth/api-key',
             'auth/jwt',
             'auth/bearer',
+            'auth/request-signing',
             'auth/oauth2',
             'auth/oidc',
             'auth/saml',
