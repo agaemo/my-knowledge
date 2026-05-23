@@ -447,6 +447,7 @@ const sidebars = {
                 'platforms/database/in-memory-db',
                 'platforms/database/olap',
                 'platforms/database/acid',
+                'platforms/database/sharding',
               ],
             },
             'platforms/baas',

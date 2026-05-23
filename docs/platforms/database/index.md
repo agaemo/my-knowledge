@@ -8,3 +8,4 @@
 - [インメモリDB](/platforms/database/in-memory-db) — RAMにデータを保持する高速データストア。キャッシュ・セッション・Pub/Sub（Redis）
 - [OLAP（分析DB）](/platforms/database/olap) — 列志向ストレージで集計クエリを高速化。組み込み型のDuckDB・クラウド型のBigQuery
 - [ACID とトランザクション](/platforms/database/acid) — 原子性・一貫性・分離性・永続性の4性質と分離レベルの使い分け
+- [シャーディング](/platforms/database/sharding) — データを複数ノードに分散する水平スケーリング手法。NewSQL 登場の背景
