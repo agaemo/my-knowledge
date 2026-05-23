@@ -340,6 +340,17 @@ const sidebars = {
       items: [
         {
           type: 'category',
+          label: 'OS',
+          link: { type: 'doc', id: 'os/index' },
+          collapsed: true,
+          items: [
+            'os/unix-linux',
+            'os/distributions',
+            'os/io-streams',
+          ],
+        },
+        {
+          type: 'category',
           label: 'Networking',
           link: { type: 'doc', id: 'networking/index' },
           collapsed: true,
