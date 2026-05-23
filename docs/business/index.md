@@ -19,3 +19,7 @@
 - [KGI・KPI・OKR](/business/kpi) — 目標設定と計測のフレームワーク。KGI/KPI/OKRの役割と関係
 - [OKR](/business/okr) — Objectives & Key Results。野心的な目標と定量的な成果指標を紐づける
 - [Rule of 40](/business/rule-of-40) — 成長率+利益率≥40のSaaSベンチマーク
+
+## 意思決定
+
+- [A/Bテスト](/business/ab-testing) — 2つのバリアントを実ユーザーで比較し、データで意思決定する手法

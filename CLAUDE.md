@@ -15,14 +15,14 @@ my-knowledge/
 │   ├── security/            # セキュリティ（CORS・web-attacks/・credential-attacks/・threats/ を含む）
 │   ├── auth/                # 認証・認可
 │   ├── observability/       # オブザーバビリティ
-│   ├── process/             # 開発プロセス
+│   ├── process/             # 開発プラクティス（ADR・SemVer・Git・コードレビュー・PoC）
 │   ├── deployment/          # デプロイ・リリース戦略（カナリア・ブルーグリーン・フィーチャーフラグ）
 │   ├── dev-tools/           # 開発・インフラツール（infra/・ci-cd/・env-management/）
 │   ├── platforms/           # マネージドサービス・プラットフォーム（cloud・database/・baas・cms）
 │   ├── networking/          # ネットワーク（OSI・HTTP・DNS・TLS・WebSocket/SSE・VPC・NAT）
 │   ├── sre/                 # SRE（信頼性設計・障害パターン・ポストモーテムなど）
-│   ├── org/                 # 組織（コンウェイの法則・ロール・チーム設計・The Model）
-│   └── business/            # ビジネス（資金調達・指標・成長戦略・SLG/PLG）
+│   ├── org/                 # 組織（コンウェイの法則・ロール・チーム設計・The Model・開発手法）
+│   └── business/            # ビジネス（資金調達・指標・成長戦略・SLG/PLG・A/Bテスト）
 ├── src/
 │   ├── css/custom.css       # グローバルスタイル（ブランドカラー）
 │   └── pages/index.js       # カスタムホームページ
