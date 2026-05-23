@@ -261,10 +261,30 @@ const sidebars = {
             'security/principles',
             {
               type: 'category',
-              label: 'コードで防ぐ攻撃',
-              link: { type: 'doc', id: 'security/code-attacks/index' },
+              label: 'Web攻撃手法',
+              link: { type: 'doc', id: 'security/web-attacks/index' },
               collapsed: true,
-              items: ['security/code-attacks/web-attacks'],
+              items: [
+                'security/web-attacks/xss',
+                'security/web-attacks/csrf',
+                'security/web-attacks/sql-injection',
+                'security/web-attacks/command-injection',
+                'security/web-attacks/directory-traversal',
+                'security/web-attacks/template-injection',
+                'security/web-attacks/ssrf',
+                'security/web-attacks/clickjacking',
+                'security/web-attacks/idor',
+              ],
+            },
+            {
+              type: 'category',
+              label: '認証突破攻撃',
+              link: { type: 'doc', id: 'security/credential-attacks/index' },
+              collapsed: true,
+              items: [
+                'security/credential-attacks/brute-force',
+                'security/credential-attacks/rainbow-table',
+              ],
             },
             {
               type: 'category',
