@@ -508,6 +508,7 @@ const sidebars = {
             'process/technical-debt',
             'process/ab-testing',
             'process/git-branching',
+            'process/code-review',
           ],
         },
       ],

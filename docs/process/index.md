@@ -11,3 +11,4 @@
 - [技術的負債](/process/technical-debt) — 開発速度の借金。Fowlerのマトリクスと返済戦略
 - [A/Bテスト](/process/ab-testing)
 - [Git ブランチ戦略](/process/git-branching) — GitFlow・GitHub Flow・トランクベース開発の違いと選び方 — 2つのバリアントを実ユーザーで比較し、データで意思決定する手法
+- [コードレビュー](/process/code-review) — なぜ行うか・何を見るか・良いコメントの書き方・レビュー文化の設計
