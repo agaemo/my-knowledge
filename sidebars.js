@@ -357,6 +357,7 @@ const sidebars = {
           items: [
             'networking/osi-model',
             'networking/ip-address',
+            'networking/tcp-udp',
             'networking/http',
             'networking/dns',
             'networking/tls',
