@@ -243,6 +243,7 @@ const sidebars = {
           items: [
             'testing/tdd',
             'testing/test-doubles',
+            'testing/legacy-code-testing',
             'testing/contract-testing',
             'testing/testing-strategy',
             'testing/headless-browser',
