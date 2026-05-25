@@ -469,6 +469,7 @@ const sidebars = {
               items: [
                 'dev-tools/env-management/nix',
                 'dev-tools/env-management/mise',
+                'dev-tools/env-management/dev-container',
               ],
             },
           ],
