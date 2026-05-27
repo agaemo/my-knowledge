@@ -146,6 +146,7 @@ const sidebars = {
                 'backend/api/trpc',
                 'backend/api/api-versioning',
                 'backend/api/api-gateway',
+                'backend/api/webhook',
               ],
             },
           ],

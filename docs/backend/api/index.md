@@ -8,3 +8,4 @@ API設計のスタイル・プロトコル・設計原則。
 - [tRPC](/backend/api/trpc) — TypeScriptで型安全なAPIを構築するフレームワーク
 - [APIバージョニング](/backend/api/api-versioning) — 破壊的変更を既存クライアントに影響させない設計方針
 - [API Gateway](/backend/api/api-gateway) — レートリミット・認証・ルーティングを一元管理するエッジパターン
+- [Webhook](/backend/api/webhook) — イベント発生時にサーバーが相手のURLへHTTP POSTを送るプッシュ型通知パターン
