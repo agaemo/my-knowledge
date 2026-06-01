@@ -527,6 +527,8 @@ const sidebars = {
             'org/waterfall',
             'org/shape-up',
             'org/technical-debt',
+            'org/code-and-fix',
+            'org/cowboy-coding',
           ],
         },
         {
