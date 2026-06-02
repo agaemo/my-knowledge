@@ -6,7 +6,7 @@ import styles from './index.module.css';
 
 const features = [
   { title: 'Architecture', details: 'レイヤード・オニオン・DDD・ヘキサゴナル・GoF・SOLID・関数型パターン・MVC/MVP/MVVM', link: '/architecture/' },
-  { title: 'Frontend', details: '状態管理・リアクティブプログラミング・JSランタイム（Node.js/Deno）・レンダリング戦略', link: '/frontend/' },
+  { title: 'Frontend', details: '状態管理・リアクティブプログラミング・JSランタイム（Node.js/Deno）・レンダリング戦略・ネイティブ速度ツールチェーン（SWC/Biome/Oxc）', link: '/frontend/' },
   { title: 'Backend', details: 'REST・GraphQL・gRPC・tRPC', link: '/backend/' },
   { title: 'AI', details: 'ハルシネーション・推論モデル・コンテキストエンジニアリング・RAG・AIエージェント・Evals', link: '/ai/' },
   { title: 'Testing', details: 'TDD・テスト戦略・テストピラミッド・ヘッドレスブラウザ（Playwright・Puppeteer）', link: '/testing/' },

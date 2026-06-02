@@ -90,6 +90,7 @@ const sidebars = {
                 'frontend/frontend-history',
                 'frontend/js-runtime',
                 'frontend/webassembly',
+                'frontend/native-js-toolchain',
               ],
             },
             {

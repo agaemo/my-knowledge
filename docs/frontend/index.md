@@ -14,3 +14,4 @@
 - [フロントエンド JS フレームワーク](/frontend/js-frameworks) — React・Vue・Angular・Svelte の設計思想と採用文脈
 - [WebAssembly](/frontend/webassembly) — JS の限界からなぜ生まれたか・ブラウザ外への展開
 - [クロスプラットフォーム](/frontend/cross-platform) — "Write Once, Run Anywhere" の歴史と Electron・Tauri・Flutter の位置づけ
+- [ネイティブ速度 JS ツールチェーン](/frontend/native-js-toolchain) — Rust/Go 製ツール（esbuild・SWC・Turbopack・Biome・Oxc）が生まれた理由と使い分け
