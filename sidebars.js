@@ -275,6 +275,7 @@ const sidebars = {
             'security/cookie',
             'security/encryption',
             'security/magic-bytes',
+            'security/waf',
             'security/principles',
             {
               type: 'category',
@@ -293,6 +294,7 @@ const sidebars = {
                 'security/web-attacks/idor',
                 'security/web-attacks/file-upload',
                 'security/web-attacks/null-byte',
+                'security/web-attacks/content-type',
               ],
             },
             {
