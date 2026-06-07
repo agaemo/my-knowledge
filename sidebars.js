@@ -290,6 +290,7 @@ const sidebars = {
                 'security/web-attacks/ssrf',
                 'security/web-attacks/clickjacking',
                 'security/web-attacks/idor',
+                'security/web-attacks/file-upload',
               ],
             },
             {
