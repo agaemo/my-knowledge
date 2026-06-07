@@ -312,6 +312,17 @@ const sidebars = {
                 'security/threats/supply-chain-attack',
               ],
             },
+            {
+              type: 'category',
+              label: 'ペネトレーションテスト',
+              link: { type: 'doc', id: 'security/pentest/index' },
+              collapsed: true,
+              items: [
+                'security/pentest/recon',
+                'security/pentest/vuln-scan',
+                'security/pentest/fuzzing',
+              ],
+            },
           ],
         },
         {

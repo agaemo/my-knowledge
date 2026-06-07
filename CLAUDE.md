@@ -12,7 +12,7 @@ my-knowledge/
 │   ├── ai/                  # AI・LLMエンジニアリング（プロンプト・RAG・Embeddings・エージェント・Fine-tuning・Evals・MCP・LLMOps など）
 │   ├── frontend/            # フロントエンド設計（CSS設計・レンダリング戦略など）
 │   ├── backend/             # バックエンド設計（api/ サブディレクトリで分類）
-│   ├── security/            # セキュリティ（CORS・web-attacks/・credential-attacks/・threats/ を含む）
+│   ├── security/            # セキュリティ（CORS・web-attacks/・credential-attacks/・threats/・pentest/ を含む）
 │   ├── auth/                # 認証・認可
 │   ├── observability/       # オブザーバビリティ
 │   ├── process/             # 開発プラクティス（ADR・SemVer・Git・コードレビュー・PoC）
