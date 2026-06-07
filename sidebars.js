@@ -326,6 +326,7 @@ const sidebars = {
                 'security/pentest/recon',
                 'security/pentest/vuln-scan',
                 'security/pentest/fuzzing',
+                'security/pentest/reverse-shell',
               ],
             },
           ],
