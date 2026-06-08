@@ -519,6 +519,7 @@ const sidebars = {
             'platforms/baas',
             'platforms/kafka',
             'platforms/cms',
+            'platforms/databricks',
           ],
         },
       ],

@@ -19,7 +19,7 @@ const features = [
   { title: '開発プロセス', details: 'アジャイル・ウォーターフォール・Shape Up・ADR', link: '/process/' },
   { title: 'Deployment', details: 'カナリアリリース・ブルーグリーン・フィーチャーフラグ・エッジコンピューティング', link: '/deployment/' },
   { title: 'Dev Tools', details: 'Docker・Podman・Buildah・Kubernetes・Terraform・GitHub Actions・Nix・mise', link: '/dev-tools/' },
-  { title: 'Platforms', details: 'クラウド・XaaS（IaaS/PaaS/SaaS/FaaS）・BaaS・分散DB・Kafka・CMS（ヘッドレス CMS）', link: '/platforms/' },
+  { title: 'Platforms', details: 'クラウド・XaaS（IaaS/PaaS/SaaS/FaaS）・BaaS・分散DB・Kafka・CMS・Databricks', link: '/platforms/' },
   { title: '組織', details: 'コンウェイの法則・サイロ化・DevOps・Team Topologies・IC/EM/Staff Engineer・The Model', link: '/org/' },
   { title: 'ビジネス', details: 'ユニコーン・資金調達ステージ・VC・ARR/バーンレート・PMF・SLG/PLG/MLG/CLG', link: '/business/' },
 ];
