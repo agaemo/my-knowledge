@@ -276,6 +276,7 @@ const sidebars = {
             'security/encryption',
             'security/magic-bytes',
             'security/waf',
+            'security/http-headers',
             'security/principles',
             {
               type: 'category',
