@@ -479,7 +479,7 @@ const sidebars = {
               label: 'CI/CD',
               link: { type: 'doc', id: 'dev-tools/ci-cd/index' },
               collapsed: true,
-              items: ['dev-tools/ci-cd/github-actions'],
+              items: ['dev-tools/ci-cd/github-actions', 'dev-tools/ci-cd/dependency-update'],
             },
             {
               type: 'category',
