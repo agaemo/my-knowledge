@@ -376,6 +376,7 @@ const sidebars = {
             'os/job-scheduling',
             'os/virtualization',
             'os/cpu-architecture',
+            'os/systemd',
           ],
         },
         {
