@@ -374,6 +374,8 @@ const sidebars = {
             'os/endianness',
             'os/kernel',
             'os/job-scheduling',
+            'os/virtualization',
+            'os/cpu-architecture',
           ],
         },
         {
