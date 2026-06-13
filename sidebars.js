@@ -377,6 +377,7 @@ const sidebars = {
             'os/virtualization',
             'os/cpu-architecture',
             'os/systemd',
+            'os/package-manager',
           ],
         },
         {
