@@ -328,6 +328,7 @@ const sidebars = {
                 'security/pentest/vuln-scan',
                 'security/pentest/fuzzing',
                 'security/pentest/reverse-shell',
+                'security/pentest/living-off-the-land',
               ],
             },
           ],
