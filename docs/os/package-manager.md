@@ -113,5 +113,5 @@ brew install --cask docker   # Docker Desktop をインストール
 
 ## 関連
 
-- [ディストリビューション](./distributions) — パッケージマネージャーの系統はディストリビューションの系統と対応する
+- [ディストリビューション](/os/distributions) — パッケージマネージャーの系統はディストリビューションの系統と対応する
 - [環境管理（Nix・mise）](/dev-tools/env-management/) — 言語ランタイムや開発ツールにはOSのパッケージマネージャーより専用ツールを使うことが多い

@@ -75,5 +75,5 @@ RAIDは**物理的なディスク故障**への対策であり、以下には効
 
 ## 関連
 
-- [単一障害点](../failure/single-point-of-failure) — RAIDが解決する障害パターン
-- [バルクヘッド](./bulkhead) — ソフトウェア層でのリソース隔離によるレジリエンス
+- [単一障害点](/sre/failure/single-point-of-failure) — RAIDが解決する障害パターン
+- [バルクヘッド](/sre/resilience/bulkhead) — ソフトウェア層でのリソース隔離によるレジリエンス

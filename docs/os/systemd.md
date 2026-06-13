@@ -94,6 +94,6 @@ journalctl -b                # 今回の起動以降のログ
 
 ## 関連
 
-- [カーネル](./kernel) — カーネルがPID 1としてsystemdを起動する
-- [ジョブスケジューリング（cron・at）](./job-scheduling) — systemd timerはcronの現代的な代替
-- [ディストリビューション](./distributions) — systemd採用の有無はディストリビューションの違いの一つ
+- [カーネル](/os/kernel) — カーネルがPID 1としてsystemdを起動する
+- [ジョブスケジューリング（cron・at）](/os/job-scheduling) — systemd timerはcronの現代的な代替
+- [ディストリビューション](/os/distributions) — systemd採用の有無はディストリビューションの違いの一つ

@@ -123,6 +123,6 @@ sudo -l      # 現在のユーザーが sudo できるコマンドを確認
 
 ## 関連
 
-- [カーネル](./kernel) — カーネルがアクセス制御を実施する
+- [カーネル](/os/kernel) — カーネルがアクセス制御を実施する
 - [Dirty COW脆弱性](/security/pentest/dirty-cow) — カーネル脆弱性による権限昇格の具体例
 - [FHSと主要ディレクトリ](/security/pentest/living-off-the-land#fhsとツールの所在linux) — `/etc/shadow` など権限昇格の標的になるファイルの場所

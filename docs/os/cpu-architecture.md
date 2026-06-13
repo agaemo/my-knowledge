@@ -96,6 +96,6 @@ docker info | grep Architecture
 
 ## 関連
 
-- [仮想化](./virtualization) — VMはホストのCPUアーキテクチャに依存する
-- [エンディアン](./endianness) — アーキテクチャごとにバイト順が異なる（x86はリトル、ネットワークはビッグ）
+- [仮想化](/os/virtualization) — VMはホストのCPUアーキテクチャに依存する
+- [エンディアン](/os/endianness) — アーキテクチャごとにバイト順が異なる（x86はリトル、ネットワークはビッグ）
 - [Docker](/dev-tools/infra/docker) — マルチアーキテクチャイメージのビルドと実行

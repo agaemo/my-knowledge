@@ -54,6 +54,6 @@ OSの中核となるソフトウェア。ハードウェアリソース（CPU・
 
 ## 関連
 
-- [Unix/Linux](./unix-linux) — Linuxはカーネルそのものを指す
-- [I/Oとファイルディスクリプタ](./io-streams) — カーネルが抽象化するI/Oの仕組み
+- [Unix/Linux](/os/unix-linux) — Linuxはカーネルそのものを指す
+- [I/Oとファイルディスクリプタ](/os/io-streams) — カーネルが抽象化するI/Oの仕組み
 - [Dirty COW脆弱性](/security/pentest/dirty-cow) — Linuxカーネルの脆弱性による権限昇格の具体例

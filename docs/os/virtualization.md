@@ -107,6 +107,6 @@ Windows版Docker DesktopはLinuxコンテナを動かすために内部でLinux 
 
 ## 関連
 
-- [カーネル](./kernel) — VMとコンテナの隔離レベルの違いはカーネル共有の有無による
+- [カーネル](/os/kernel) — VMとコンテナの隔離レベルの違いはカーネル共有の有無による
 - [Docker](/dev-tools/infra/docker) — コンテナランタイムの代表
-- [CPUアーキテクチャ](./cpu-architecture) — VMはゲストOSのアーキテクチャとホストが一致している必要がある
+- [CPUアーキテクチャ](/os/cpu-architecture) — VMはゲストOSのアーキテクチャとホストが一致している必要がある
