@@ -330,6 +330,7 @@ const sidebars = {
                 'security/pentest/fuzzing',
                 'security/pentest/reverse-shell',
                 'security/pentest/living-off-the-land',
+                'security/pentest/dirty-cow',
               ],
             },
           ],
@@ -371,6 +372,8 @@ const sidebars = {
             'os/distributions',
             'os/io-streams',
             'os/endianness',
+            'os/kernel',
+            'os/job-scheduling',
           ],
         },
         {
