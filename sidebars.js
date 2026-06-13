@@ -437,6 +437,7 @@ const sidebars = {
                 'sre/resilience/circuit-breaker',
                 'sre/resilience/bulkhead',
                 'sre/resilience/backpressure',
+                'sre/resilience/raid',
               ],
             },
             'sre/postmortem',

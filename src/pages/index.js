@@ -15,7 +15,7 @@ const features = [
   { title: 'OS', details: 'UNIX設計思想・Linux・ディストリビューション・ファイルディスクリプタ・I/Oリダイレクト・エンディアン', link: '/os/' },
   { title: 'Networking', details: 'OSIモデル・HTTP/2/3・DNS・TLS・WebSocket/SSE・VPC・NAT・DHCP', link: '/networking/' },
   { title: 'Observability', details: 'ログ・メトリクス・トレース・OpenTelemetry・分散トレーシング・ログ集約・Zabbix', link: '/observability/' },
-  { title: 'SRE', details: '単一障害点・カスケード障害・サーキットブレーカー・バルクヘッド・ポストモーテム・SLO', link: '/sre/' },
+  { title: 'SRE', details: '単一障害点・カスケード障害・サーキットブレーカー・バルクヘッド・RAID・ポストモーテム・SLO', link: '/sre/' },
   { title: '開発プロセス', details: 'アジャイル・ウォーターフォール・Shape Up・ADR', link: '/process/' },
   { title: 'Deployment', details: 'カナリアリリース・ブルーグリーン・フィーチャーフラグ・エッジコンピューティング', link: '/deployment/' },
   { title: 'Dev Tools', details: 'Docker・Podman・Buildah・Kubernetes・Terraform・GitHub Actions・Nix・mise', link: '/dev-tools/' },
