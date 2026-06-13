@@ -276,6 +276,7 @@ const sidebars = {
             'security/encryption',
             'security/magic-bytes',
             'security/waf',
+            'security/firewall-rules',
             'security/http-headers',
             'security/principles',
             {
@@ -389,6 +390,7 @@ const sidebars = {
             'networking/nat',
             'networking/socket',
             'networking/vpn',
+            'networking/dhcp',
           ],
         },
         {
