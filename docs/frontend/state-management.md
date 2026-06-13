@@ -71,7 +71,7 @@ Reducer の例:
 
 Redux の複雑さへの反動で、シンプルなライブラリが普及した。
 
-**Zustand（React）**
+**Zustand**（React）
 ```typescript
 const useStore = create<State>((set) => ({
     count: 0,

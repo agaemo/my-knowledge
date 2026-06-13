@@ -52,7 +52,7 @@ Wasm は JS の置き換えではなく、**重い処理を担当するモジュ
 
 ## ブラウザの外への展開
 
-当初はブラウザ専用だったが、**WASI（WebAssembly System Interface）** の標準化でブラウザ外でも動くようになった。
+当初はブラウザ専用だったが、**WASI**（WebAssembly System Interface） の標準化でブラウザ外でも動くようになった。
 
 **Cloudflare Workers・Fastly Compute** などのエッジランタイムで Wasm を実行できる。「一度コンパイルすれば、ブラウザでも Edge でもサーバーでも動く」という新しいクロスプラットフォームの形が生まれつつある。
 

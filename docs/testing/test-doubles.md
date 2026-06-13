@@ -94,7 +94,7 @@ expect(mockMailer.send).toHaveBeenCalledWith('user@example.com');
 
 テストダブルの選択は「何を検証するか」で決まる。
 
-**状態検証（State Verification）**  
+**状態検証**（State Verification）  
 「処理後の結果が正しいか」を検証する。Stub・Fake を使うことが多い。
 
 ```typescript
@@ -104,7 +104,7 @@ const saved = await fakeRepo.findByEmail('alice@example.com');
 expect(saved).not.toBeNull();
 ```
 
-**振る舞い検証（Behavior Verification）**  
+**振る舞い検証**（Behavior Verification）  
 「正しいメソッドが正しく呼ばれたか」を検証する。Mock・Spy を使う。
 
 ```typescript

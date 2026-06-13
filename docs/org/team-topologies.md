@@ -52,9 +52,9 @@ Stream-aligned team の能力を向上させることに特化するチーム。
 
 | モード | 概要 | いつ使うか |
 |---|---|---|
-| **Collaboration（協働）** | 2チームが密接に協力する | 新技術の探索・複雑な問題の解決期間中 |
+| **Collaboration**（協働） | 2チームが密接に協力する | 新技術の探索・複雑な問題の解決期間中 |
 | **X-as-a-Service** | 一方がサービスを提供し、他方が消費する | Platform team が基盤を提供する定常状態 |
-| **Facilitating（支援）** | Enabling team が他チームの能力向上を支援 | 新しいプラクティス・技術の導入時 |
+| **Facilitating**（支援） | Enabling team が他チームの能力向上を支援 | 新しいプラクティス・技術の導入時 |
 
 Collaboration は認知負荷が高く、長期間続けるとチームが疲弊する。定常状態は X-as-a-Service に移行するのが理想。
 

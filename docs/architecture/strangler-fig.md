@@ -127,4 +127,4 @@ export class UserServiceFacade {
 
 - **Branch by Abstraction** — コード内にインターフェースを挟んで新旧実装を差し替える（Facadeの粒度がより細かい）
 - **Feature Flag** — 移行の切り替えをコードから操作する手段としてよく組み合わせる
-- **Anti-Corruption Layer（ACL）** — 旧システムの概念モデルが新システムに汚染されないよう変換層を設ける
+- **Anti-Corruption Layer**（ACL） — 旧システムの概念モデルが新システムに汚染されないよう変換層を設ける

@@ -42,7 +42,7 @@ SaaS の収益構造:
 インバウンドで来たリードを精査し、商談アポを設定する。**売ることが仕事ではなく、適切な見込み客かを判断することが仕事**。
 
 - **SDR** — インバウンドリード（問い合わせ・トライアル登録など）を対応
-- **BDR（Business Development Representative）** — アウトバウンドで新規開拓。特にエンタープライズ向け
+- **BDR**（Business Development Representative） — アウトバウンドで新規開拓。特にエンタープライズ向け
 
 ### AE（Account Executive）
 

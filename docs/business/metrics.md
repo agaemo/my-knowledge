@@ -39,8 +39,8 @@ ARR の成長倍率:
 
 ### ARR / MRR
 
-**MRR（Monthly Recurring Revenue）** — 月次経常収益。毎月繰り返し発生するサブスクリプション収益。  
-**ARR（Annual Recurring Revenue）** — 年次経常収益。MRR × 12。
+**MRR**（Monthly Recurring Revenue） — 月次経常収益。毎月繰り返し発生するサブスクリプション収益。  
+**ARR**（Annual Recurring Revenue） — 年次経常収益。MRR × 12。
 
 ```
 MRR の構成要素:

@@ -1,6 +1,6 @@
 # GitOps
 
-Git リポジトリをインフラ・アプリの**唯一の信頼できる情報源（Single Source of Truth）**として扱い、Git への変更を起点に自動デプロイを行う運用モデル。  
+Git リポジトリをインフラ・アプリの**唯一の信頼できる情報源**（Single Source of Truth）として扱い、Git への変更を起点に自動デプロイを行う運用モデル。  
 Weaveworks が 2017年に提唱。Kubernetes の普及とともに広まった。
 
 ## なぜ存在するか

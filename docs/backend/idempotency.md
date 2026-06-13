@@ -64,7 +64,7 @@ async function createPayment(req: Request) {
 
 ## DB での設計
 
-**UPSERT（INSERT OR UPDATE）** を使うと、同じデータを何度挿入しても重複しない。
+**UPSERT**（INSERT OR UPDATE） を使うと、同じデータを何度挿入しても重複しない。
 
 ```sql
 -- PostgreSQL

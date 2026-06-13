@@ -49,7 +49,7 @@ SDR が見込み客を探し、AE がクロージングし、CSM が継続・拡
 | 指標 | 内容 |
 |---|---|
 | **Activation Rate** | サインアップ後、価値を体験した割合 |
-| **PQL（Product Qualified Lead）** | プロダクト上の行動から「購入可能性が高い」と判断されたユーザー |
+| **PQL**（Product Qualified Lead） | プロダクト上の行動から「購入可能性が高い」と判断されたユーザー |
 | **Time to Value** | サインアップからAha Moment（価値体験）までの時間 |
 
 ---

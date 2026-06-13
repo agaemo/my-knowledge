@@ -17,5 +17,5 @@
 ## 対策
 
 - **出力エスケープ**: HTMLに出力する際に `<` `>` `&` などを文字参照に変換する
-- **Content Security Policy（CSP）**: 許可するスクリプトのソースをHTTPヘッダーで制限する
+- **Content Security Policy**（CSP）: 許可するスクリプトのソースをHTTPヘッダーで制限する
 - **HttpOnly Cookie**: JavaScriptからCookieを読めないようにする
