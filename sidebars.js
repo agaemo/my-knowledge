@@ -369,6 +369,7 @@ const sidebars = {
             'os/unix-linux',
             'os/distributions',
             'os/io-streams',
+            'os/endianness',
           ],
         },
         {

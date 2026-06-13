@@ -13,3 +13,4 @@ sidebar_label: OS
 | [Unix/Linux](./unix-linux) | UNIX設計思想・LinuxとUNIXの関係・POSIX |
 | [ディストリビューション](./distributions) | なぜディストリビューションが存在するか・主要な系統と違い |
 | [I/Oとファイルディスクリプタ](./io-streams) | 標準入出力・リダイレクト・`/dev/null` |
+| [エンディアン](./endianness) | リトルエンディアン・ビッグエンディアンの違いと意識すべき場面 |
