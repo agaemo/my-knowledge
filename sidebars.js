@@ -378,6 +378,7 @@ const sidebars = {
             'os/cpu-architecture',
             'os/systemd',
             'os/package-manager',
+            'os/permissions',
           ],
         },
         {

@@ -20,3 +20,4 @@ sidebar_label: OS
 | [CPUアーキテクチャ](./cpu-architecture) | x86-64・ARM64・Apple Silicon・Rosetta 2・Docker との関係 |
 | [systemd](./systemd) | PID 1・ユニット・systemctl・journald |
 | [パッケージマネージャー](./package-manager) | apt・dpkg・dnf・yum・rpm・brew の関係と使い分け |
+| [パーミッションとアクセス制御](./permissions) | rwx・setuid・ACL・権限昇格の仕組み |
