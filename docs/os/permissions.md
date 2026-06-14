@@ -111,8 +111,10 @@ find / -perm -4000 -type f 2>/dev/null
 sudo -l      # 現在のユーザーが sudo できるコマンドを確認
 ```
 
-**SUID + GTFOBins**  
-[GTFOBins](https://gtfobins.github.io/) はsetuidが設定された標準ツール（find・vim・python等）でシェルを昇格する方法をまとめたデータベース。
+**SUID / sudo + GTFOBins**  
+[GTFOBins](https://gtfobins.org/) は Unix 標準ツール（find・vim・python・curl 等）に対して、「setuid が設定されているとき」「sudo で許可されているとき」「ケーパビリティが付与されているとき」それぞれのシェル昇格・制限回避の方法を収録したデータベース。
+
+setuid バイナリを発見したとき、または `sudo -l` で許可コマンドを確認したとき、そのコマンド名を GTFOBins で検索して悪用可否を即座に判定できる。sudo の設定ミス（例：`sudo vim` を許可）が GTFOBins に載っているパターンと一致すれば、それだけで root 昇格の経路になる。
 
 ### 防御側の視点
 
