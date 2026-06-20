@@ -14,6 +14,8 @@
 | [OIDC](/auth/oidc) | OAuth2 + 認証。「誰としてログインしているか」を標準化 |
 | [SAML](/auth/saml) | エンタープライズSSO。XMLベースで企業システム間の認証連携 |
 | [FIDO2 / Passkeys](/auth/fido2-webauthn) | パスワードレス認証。生体認証・デバイス認証でフィッシング耐性が高い |
+| [RADIUS](/auth/radius) | VPN・Wi-Fiなどネットワーク接続をAAAで認証 |
+| [Kerberos](/auth/kerberos) | チケットベースの相互認証によるドメインSSO |
 
 ## 場面別の使い分け
 
@@ -69,6 +71,20 @@ SPA + API 構成       →  JWT（Bearer で送る）
 
 ```
 → Basic 認証（Nginx・Cloudflare などサーバー側で設定）
+```
+
+### 社内ネットワーク（VPN・Wi-Fi）への接続自体を認証したい
+
+```
+→ RADIUS
+   802.1X環境でのWi-Fi認証、VPNゲートウェイへの接続認証など
+```
+
+### Windows ADドメイン環境で複数サービスにSSOしたい
+
+```
+→ Kerberos
+   ドメイン参加済みのクライアントが、パスワード再入力なしで複数サービスにアクセス
 ```
 
 ## 比較表
