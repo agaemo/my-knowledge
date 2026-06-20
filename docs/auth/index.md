@@ -25,3 +25,8 @@
 - [OAuth2](/auth/oauth2) — 認可の委譲を標準化したプロトコル
 - [OpenID Connect（OIDC）](/auth/oidc) — OAuth2の上に認証レイヤーを追加したプロトコル
 - [SAML](/auth/saml) — エンタープライズSSOのXMLベース標準プロトコル
+
+## ネットワーク・エンタープライズ認証
+
+- [RADIUS](/auth/radius) — VPN・Wi-Fi など、ネットワーク接続を中央サーバーで認証するAAAプロトコル
+- [Kerberos](/auth/kerberos) — チケットベースの相互認証によるドメインSSOプロトコル

@@ -352,6 +352,8 @@ const sidebars = {
             'auth/oauth2',
             'auth/oidc',
             'auth/saml',
+            'auth/radius',
+            'auth/kerberos',
           ],
         },
       ],

@@ -11,7 +11,7 @@ const features = [
   { title: 'AI', details: 'ハルシネーション・推論モデル・コンテキストエンジニアリング・RAG・AIエージェント・Evals', link: '/ai/' },
   { title: 'Testing', details: 'TDD・テスト戦略・テストピラミッド・ヘッドレスブラウザ（Playwright・Puppeteer）', link: '/testing/' },
   { title: 'Security', details: 'CORS・CSP・HSTS・XSS・CSRF・SQLi・SSRF・IDOR・ブルートフォース・レインボーテーブル・ゼロデイ・Zero Trust・ファイアウォールルール・ペネトレーションテスト・脆弱性スキャン・ファジング・現地調達型攻撃・Dirty COW', link: '/security/' },
-  { title: '認証', details: 'Basic認証・セッション認証・APIキー・JWT・Bearer・OAuth2・OIDC・SAML', link: '/auth/' },
+  { title: '認証', details: 'Basic認証・セッション認証・APIキー・JWT・Bearer・OAuth2・OIDC・SAML・RADIUS・Kerberos', link: '/auth/' },
   { title: 'OS', details: 'UNIX設計思想・Linux・ディストリビューション・カーネル・systemd・仮想化・Hyper-V・VMware・CPUアーキテクチャ・Apple Silicon・パッケージ管理・apt・dnf・brew・パーミッション・ACL・権限昇格', link: '/os/' },
   { title: 'Networking', details: 'OSIモデル・HTTP/2/3・DNS・TLS・WebSocket/SSE・VPC・NAT・DHCP', link: '/networking/' },
   { title: 'Observability', details: 'ログ・メトリクス・トレース・OpenTelemetry・分散トレーシング・ログ集約・Zabbix', link: '/observability/' },
