@@ -583,6 +583,17 @@ const sidebars = {
             'business/okr',
             'business/rule-of-40',
             'business/ab-testing',
+            {
+              type: 'category',
+              label: '戦略分析',
+              link: { type: 'doc', id: 'business/strategy-analysis/index' },
+              collapsed: true,
+              items: [
+                'business/strategy-analysis/3c-analysis',
+                'business/strategy-analysis/swot',
+                'business/strategy-analysis/wardley-map',
+              ],
+            },
           ],
         },
       ],
