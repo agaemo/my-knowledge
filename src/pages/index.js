@@ -5,23 +5,21 @@ import Layout from '@theme/Layout';
 import styles from './index.module.css';
 
 const features = [
-  { title: 'Architecture', details: 'レイヤード・オニオン・DDD・ヘキサゴナル・GoF・SOLID・関数型パターン・MVC/MVP/MVVM', link: '/architecture/' },
-  { title: 'Frontend', details: '状態管理・リアクティブプログラミング・JSランタイム（Node.js/Deno）・レンダリング戦略・ネイティブ速度ツールチェーン（SWC/Biome/Oxc）', link: '/frontend/' },
-  { title: 'Backend', details: 'REST・GraphQL・gRPC・tRPC', link: '/backend/' },
-  { title: 'AI', details: 'ハルシネーション・推論モデル・コンテキストエンジニアリング・RAG・AIエージェント・Evals', link: '/ai/' },
-  { title: 'Testing', details: 'TDD・テスト戦略・テストピラミッド・ヘッドレスブラウザ（Playwright・Puppeteer）', link: '/testing/' },
-  { title: 'Security', details: 'CORS・CSP・HSTS・XSS・CSRF・SQLi・SSRF・IDOR・ブルートフォース・レインボーテーブル・ゼロデイ・Zero Trust・ファイアウォールルール・ペネトレーションテスト・脆弱性スキャン・ファジング・現地調達型攻撃・Dirty COW', link: '/security/' },
-  { title: '認証', details: 'Basic認証・セッション認証・APIキー・JWT・Bearer・OAuth2・OIDC・SAML・RADIUS・Kerberos', link: '/auth/' },
-  { title: 'OS', details: 'UNIX設計思想・Linux・ディストリビューション・カーネル・systemd・仮想化・Hyper-V・VMware・CPUアーキテクチャ・Apple Silicon・パッケージ管理・apt・dnf・brew・パーミッション・ACL・権限昇格', link: '/os/' },
-  { title: 'Networking', details: 'OSIモデル・HTTP/2/3・DNS・TLS・WebSocket/SSE・VPC・NAT・DHCP', link: '/networking/' },
-  { title: 'Observability', details: 'ログ・メトリクス・トレース・OpenTelemetry・分散トレーシング・ログ集約・Zabbix', link: '/observability/' },
-  { title: 'SRE', details: '単一障害点・カスケード障害・サーキットブレーカー・バルクヘッド・RAID・ポストモーテム・SLO', link: '/sre/' },
-  { title: '開発プロセス', details: 'アジャイル・ウォーターフォール・Shape Up・ADR', link: '/process/' },
-  { title: 'Deployment', details: 'カナリアリリース・ブルーグリーン・フィーチャーフラグ・エッジコンピューティング', link: '/deployment/' },
-  { title: 'Dev Tools', details: 'Docker・Podman・Buildah・Kubernetes・Terraform・GitHub Actions・Nix・mise', link: '/dev-tools/' },
-  { title: 'Platforms', details: 'クラウド・XaaS（IaaS/PaaS/SaaS/FaaS）・BaaS・分散DB・Kafka・CMS・Databricks', link: '/platforms/' },
-  { title: '組織', details: 'コンウェイの法則・サイロ化・DevOps・Team Topologies・IC/EM/Staff Engineer・The Model', link: '/org/' },
-  { title: 'ビジネス', details: 'ユニコーン・資金調達ステージ・VC・ARR/バーンレート・PMF・SLG/PLG/MLG/CLG・3C分析・SWOT分析・ワードリーマップ', link: '/business/' },
+  {
+    title: '設計・開発',
+    details: 'アーキテクチャパターン・フロントエンド/バックエンド設計・AI/LLM エンジニアリング・テスト手法・セキュリティ・認証など、ソフトウェアを設計・実装するための概念と判断基準',
+    link: '/architecture/',
+  },
+  {
+    title: '運用・インフラ',
+    details: 'OS・ネットワーク・オブザーバビリティ・SRE・デプロイ戦略・開発ツール・クラウドプラットフォームなど、システムを動かし続けるための知識',
+    link: '/os/',
+  },
+  {
+    title: '組織・プロセス・事業',
+    details: 'チーム設計・組織パターン・開発プロセス・ビジネス指標・成長戦略など、プロダクトとチームを持続的に成長させるための考え方',
+    link: '/org/',
+  },
 ];
 
 export default function Home() {
