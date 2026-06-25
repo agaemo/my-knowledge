@@ -249,6 +249,7 @@ const sidebars = {
             'testing/contract-testing',
             'testing/testing-strategy',
             'testing/headless-browser',
+            'testing/page-object-model',
             'testing/qa-engineer',
           ],
         },
