@@ -223,6 +223,8 @@ const sidebars = {
                 'ai/dev-style/ai-dlc',
                 'ai/dev-style/vibe-coding',
                 'ai/dev-style/harness-engineering',
+                'ai/dev-style/loop-engineering',
+                'ai/dev-style/graph-engineering',
               ],
             },
             {
