@@ -41,6 +41,10 @@ GoFが書かれた当時の主流はC++・Java。クラス継承とインター�
 - [Dependency Injection](/architecture/design-patterns/dependency-injection) — 依存オブジェクトを外から渡す。テスタビリティと疎結合の基盤
 - [Active Record vs Data Mapper](/architecture/design-patterns/orm-patterns) — DB とオブジェクトのマッピング2アプローチ。ORM 選定の判断基準
 
+## 並行プログラミングパターン
+
+- [Promise / Future](/architecture/design-patterns/promise-future) — 非同期処理の結果をオブジェクトにカプセル化し、コールバックのネストを解消する。GoF 外だが State・Observer と構造的に類似する
+
 ## その他の原則
 
 - [プログラミング原則](/architecture/design-patterns/principles) — DRY・KISS・YAGNI・LoD・合成優先・SoC

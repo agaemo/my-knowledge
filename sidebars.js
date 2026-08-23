@@ -57,6 +57,7 @@ const sidebars = {
                     'architecture/design-patterns/repository',
                     'architecture/design-patterns/dependency-injection',
                     'architecture/design-patterns/orm-patterns',
+                    'architecture/design-patterns/promise-future',
                   ],
                 },
                 { type: 'doc', id: 'architecture/functional-patterns/index', label: '関数型パターン' },
